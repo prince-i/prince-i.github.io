@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="Image/icon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prince Arce</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="node_modules/materialize-css/dist/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <center><img src="Image/preview.gif" alt="" class="responsive-img" id="loader"></center>
+    <main id="main-screen">
+        <div class="navbar-fixed">
+            <nav class="nav-extended white">
+                <div class="nav-wrapper">
+                  <a href="#" class="brand-logo" style="color:#eb4034;" id="logo">Prince Arce</a>
+                  <a href="#" data-target="mobile-demo" class="sidenav-trigger" style="color:#eb4034;"><i class="material-icons">menu</i></a>
+                  <ul id="nav-mobile" class="right hide-on-med-and-down" >
+                    <li><a href="#" style="color:#eb4034;">Home</a></li>
+                    <li><a href="#about" style="color:#eb4034;">About</a></li>
+                    <li><a href="#services" style="color:#eb4034;">Services</a></li>
+                    <li><a href="#work" style="color:#eb4034;">Work</a></li>
+                    <li><a href="#contact" style="color:#eb4034;">Contact</a></li>
+                  </ul>
+                </div>
+              </nav>
+        </div>
+    
+    
+      <ul class="sidenav" id="mobile-demo">
+        <li><a href="#" style="color:#eb4034;" class="sidenav-close">Home</a></li>
+        <li><a href="#about" style="color:#eb4034;" class="sidenav-close">About</a></li>
+        <li><a href="#services" style="color:#eb4034;" class="sidenav-close">Services</a></li>
+        <li><a href="#work" style="color:#eb4034;" class="sidenav-close">Work</a></li>
+        <li><a href="#contact" style="color:#eb4034;" class="sidenav-close">Contact</a></li>
+      </ul>
+    
+
+
+    <!-- CONTENT -->
+    <div class="row" id="root">
+        <div class="parallax-container" style="height:400px;">
+            <div class="parallax"><img src="Image/desktop.jpg"></div>
+        </div>
+        <!-- ----------------------------------------------------------------------- -->
+        <div class="section white">
+            <div class="row container">
+              <h2 class="header">Hi! I'm Prince.</h2>
+              <p class="grey-text text-darken-3 lighten-3" id="title"></p>
+            </div>
+        </div>
+        <!-- ------------------------------------------------------------------------- -->
+        <div class="parallax-container" style="height:400px;">
+            <div class="parallax"><img src="Image/tech.jpg"></div>
+        </div>
+    </div>
+
+
+    <!-- ABOUT -->
+    <div class="row" style="padding:10px;margin-top:5%;">
+        <h1 class="center">About Me</h1>
+
+        <div class="col l12 m12 s12" id="about">
+            <!-- GRID 1 -->
+            <div class="col l4 m4 s12">
+                <img src="Image/me.jfif" alt="" class="responsive-img" id="myPic">
+            </div>
+            <div class="col l4 m4 s12 align-left">
+                <p class="flow-text"><b class="red-text">Name:</b> Prince Arce</p>
+                <p class="flow-text"><b class="red-text">Profile:</b> Full Stack Web Developer</p>
+                <p class="flow-text"><b class="red-text">Email:</b> prince_arce01@outlook.com</p>
+                <p class="flow-text"><b class="red-text">Phone:</b> 09672562924</p>
+            </div>
+            <div class="col l4 m4 s12">
+                <h4 class="red-text">Introduction</h4>
+                <p>
+                    Hi! I am Prince, a Full Stack Web Developer, Web Designer, IT Technician, and Visual Basic .Net Developer.
+                </p>
+                <p>
+                    Experienced in computer hardware and software troubleshooting, network and server configuration, system development and analysis.
+                </p>
+                <p>
+                    If you want to have your own website, e-commerce website, business posters or pliers, even technology-related concerns, I may be of professional help.
+                </p>
+                       
+            </div>
+        </div>
+
+        <div class="col s12">
+            <h1 class="center">SKILLS</h1>
+            <canvas id="myChart" style="width:100%;"></canvas>
+        </div>
+    </div>
+    <div class="row divider"></div>
+    <!-- SERVICES -->
+    <div class="col s12 container" id="services">
+        <h1 class="center">SERVICES</h1>
+        <p class="center">What can I do?</p>
+        <!-- CARDS -->
+        <div class="row">
+            <div class="col l4 m4 s12" style="text-align: center;">
+                <img src="Image/icons/monitor-screen.svg" alt="" style="width:30%;">
+                <p style="font-weight: bold;">WEB DESIGN</p>
+                <p>
+                    As a Web Designer, I have an experience with HTML5, CSS3, Javascript, jQuery and CSS Framework like materializes.
+                </p>
+            </div>
+
+            <div class="col l4 m4 s12" style="text-align: center;">
+                <img src="Image/icons/coding.svg" alt="" style="width:30%;">
+                <p style="font-weight: bold;">WEB DEVELOPMENT</p>
+                <p>
+                    I successfully deployed web-based application in my current workplace, having experience in PHP7, Javascript, AJAX, JSON and MYSQL Database.
+                </p>
+            </div>
+
+            <div class="col l4 m4 s12" style="text-align: center;">
+                <img src="Image/icons/landing-page.svg" alt="" style="width:30%;">
+                <p style="font-weight: bold;">RESPONSIVE DESIGN</p>
+                <p>
+                    Knowledgeable in modern design for any screen size.
+                </p>
+            </div>
+        </div>
+        <div class="row divider"></div>
+        <!-- STATS -->
+        <div class="row">
+            <div class="col l3 m3 s12" style="text-align: center;" id="stat_cont">
+                <img src="Image/icons/landing-page.svg" alt="" style="width:30%;">
+                <p style="font-size:30px;font-weight:bold;">8</p>
+                <p>WORKS COMPLETED</p>
+            </div>
+
+            <div class="col l3 m3 s12" style="text-align: center;"  id="stat_cont">
+                <img src="Image/icons/schedule.svg" alt="" style="width:30%;">
+                <p style="font-size:30px;font-weight:bold;">1</p>
+                <p>YEARS OF EXPERIENCE</p>
+            </div>
+
+            <div class="col l3 m3 s12" style="text-align: center;" id="stat_cont">
+                <img src="Image/icons/target.svg" alt="" style="width:30%;">
+                <p style="font-size:30px;font-weight:bold;">1</p>
+                <p>TOTAL CLIENTS</p>
+            </div>
+
+            <div class="col l3 m3 s12" style="text-align: center;" id="stat_cont">
+                <img src="Image/icons/trophy.svg" alt="" style="width:30%;">
+                <p style="font-size:30px;font-weight:bold;">0</p>
+                <p>AWARD WON</p>
+            </div>
+
+        </div>
+    </div>
+    <div class="row divider"></div>
+    <!-- WORK -->
+
+    <div class="row" id="work">
+        <h1 class="center">PORTFOLIO</h1>
+        <p class="center">My previous works...</p>
+        <div class="col l12 m12 s12" id="work">
+            <!-- SYSTEMS -->
+            <div class="col l4 m4 s12">
+                <center>
+                    <img src="Image/systems/it_installer.jpg" alt="" class="responsive-img materialboxed" id="system_preview">
+                </center>
+                <p id="system_name">IT SYSTEM INSTALLER</p>
+                <p id="system_info">Web Application / July 2020</p>
+            </div>
+
+            <div class="col l4 m4 s12">
+                <center>
+                    <img src="Image/systems/PE.PNG" alt="" class="responsive-img materialboxed" id="system_preview">
+                </center>
+                <p id="system_name">PE APP LAUNCHER</p>
+                <p id="system_info">VB .Net Application / August 2020</p>
+            </div>
+
+            <div class="col l4 m4 s12">
+                <center>
+                    <img src="Image/systems/progresscounter.jpg" alt="" class="responsive-img materialboxed" id="system_preview">
+                </center>
+                <p id="system_name">PRODUCTION PROGRESS COUNTER</p>
+                <p id="system_info">Web Application / November 2020</p>
+            </div>
+            
+            <div class="col l4 m4 s12">
+                <center>
+                    <img src="Image/systems/andonsystem.jpg" alt="" class="responsive-img materialboxed" id="system_preview">
+                </center>
+                <p id="system_name">ANDON SYSTEM</p>
+                <p id="system_info">Web Application / October 2020</p>
+            </div>
+
+            <div class="col l4 m4 s12">
+                <center>
+                    <img src="Image/systems/progress_counter_control_panel.jpg" alt="" class="responsive-img materialboxed" id="system_preview">
+                </center>
+                <p id="system_name">PROGRESS COUNTER CONTROL ADMIN SYSTEM</p>
+                <p id="system_info">Web Application / November 2020</p>
+            </div>
+
+            <div class="col l4 m4 s12">
+                <center>
+                    <img src="Image/systems/prf_system.png" alt="" class="responsive-img materialboxed" id="system_preview">
+                </center>
+                <p id="system_name">PRF APPROVAL SYSTEM WITH EMAIL NOTIFICATION</p>
+                <p id="system_info">Web Application / February 2021</p>
+            </div>
+
+            <div class="col l4 m4 s12">
+                <center>
+                    <img src="Image/systems/furukawalima.png" alt="" class="responsive-img materialboxed" id="system_preview">
+                </center>
+                <p id="system_name">FURUKAWA AUTOMOTIVE SYSTEM LIMA PH - OFFICAL WEBSITE</p>
+                <p id="system_info">Web Hosting / February 2021</p>
+            </div>
+
+            <div class="col l4 m4 s12">
+                <center>
+                    <img src="Image/systems/server-ping.png" alt="" class="responsive-img materialboxed" id="system_preview">
+                </center>
+                <p id="system_name">SERVER AND NETWORK PING TOOL</p>
+                <p id="system_info">VB .Net Application / April 2021</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row divider"></div>
+    <!--</CONTENT>  -->
+    
+    <div class="row" id="contact">
+        <h1 class="center">GET IN TOUCH</h1>
+        <div class="col s12">
+            <div class="col l6 m6 s12">
+                <img src="Image/developer_med.gif" alt="" class="responsive-img" style="border-radius: 10px;">
+            </div>
+            <div class="col l6 m6 s12">
+                <p class="flow-text">We'd love to talk with you about your next project.</p>
+                <div class="row divider"></div>
+                <ul class="collection with-header">
+                    <li class="collection-header"><h4><i class="material-icons">contacts</i> Prince Arce</h4></li>
+                    <li class="collection-item"><div>San Francisco Lipa City, Batangas<a href="#!" class="secondary-content"><i class="material-icons">location_on</i></a></div></li>
+                    <li class="collection-item"><div>09672562924<a href="#!" class="secondary-content"><i class="material-icons">phone</i></a></div></li>
+                    <li class="collection-item"><div><a href="mailto:prince_arce01@outlook.com">prince_arce01@outlook.com</a><a href="mailto:prince_arce01@outlook.com" class="secondary-content"><i class="material-icons">email</i></a></div></li>
+                  </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="fixed-action-btn" id="floatingBtn">
+        <a class="btn-floating btn-large red" href="#">
+          <i class="large material-icons">arrow_drop_up</i>
+        </a>
+      </div>
+
+    </main>
+
+
+
+
+
+    <!-- JS -->
+    <script src="node_modules/materialize-css/dist/jquery/jquery.min.js"></script>
+    <script src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
+    <script src="node_modules/chart.js/dist/chart.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.sidenav').sidenav();
+            $('#main-screen').fadeIn(1500);
+            $('#loader').hide();
+            $('.parallax').parallax();
+            $('.materialboxed').materialbox();
+        });
+
+        $(window).on("scroll", function(){
+            amountscrolled();
+        });
+
+        function amountscrolled(){
+        var winheight = $(window).height();
+        var docheight = $(document).height();
+        var scrollTop = $(window).scrollTop();
+        var trackLength = docheight - winheight;
+        var pctScrolled = Math.floor(scrollTop/trackLength * 100);
+        console.log(pctScrolled + '% scrolled');
+        if(pctScrolled >= '10'){
+            // IF THE SCREEN SCROLLED OVER 50% typeWriter function will call
+            typeWriter();
+        }
+        if(pctScrolled >= '95'){
+            $('#floatingBtn').fadeIn(500);
+        }else{
+            $('#floatingBtn').fadeOut(500);
+        }
+    }
+    
+        // TYPEWRITER EFFECT
+        var i = 0;
+        var txt = 'Full Stack Web Developer';
+        var speed = 60;
+        function typeWriter() {
+        if (i < txt.length) {
+            document.getElementById("title").innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+            }
+        }
+        
+        // CHART
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['HTML5','CSS3','PHP','JAVASCRIPT','jQuery','VB .NET','MYSQL','MS SQL','Git','Figma'],
+                datasets: [{
+                    label: 'Skill Percentage',
+                    data: [100,95,80,90,85,70,80,60,65,75],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 159, 64, 0.2)',
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 159, 64, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)',
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                indexAxis: 'y',
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+
+    </script>
+</body>
+</html>
