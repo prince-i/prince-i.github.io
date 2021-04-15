@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prince Arce</title>
     <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="node_modules/materialize-css/dist/css/materialize.min.css">
+    <!--<link rel="stylesheet" href="node_modules/materialize-css/dist/css/materialize.min.css">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
@@ -243,7 +244,7 @@
                 <ul class="collection with-header">
                     <li class="collection-header"><h4><i class="material-icons">contacts</i> Prince Arce</h4></li>
                     <li class="collection-item"><div>San Francisco Lipa City, Batangas<a href="#!" class="secondary-content"><i class="material-icons">location_on</i></a></div></li>
-                    <li class="collection-item"><div>09672562924<a href="#!" class="secondary-content"><i class="material-icons">phone</i></a></div></li>
+                    <li class="collection-item"><div><a href="tel:09672562924">09672562924</a><a href="tel:09672562924" class="secondary-content"><i class="material-icons">phone</i></a></div></li>
                     <li class="collection-item"><div><a href="mailto:prince_arce01@outlook.com">prince_arce01@outlook.com</a><a href="mailto:prince_arce01@outlook.com" class="secondary-content"><i class="material-icons">email</i></a></div></li>
                   </ul>
             </div>
@@ -264,8 +265,8 @@
 
 
     <!-- JS -->
-    <script src="node_modules/materialize-css/dist/jquery/jquery.min.js"></script>
-    <script src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="node_modules/chart.js/dist/chart.js"></script>
     <script>
         $(document).ready(function(){
@@ -286,7 +287,7 @@
         var scrollTop = $(window).scrollTop();
         var trackLength = docheight - winheight;
         var pctScrolled = Math.floor(scrollTop/trackLength * 100);
-        console.log(pctScrolled + '% scrolled');
+        //console.log(pctScrolled + '% scrolled');
         if(pctScrolled >= '10'){
             // IF THE SCREEN SCROLLED OVER 50% typeWriter function will call
             typeWriter();
