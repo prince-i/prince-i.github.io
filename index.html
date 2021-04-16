@@ -64,21 +64,21 @@
     <div class="row" style="padding:10px;margin-top:5%;" id="about">
         <h1 class="center">About Me</h1>
 
-        <div class="col l12 m12 s12">
+        <div class="col l12 m12 s12" id="about_content">
             <!-- GRID 1 -->
             <div class="col l4 m4 s12">
-                <img src="Image/me.jfif" alt="" class="responsive-img" id="myPic">
+                <img src="Image/me.jfif" alt="" class="responsive-img z-depth-5" id="myPic">
             </div>
-            <div class="col l4 m4 s12 align-left">
+            <div class="col l4 m4 s12 align-left" id="profile_info">
                 <p class="flow-text"><b class="red-text">Name:</b> Prince Arce</p>
                 <p class="flow-text"><b class="red-text">Profile:</b> Full Stack Web Developer</p>
                 <p class="flow-text"><b class="red-text">Email:</b> prince_arce01@outlook.com</p>
                 <p class="flow-text"><b class="red-text">Phone:</b> 09672562924</p>
             </div>
             <div class="col l4 m4 s12">
-                <h4 class="red-text">Introduction</h4>
+                <h4 class="red-text">INTRODUCTION</h4>
                 <p>
-                    Hi! I am Prince, a Full Stack Web Developer, Web Designer, IT Technician, and Visual Basic .Net Developer.
+                    Hi! I am Prince, a Full Stack Web Developer, IT Technician, and Visual Basic .Net Developer.
                 </p>
                 <p>
                     Experienced in computer hardware and software troubleshooting, network and server configuration, system development and analysis.
@@ -90,9 +90,73 @@
             </div>
         </div>
 
-        <div class="col s12">
+        <div class="col s12" id="skills_content">
             <h1 class="center">SKILLS</h1>
-            <canvas id="myChart" style="width:100%;"></canvas>
+            <!-- <canvas id="myChart" style="width:100%;"></canvas> -->
+            <div class="row">
+                <div class="col s12">
+                    <!-- HTML -->
+                    <div class="col l2 m2 s2">
+                         <img src="Image/icons/html-5.png"  class="responsive-img" id="skill_icon">
+                    </div>
+
+                    <!-- CSS -->
+                    <div class="col l2 m2 s2">
+                         <img src="Image/icons/css-3.png"  class="responsive-img" id="skill_icon">
+                    </div>
+
+                    <!-- PHP -->
+                   <div class="col l2 m2 s2">
+                         <img src="Image/icons/php.png"  class="responsive-img" id="skill_icon">
+                    </div>
+
+                    <!-- JS -->
+                    <div class="col l2 m2 s2">
+                         <img src="Image/icons/javascript.png"  class="responsive-img" id="skill_icon">
+                    </div>
+
+                    <!-- MYSQL -->
+                    <div class="col l2 m2 s2">
+                         <img src="Image/icons/mysql.png"  class="responsive-img" id="skill_icon">
+                    </div>
+
+                    <!-- MS SQL -->
+                    <div class="col l2 m2 s2">
+                         <img src="Image/icons/sql.png"  class="responsive-img" id="skill_icon">
+                    </div>
+
+                    <!-- .NET -->
+                    <div class="col l2 m2 s2">
+                         <img src="Image/icons/dotnet.png"  class="responsive-img" id="skill_icon">
+                    </div>
+
+                    <!-- GIT -->
+                    <div class="col l2 m2 s2">
+                         <img src="Image/icons/git.png"  class="responsive-img" id="skill_icon">
+                    </div>
+
+                    <!-- VB -->
+                    <div class="col l2 m2 s2">
+                         <img src="Image/icons/visual-studio.png"  class="responsive-img" id="skill_icon">
+                    </div>
+
+                    <!-- windows -->
+                    <div class="col l2 m2 s2">
+                         <img src="Image/icons/microsoft.png"  class="responsive-img" id="skill_icon">
+                    </div>
+
+                    <!-- GITHUB -->
+                    <div class="col l2 m2 s2">
+                         <img src="Image/icons/github.png"  class="responsive-img" id="skill_icon">
+                    </div>
+
+                    <!-- UBUNTU -->
+                    <div class="col l2 m2 s2">
+                         <img src="Image/icons/ubuntu.png"  class="responsive-img" id="skill_icon">
+                    </div>
+
+                </div>
+            </div>
         </div>
     </div>
     <div class="row divider"></div>
@@ -101,7 +165,7 @@
         <h1 class="center">SERVICES</h1>
         <p class="center">What can I do?</p>
         <!-- CARDS -->
-        <div class="row">
+        <div class="row" id="services_content">
             <div class="col l4 m4 s12" style="text-align: center;">
                 <img src="Image/icons/monitor-screen.svg" alt="" style="width:30%;">
                 <p style="font-weight: bold;">WEB DESIGN</p>
@@ -128,7 +192,7 @@
         </div>
         <div class="row divider"></div>
         <!-- STATS -->
-        <div class="row">
+        <div class="row" id="services_content">
             <div class="col l3 m3 s12" style="text-align: center;" id="stat_cont">
                 <img src="Image/icons/completed-task.svg" alt="" style="width:30%;">
                 <p style="font-size:30px;font-weight:bold;">8</p>
@@ -268,99 +332,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.1.0/chart.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $('.sidenav').sidenav();
-            $('#main-screen').fadeIn(1500);
-            $('#loader').hide();
-            $('.parallax').parallax();
-            $('.materialboxed').materialbox();
-        });
-
-        $(window).on("scroll", function(){
-            amountscrolled();
-        });
-
-        function amountscrolled(){
-        var winheight = $(window).height();
-        var docheight = $(document).height();
-        var scrollTop = $(window).scrollTop();
-        var trackLength = docheight - winheight;
-        var pctScrolled = Math.floor(scrollTop/trackLength * 100);
-        //console.log(pctScrolled + '% scrolled');
-        if(pctScrolled >= '10'){
-            // IF THE SCREEN SCROLLED OVER 50% typeWriter function will call
-            typeWriter();
-        }
-        if(pctScrolled >= '95'){
-            $('#floatingBtn').fadeIn(500);
-        }else{
-            $('#floatingBtn').fadeOut(500);
-        }
-    }
-    
-        // TYPEWRITER EFFECT
-        var i = 0;
-        var txt = 'Full Stack Web Developer';
-        var speed = 60;
-        function typeWriter() {
-        if (i < txt.length) {
-            document.getElementById("title").innerHTML += txt.charAt(i);
-            i++;
-            setTimeout(typeWriter, speed);
-            }
-        }
-        
-        // CHART
-        var ctx = document.getElementById('myChart').getContext('2d');
-        var myChart = new Chart(ctx, {
-            type: 'bar',
-            data: {
-                labels: ['HTML5','CSS3','PHP','JAVASCRIPT','jQuery','VB .NET','MYSQL','MS SQL','Git','Figma'],
-                datasets: [{
-                    label: 'Skill Percentage',
-                    data: [100,95,80,90,85,70,80,60,65,75],
-                    backgroundColor: [
-                        'rgba(255, 99, 132, 0.2)',
-                        'rgba(54, 162, 235, 0.2)',
-                        'rgba(255, 206, 86, 0.2)',
-                        'rgba(75, 192, 192, 0.2)',
-                        'rgba(153, 102, 255, 0.2)',
-                        'rgba(255, 159, 64, 0.2)',
-                        'rgba(255, 99, 132, 0.2)',
-                        'rgba(54, 162, 235, 0.2)',
-                        'rgba(255, 206, 86, 0.2)',
-                        'rgba(75, 192, 192, 0.2)',
-                        'rgba(153, 102, 255, 0.2)',
-                        'rgba(255, 159, 64, 0.2)'
-                    ],
-                    borderColor: [
-                        'rgba(255, 99, 132, 1)',
-                        'rgba(54, 162, 235, 1)',
-                        'rgba(255, 206, 86, 1)',
-                        'rgba(75, 192, 192, 1)',
-                        'rgba(153, 102, 255, 1)',
-                        'rgba(255, 159, 64, 1)',
-                        'rgba(255, 99, 132, 1)',
-                        'rgba(54, 162, 235, 1)',
-                        'rgba(255, 206, 86, 1)',
-                        'rgba(75, 192, 192, 1)',
-                        'rgba(153, 102, 255, 1)',
-                        'rgba(255, 159, 64, 1)'
-                    ],
-                    borderWidth: 1
-                }]
-            },
-            options: {
-                indexAxis: 'y',
-                scales: {
-                    y: {
-                        beginAtZero: true
-                    }
-                }
-            }
-        });
-
-    </script>
+    <script src="main.js"></script>
 </body>
 </html>

@@ -35,9 +35,10 @@ html{
 
 #myPic{
     border-radius:30px;
-    border:3px solid #eb4034;
-    width:75%;
+    object-fit: cover;
 }
+
+
 
 #system_preview{
     width:400px;
@@ -71,4 +72,13 @@ html{
 
 #floatingBtn{
     display:none;
+}
+
+#about_content{
+    display:none;
+}
+
+#skill_icon{
+    width:200px;
+
 }
