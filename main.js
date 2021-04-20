@@ -10,7 +10,6 @@ $(document).ready(function(){
             $('.materialboxed').materialbox();
              typeWriter();
         });
-
         $(window).on("scroll", function(){
             amountscrolled();
         });

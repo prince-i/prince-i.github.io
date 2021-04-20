@@ -7,6 +7,7 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+
 @media only screen  and (max-width: 600px) {
     #logo{
         display: none;
@@ -18,9 +19,9 @@
         text-align: center;
     }
     #stat_cont{
-        border:1px solid #eb4034;
-        padding:5px;
-        border-radius:8px;
+        border-bottom:1px solid #b0b0b0; 
+        padding:15px;
+        /*border-radius:8px;*/
         margin-top: 1%;
     }
     #loader{
@@ -47,6 +48,7 @@ html{
     width:400px;
     height:250px;
     object-fit: contain;
+    border-radius:10px;
 }
 
 #system_name{
@@ -69,7 +71,7 @@ html{
 }
 
 .collection-item , .collection-item a{
-    color:#eb4034;
+    color:gray;
     font-weight: bold;
 }
 
