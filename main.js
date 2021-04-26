@@ -34,7 +34,7 @@ $(document).ready(function(){
     
         // TYPEWRITER EFFECT
         var i = 0;
-        var txt = 'Full Stack Web Developer';
+        var txt = 'PHP Developer / IT Specialist';
         var speed = 60;
         function typeWriter() {
         if (i < txt.length) {
