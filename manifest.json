@@ -3,7 +3,7 @@
   "name": "",
   "icons": [
       {
-          "src": "Image/icon.ico",
+          "src": "Image/icon.png",
           "sizes": "64x64",
           "type": "image/x-icon"
       }
