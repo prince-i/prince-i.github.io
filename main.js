@@ -22,9 +22,9 @@ $(document).ready(function(){
         var pctScrolled = Math.floor(scrollTop/trackLength * 100);
         // console.log(pctScrolled + '% scrolled');
         // FADE IN ABOUT CONTENT
-        if(pctScrolled > 10){
-          $('#about_content').fadeIn(2000);
-        }
+        // if(pctScrolled > 10){
+        //   $('#about_content').fadeIn(2000);
+        // }
         if(pctScrolled >= 95){
             $('#floatingBtn').fadeIn(500);
         }else{
@@ -34,8 +34,8 @@ $(document).ready(function(){
     
         // TYPEWRITER EFFECT
         var i = 0;
-        var txt = 'PHP Developer / IT Specialist';
-        var speed = 60;
+        var txt = 'PHP Web Developer / IT Hardware & Network Technician / IT Consultant / Entrepreneur';
+        var speed = 70;
         function typeWriter() {
         if (i < txt.length) {
             document.getElementById("title").innerHTML += txt.charAt(i);
