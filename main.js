@@ -8,7 +8,8 @@ $(document).ready(function(){
             $('.parallax').parallax();
             $('.materialboxed').materialbox();
              typeWriter();
-            document.querySelector('#loader').classList.remove("loader")
+            document.querySelector('#loader').classList.remove("loader");
+            $('.tooltipped').tooltip();
 });
         $(window).on("scroll", function(){
             amountscrolled();
