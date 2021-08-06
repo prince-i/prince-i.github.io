@@ -22,15 +22,7 @@ $(document).ready(function(){
         var trackLength = docheight - winheight;
         var pctScrolled = Math.floor(scrollTop/trackLength * 100);
         // console.log(pctScrolled + '% scrolled');
-        // FADE IN ABOUT CONTENT
-        // if(pctScrolled > 10){
-        //   $('#about_content').fadeIn(2000);
-        // }
-        if(pctScrolled >= 95){
-            $('#floatingBtn').fadeIn(500);
-        }else{
-            $('#floatingBtn').fadeOut(500);
-        }
+
     }
     
         // TYPEWRITER EFFECT
