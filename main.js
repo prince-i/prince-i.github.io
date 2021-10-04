@@ -27,7 +27,7 @@ $(document).ready(function(){
     
         // TYPEWRITER EFFECT
         var i = 0;
-        var txt = 'PHP Web Developer / IT Hardware & Network Technician / IT Consultant / Entrepreneur';
+        var txt = 'PHP Developer - IT Technician - UX/UI Designer';
         var speed = 70;
         function typeWriter() {
         if (i < txt.length) {
