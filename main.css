@@ -25,9 +25,6 @@ body::-webkit-scrollbar-thumb {
     #logo{
         display: none;
     }
-    #about{
-        text-align: center;
-    }
     #work {
         text-align: center;
     }
@@ -107,14 +104,14 @@ html{
 }
 .loader {
   margin: 60px auto;
-  font-size: 10px;
+  font-size: 20px;
   position: relative;
   margin-top:15%;
   text-indent: -9999em;
   border-top: 1.1em solid rgba(202,78,78, 0.2);
   border-right: 1.1em solid rgba(202,78,78, 0.2);
   border-bottom: 1.1em solid rgba(202,78,78, 0.2);
-  border-left: 1.1em solid #ca4e4e;
+  border-left: 1.1em solid #f72f2f;
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
   transform: translateZ(0);
