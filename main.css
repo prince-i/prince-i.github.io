@@ -18,7 +18,7 @@ body::-webkit-scrollbar-track {
 }
  
 body::-webkit-scrollbar-thumb {
-  background-color: #f72f2f;
+  background-color: #000000;
 }
 
 @media only screen  and (max-width: 600px) {
