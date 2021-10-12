@@ -21,25 +21,27 @@
                   <a href="#" class="brand-logo" style="color:black;" id="logo">Prince Arce</a>
                   <a href="#" data-target="mobile-demo" class="sidenav-trigger" style="color:black;"><i class="material-icons">menu</i></a>
                   <ul id="nav-mobile" class="right hide-on-med-and-down nav-linked" >
-                    <li><a href="#" style="color:black;">Home</a></li>
-                    <li><a href="#about" style="color:black;">About</a></li>
-                    <li><a href="#services" style="color:black;">Services</a></li>
-                    <li><a href="#work" style="color:black;">Work</a></li>
-                    <li><a href="#contact" style="color:black;">Contact</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="javascript:void()" id="theme_button_nav">Dark Mode<i class="material-icons black-text" id="theme_icon">brightness_2</i></a></li>
                   </ul>
                 </div>
               </nav>
         </div>
-    
-    
+
+
       <ul class="sidenav" id="mobile-demo">
         <li><a href="#" class="sidenav-close">Home</a></li>
         <li><a href="#about" class="sidenav-close">About</a></li>
         <li><a href="#services" class="sidenav-close">Services</a></li>
         <li><a href="#work" class="sidenav-close">Work</a></li>
         <li><a href="#contact" class="sidenav-close">Contact</a></li>
+        <li><a href="javascript:void()" class="flow-text" style="color:black;" id="theme_button">Dark Mode<i class="material-icons black-text" id="theme_icon">brightness_2</i></a></li>
       </ul>
-    
+
 
      <div class="row center">
          <img src="Image/coder.jpg" class="responsive-img">
@@ -47,9 +49,8 @@
 
     <!-- CONTENT -->
     <div class="row" id="root">
-        
         <!-- ----------------------------------------------------------------------- -->
-        <div class="section white">
+        <div class="section">
             <div class="row container">
               <h4 class="header" style="font-weight: bold;">PRINCE ARCE</h4>
               <p class="grey-text text-darken-3 lighten-3" id="title" style="font-weight: bold;"></p>
@@ -65,23 +66,22 @@
     <!-- ABOUT -->
     <div class="row" style="padding:10px;margin-top:5%;" id="about">
         <h1 class="center">About Me</h1>
-
         <div class="col l12 m12 s12" id="about_content">
             <!-- GRID 1 -->
             <div class="col l6 m6 s12">
                 <img src="Image/me.png" alt="" class="responsive-img z-depth-1" id="myPic">
             </div>
             <div class="col l6 m6 s12 align-left" id="profile_info">
-                <p class="flow-text"><b class="black-text">Name:</b> PRINCE ARCE</p>
-                <p class="flow-text"><b class="black-text">Profile:</b> PHP DEVELOPER</p>
-                <p class="flow-text"><b class="black-text">Email:</b> PRINCE_ARCE01@OUTLOOK.COM</p>
-                <p class="flow-text"><b class="black-text">Education:</b> BS INFORMATION TECHNOLOGY</p>
-                <p class="flow-text"><b class="black-text">Industry Knowledge:</b> IT OPERATIONS, COMPUTER NETWORKS, DATA ANALYSIS, DATABASE MANAGEMENT, WEB DEVELOPMENT, PROJECT MANAGEMENT, SEO</p>
+                <p class="flow-text"><b>Name:</b> PRINCE ARCE</p>
+                <p class="flow-text"><b>Profile:</b> PHP DEVELOPER</p>
+                <p class="flow-text"><b>Email:</b> PRINCE_ARCE01@OUTLOOK.COM</p>
+                <p class="flow-text"><b>Education:</b> BS INFORMATION TECHNOLOGY</p>
+                <p class="flow-text"><b>Industry Knowledge:</b> IT OPERATIONS, COMPUTER NETWORKS, DATA ANALYSIS, DATABASE MANAGEMENT, WEB DEVELOPMENT, PROJECT MANAGEMENT, SEO</p>
             </div>
             <div class="col l12 m12 s12">
-                <h4 class="black-text" style="font-weight: bold;">INTRODUCTION</h4>
+                <h4 style="font-weight: bold;">INTRODUCTION</h4>
                 <p class="flow-text">
-                    Hi! I am Prince, a PHP Web Developer, IT Technical Support, and Entrepreneur.
+                    Hi! I am Prince, a PHP Web Developer, IT Technical Support, UI/UX Designer and an Entrepreneur.
                 </p>
                 <p class="flow-text">
                     Experienced in computer hardware and software troubleshooting, network and server installation, system development and data analyzation.
@@ -92,21 +92,18 @@
                 <p class="flow-text">
                     I welcome the opportunity to further discuss with you more of my professional competencies not just as an IT professional but also as an entrepreneur. Thus if you want to have your own website, e-commerce website, business posters or pliers, and other technology-related concerns, I may be of professional help.
                 </p>
-                       
             </div>
         </div>
 
         <div class="col s12" id="skills_content">
             <h1 class="center hide-on-med-and-down">TECHNOLOGY STACK</h1>
             <h1 class="center hide-on-large-only">TECH STACK</h1>
-            <!-- <canvas id="myChart" style="width:100%;"></canvas> -->
             <div class="row" id="skills_content_sub">
                 <div class="col s12">
                     <!-- HTML -->
                     <div class="col l2 m2 s2">
                          <img src="Image/icons/html-5.png"  class="responsive-img" id="skill_icon">
                     </div>
-
                     <!-- CSS -->
                     <div class="col l2 m2 s2">
                          <img src="Image/icons/css-3.png"  class="responsive-img" id="skill_icon">
@@ -169,7 +166,7 @@
     <div class="row divider"></div>
     <!-- SERVICES -->
     <div class="col s12 container" id="services">
-        <h1 class="center black-text">SERVICES</h1>
+        <h1 class="center">SERVICES</h1>
         <p class="center">What can I do?</p>
         <!-- CARDS -->
         <div class="row" id="services_content">
@@ -230,91 +227,150 @@
     <!-- WORK -->
 
     <div class="row" id="work">
-        <h1 class="center black-text">PORTFOLIO</h1>
+        <h1 class="center">PORTFOLIO</h1>
         <p class="center">My previous works...</p>
         <div class="col l12 m12 s12" id="work">
             <!-- SYSTEMS -->
-            <div class="col l4 m4 s12">
-                <center>
-                    <img src="Image/systems/it_installer.jpg" alt="" class="responsive-img materialboxed z-depth-1" id="system_preview">
-                </center>
-                <p id="system_name">IT SYSTEM INSTALLER</p>
-                <p id="system_info">Web Application / July 2020</p>
+            <div class="col l4 m12 s12">
+                <div class="col s12 card">
+                  <div class="card-image">
+                    <center>
+                        <img src="Image/systems/it_installer.jpg" alt="" class="responsive-img materialboxed" id="system_preview">
+                    </center>
+                  </div>
+                  <div class="card-content">
+                    <p id="system_name">IT SYSTEM INSTALLER</p>
+                    <p id="system_info">Web Application / July 2020</p>
+                  </div>
+                </div>
             </div>
-
-            <div class="col l4 m4 s12">
-                <center>
-                    <img src="Image/systems/PE.PNG" alt="" class="responsive-img materialboxed z-depth-1" id="system_preview">
-                </center>
-                <p id="system_name">PE APP LAUNCHER</p>
-                <p id="system_info">VB .Net Application / August 2020</p>
+            <!-- PE APP LAUNCHER -->
+            <div class="col l4 m12 s12">
+                <div class="col s12 card">
+                  <div class="card-image">
+                    <center>
+                        <img src="Image/systems/PE.PNG" alt="" class="responsive-img materialboxed" id="system_preview">
+                    </center>
+                  </div>
+                  <div class="card-content">
+                    <p id="system_name">PE APP LAUNCHER</p>
+                    <p id="system_info">VB .Net Application / August 2020</p>
+                  </div>
+                </div>
             </div>
-
-            <div class="col l4 m4 s12">
-                <center>
-                    <img src="Image/systems/progresscounter.jpg" alt="" class="responsive-img materialboxed z-depth-1" id="system_preview">
-                </center>
-                <p id="system_name">PRODUCTION PROGRESS COUNTER</p>
-                <p id="system_info">Web Application / November 2020</p>
+            <!-- PCS -->
+            <div class="col l4 m12 s12">
+                <div class="col s12 card">
+                  <div class="card-image">
+                    <center>
+                        <img src="Image/systems/progresscounter.jpg" alt="" class="responsive-img materialboxed" id="system_preview">
+                    </center>
+                  </div>
+                  <div class="card-content">
+                    <p id="system_name">PRODUCTION PROGRESS COUNTER</p>
+                    <p id="system_info">Web Application / November 2020</p>
+                  </div>
+                </div>
             </div>
-            
-            <div class="col l4 m4 s12">
-                <center>
-                    <img src="Image/systems/andonsystem.jpg" alt="" class="responsive-img materialboxed z-depth-1" id="system_preview">
-                </center>
-                <p id="system_name">ANDON SYSTEM</p>
-                <p id="system_info">Web Application / October 2020</p>
+            <!-- /ANDON -->
+            <div class="col l4 m12 s12">
+                <div class="card col s12">
+                <div class="card-image">
+                  <center>
+                      <img src="Image/systems/andonsystem.jpg" alt="" class="responsive-img materialboxed" id="system_preview">
+                  </center>
+                </div>
+                  <div class="card-content">
+                    <p id="system_name">ANDON SYSTEM</p>
+                    <p id="system_info">Web Application / October 2020</p>
+                  </div>
+                </div>
             </div>
-
-            <div class="col l4 m4 s12">
-                <center>
-                    <img src="Image/systems/progress_counter_control_panel.jpg" alt="" class="responsive-img materialboxed z-depth-1" id="system_preview">
-                </center>
-                <p id="system_name">PROGRESS COUNTER ADMIN</p>
-                <p id="system_info">Web Application / November 2020</p>
+            <!-- PCS ADMIN -->
+            <div class="col l4 m12 s12">
+                <div class="col s12 card">
+                  <div class="card-image">
+                    <center>
+                        <img src="Image/systems/progress_counter_control_panel.jpg" alt="" class="responsive-img materialboxed" id="system_preview">
+                    </center>
+                  </div>
+                  <div class="card-content">
+                    <p id="system_name">PROGRESS COUNTER ADMIN</p>
+                    <p id="system_info">Web Application / November 2020</p>
+                  </div>
+                </div>
             </div>
-
-            <div class="col l4 m4 s12">
-                <center>
-                    <img src="Image/systems/prf_system.png" alt="" class="responsive-img materialboxed z-depth-1" id="system_preview">
-                </center>
-                <p id="system_name">PRF APPROVAL SYSTEM WITH EMAIL NOTIFICATION</p>
-                <p id="system_info">Web Application / February 2021</p>
+            <!-- PRF -->
+            <div class="col l4 m12 s12">
+                <div class="card col s12">
+                  <div class="card-image">
+                    <center>
+                        <img src="Image/systems/prf_system.png" alt="" class="responsive-img materialboxed" id="system_preview">
+                    </center>
+                  </div>
+                  <div class="card-content">
+                    <p id="system_name">PRF APPROVAL SYSTEM</p>
+                    <p id="system_info">Web Application / February 2021</p>
+                  </div>
+                </div>
             </div>
-
-            <div class="col l4 m4 s12">
-                <center>
-                    <img src="Image/systems/furukawalima.png" alt="" class="responsive-img materialboxed z-depth-1" id="system_preview">
-                </center>
-                <p id="system_name">FALP- OFFICAL WEBSITE</p>
-                <p id="system_info">Web Hosting / February 2021</p>
+            <!-- FALP WEB -->
+            <div class="col l4 m12 s12">
+                <div class="card col s12">
+                  <div class="card-image">
+                    <center>
+                        <img src="Image/systems/furukawalima.png" alt="" class="responsive-img materialboxed" id="system_preview">
+                    </center>
+                  </div>
+                  <div class="card-content">
+                    <p id="system_name">FALP- OFFICAL WEBSITE</p>
+                    <p id="system_info">Web Hosting / February 2021</p>
+                  </div>
+                </div>
             </div>
-
-            <div class="col l4 m4 s12">
-                <center>
-                    <img src="Image/systems/server-ping.png" alt="" class="responsive-img materialboxed z-depth-1" id="system_preview">
-                </center>
-                <p id="system_name">SERVER AND NETWORK PING TOOL</p>
-                <p id="system_info">VB .Net Application / April 2021</p>
+            <!-- SERVER PING -->
+            <div class="col l4 m12 s12">
+                <div class="card col s12">
+                  <div class="card-image">
+                    <center>
+                        <img src="Image/systems/server-ping.png" alt="" class="responsive-img materialboxed" id="system_preview">
+                    </center>
+                  </div>
+                  <div class="card-content">
+                    <p id="system_name">SERVER AND NETWORK PING TOOL</p>
+                    <p id="system_info">VB .Net Application / April 2021</p>
+                  </div>
+                </div>
             </div>
 
             <!-- TUBEMAKING SYSTEM -->
-
-            <div class="col l4 m4 s12">
-                <center>
-                    <img src="Image/systems/tubemaking_system.png" alt="" class="responsive-img materialboxed z-depth-1" id="system_preview">
-                </center>
-                <p id="system_name">TUBEMAKING KANBAN SYSTEM</p>
-                <p id="system_info">Web Application / July 2021</p>
+            <div class="col l4 m12 s12">
+                <div class="card col s12">
+                  <div class="card-image">
+                    <center>
+                        <img src="Image/systems/tubemaking_system.png" alt="" class="responsive-img materialboxed" id="system_preview">
+                    </center>
+                  </div>
+                  <div class="card-content">
+                    <p id="system_name">TUBEMAKING KANBAN SYSTEM</p>
+                    <p id="system_info">Web Application / July 2021</p>
+                  </div>
+                </div>
             </div>
 
             <!-- PCS SUMMARY -->
-            <div class="col l4 m4 s12">
-                <center>
-                    <img src="Image/systems/pcs_summary_view.png" alt="" class="responsive-img materialboxed z-depth-1" id="system_preview">
-                </center>
-                <p id="system_name">PRODUCTION PROGRESS COUNTER SUMMARY</p>
-                <p id="system_info">Web Application / August 2021</p>
+            <div class="col l4 m12 s12">
+                <div class="col s12 card">
+                  <div class="card-image">
+                    <center>
+                        <img src="Image/systems/pcs_summary_view.png" alt="" class="responsive-img materialboxed" id="system_preview">
+                    </center>
+                  </div>
+                  <div class="card-content">
+                    <p id="system_name">PRODUCTION PROGRESS COUNTER SUMMARY</p>
+                    <p id="system_info">Web Application / August 2021</p>
+                  </div>
+                </div>
             </div>
 
         </div>
@@ -322,47 +378,41 @@
 
     <div class="row divider"></div>
     <!--</CONTENT>  -->
-    
+
     <div class="row" id="contact">
         <!-- <h1 class="center red-text">CONTACT DETAILS</h1> -->
         <div class="col s12">
             <div class="col l6 m6 s12">
-                <img src="Image/developer_med.gif" alt="" class="responsive-img">
+                <img src="Image/developer_med.gif" alt="" id="contact_image" class="responsive-img" style="opacity:0.8;">
             </div>
             <div class="col l6 m6 s12">
                 <p class="flow-text">“Technology is a useful servant but a dangerous master.” &mdash; <b>Christian Lous Lange</b></p>
                 <div class="row divider"></div>
-                <ul class="collection with-header z-depth-3" style="border-radius: 8px;">
-                    <li class="collection-header black-text"><h4>CONTACT INFO</h4></li>
-                    <li class="collection-item"><div>Lipa City, Batangas, Philippines<a href="#!" class="secondary-content"><i class="material-icons">location_on</i></a></div></li>
-                    <li class="collection-item"><div><a href="mailto:prince_arce01@outlook.com">Outlook</a><a href="mailto:prince_arce01@outlook.com" class="secondary-content"><i class="material-icons">email</i></a></div></li>
-                    <li class="collection-item">
-                        <div>
-                            <a href="https://www.linkedin.com/in/prince-arce-b78953205/">Linkedin</a>
-                            <a href="https://www.linkedin.com/in/prince-arce-b78953205/" class="secondary-content">
-                            <i class="material-icons">language</i></a>
-                        </div>
-                    </li>
-                  </ul>
+                <h4>CONTACT</h4>
+                <p class="flow-text">
+                  Lipa City, Batangas, Philippines
+                </p>
+                <div>
+                  <a href="mailto:prince_arce01@outlook.com" class="btn-large btn black white-text" style="border-radius:40px">Outlook</a>
+                  <a href="https://www.linkedin.com/in/prince-arce-b78953205/" class="btn-large btn black white-text" style="border-radius:40px">Linkedin</a>
+                </div>
             </div>
         </div>
     </div>
-
+    <div class="row divider"></div>
     <div class="row center">
-        <a href="#main-screen" class="btn black btn-large z-depth-5" style="font-size:20px;font-weight: bold;">&uarr;</a>
+        <a href="#main-screen" class="btn black btn-large z-depth-1" style="font-size:20px;font-weight: bold;border-radius:50px;">&uarr;</a>
     </div>
-
     <footer>
         <p class="center">All Rights Reserved &copy; 2021</p>
     </footer>
     </main>
+
    <!-- Messenger Chat Plugin Code -->
     <div id="fb-root"></div>
-
     <!-- Your Chat Plugin code -->
     <div id="fb-customer-chat" class="fb-customerchat">
     </div>
-
     <script>
       var chatbox = document.getElementById('fb-customer-chat');
       chatbox.setAttribute("page_id", "100706715517004");
@@ -383,7 +433,7 @@
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
     </script>
-	
+
     <!-- JS -->
     <script src="materialize/js/jquery.min.js"></script>
     <script src="materialize/js/materialize.min.js"></script>
