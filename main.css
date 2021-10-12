@@ -37,6 +37,12 @@ body::-webkit-scrollbar-thumb {
     #loader{
         object-fit: contain;
     }
+    #qoute{
+      text-align:center;
+    }
+    #contact_section{
+      text-align:center;
+    }
 }
 
 html{
@@ -129,3 +135,4 @@ html{
     transform: rotate(360deg);
   }
 }
+
