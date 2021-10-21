@@ -56,9 +56,9 @@ html{
 #myPic{
     border-radius:30px;
     object-fit: cover;
+    height:80vh;
+    border: 2px solid white;
 }
-
-
 
 #system_preview{
     width:100%;
