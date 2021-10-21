@@ -61,8 +61,8 @@ html{
 
 
 #system_preview{
-    width:550px;
-    height:350px;
+    width:100%;
+    height:40vh;
     object-fit: contain;
     /* border-radius:10px; */
 }

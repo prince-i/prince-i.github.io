@@ -1,10 +1,11 @@
 $(document).ready(function(){
+            $('#main-screen').fadeIn(1500);
             $('.sidenav').sidenav({
                 draggable:true,
                 inDuration: 600,
                 outDuration:500
             });
-            $('#main-screen').fadeIn(1500);
+            $('.tooltipped').tooltip();
             $('.parallax').parallax();
             $('.materialboxed').materialbox();
              typeWriter();
@@ -12,18 +13,6 @@ $(document).ready(function(){
             $('.tooltipped').tooltip();
             get_theme();
 });
-        $(window).on("scroll", function(){
-            amountscrolled();
-        });
-
-        function amountscrolled(){
-        var winheight = $(window).height();
-        var docheight = $(document).height();
-        var scrollTop = $(window).scrollTop();
-        var trackLength = docheight - winheight;
-        var pctScrolled = Math.floor(scrollTop/trackLength * 100);
-        // console.log(pctScrolled + '% scrolled');
-    }
         // TYPEWRITER EFFECT
         var i = 0;
         var txt = 'PHP Developer - IT Technical Support - UX/UI Designer';
