@@ -43,6 +43,10 @@ body::-webkit-scrollbar-thumb {
     #contact_section{
       text-align:center;
     }
+    #myPic{
+      max-height:300px;
+      object-fit: contain;
+    }
 }
 
 html{
