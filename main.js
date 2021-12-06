@@ -12,7 +12,43 @@ $(document).ready(function(){
             document.querySelector('#loader').classList.remove("loader");
             $('.tooltipped').tooltip();
             get_theme();
+
+
 });
+      //LOAD TECH STACK
+      for(t = 0; t <= tech_stack.length - 1;t++){
+        $('#tech_stack').append('<div class="col l2 m2 s2">'+
+                                '<img src="'+tech_stack[t]+'"  class="responsive-img" id="skill_icon">'+
+                                '</div>');
+      }
+       
+      //LOAD SERVICES
+      for(s = 0; s <= services.length -1;s++){
+        $('#services_content').append('<div class="col l4 m4 s12" style="text-align: center;height:40vh;">'+
+                '<img src="'+services[s][0]+'" alt="" style="width:30%;">'+
+                '<p style="font-weight: bold;">'+services[s][1]+'</p>'+
+                '<p>'+services[s][2]+'</p>'+
+            '</div>');
+      }
+
+      // LOAD PORTFOLIO
+      for(p = 0; p <= portfolio.length -1;p++){
+        $('#work').append('<div class="col l4 m12 s12">'+
+          '<div class="col s12 card">'+
+            '<div class="card-image">'+
+              '<center>'+
+                  '<img src="'+portfolio[p][0]+'" alt="" class="responsive-img materialboxed" id="system_preview">'+
+              '</center>'+
+            '</div>'+
+            '<div class="card-content">'+
+              '<p id="system_name">'+portfolio[p][1]+'</p>'+
+              '<p id="system_info">'+portfolio[p][2]+'</p>'+
+            '</div>'+
+          '</div>'+
+      '</div>');
+      }
+
+
         // TYPEWRITER EFFECT
         var i = 0;
         var txt = 'PHP Developer - IT Technical Support - UX/UI Designer';
