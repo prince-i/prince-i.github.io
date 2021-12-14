@@ -79,13 +79,14 @@ $(document).ready(function(){
             $('#work .card').addClass('N/A transparent');
             $('#title').removeClass('grey-text text-darken-3 lighten-3');
             $('#title').addClass('white-text');
+            $('#bktotopbtn').addClass('white black-text');
           }else{
             $('#theme_button').html('Dark Mode<i class="material-icons black-text">brightness_2<i>');
             $('#theme_button_nav').html('<i class="material-icons black-text">brightness_2<i>');
             $('nav').addClass('white');
             $('nav').removeClass('#212121 grey darken-4');
             $('nav a').removeClass('white-text');
-              $('nav a').addClass('black-text');
+            $('nav a').addClass('black-text');
             $('.brand-logo').removeClass('white-text');
             $('.sidenav-trigger').removeClass('white-text');
             $('.sidenav').removeClass('#212121 grey darken-4');
@@ -95,6 +96,7 @@ $(document).ready(function(){
             $('#work .card').removeClass('N/A transparent');
             $('#title').addClass('grey-text text-darken-3 lighten-3');
             $('#title').removeClass('white-text');
+            $('#bktotopbtn').removeClass('white black-text');
           }
         }
 
