@@ -51,7 +51,7 @@ $(document).ready(function(){
 
         // TYPEWRITER EFFECT
         var i = 0;
-        var txt = 'PHP Developer - IT Technical Support - UX/UI Designer';
+        var txt = 'LAMP Stack Developer - IT Technician - UX/UI Designer - Entreprenuer';
         var speed = 50;
         function typeWriter() {
         if (i < txt.length) {
