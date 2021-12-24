@@ -15,6 +15,11 @@ $(document).ready(function(){
 
 
 });
+      //LOAD ABOUT
+      for(a = 0; a <= about.length - 1;a++){
+        $('#profile_info').append('<p class="flow-text"><b>'+ about[a][0]+'</b>&nbsp;'+ about[a][1] +'</p>');
+      }
+
       //LOAD TECH STACK
       for(t = 0; t <= tech_stack.length - 1;t++){
         $('#tech_stack').append('<div class="col l2 m2 s2">'+
@@ -51,7 +56,7 @@ $(document).ready(function(){
 
         // TYPEWRITER EFFECT
         var i = 0;
-        var txt = 'LAMP Stack Developer - IT Technician - UX/UI Designer - Entreprenuer';
+        var txt = 'IT PROGRAMMER/ SOFTWARE DEVELOPER/ IT TECHNICIAN/ UX DESIGNER/ ENTREPRENEUR';
         var speed = 50;
         function typeWriter() {
         if (i < txt.length) {
