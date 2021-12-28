@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HAPPY NEW YEAR</title>
+	<style type="text/css">
+		h1{
+			font-size: 50vh;
+			text-align: center;
+			font-family: verdana;
+			color: mediumpurple;
+		}
+	</style>
+</head>
+<body>
+<div id="demo"></div>
+<h1>2022</h1>
+<script type="text/javascript" src="plugins/jquery.js"></script>
+<script type="text/javascript" src="plugins/jquery.fireworks.js"></script>
+<script type="text/javascript">
+	$(function(){
+		setTimeout(fire,5000);
+
+		function fire(){
+			$('#demo').fireworks({ 
+				sound: true, 
+				opacity: 0.9, 
+				width: '100%', 
+				height: '100%'
+			});
+		}
+	});
+</script>
+</body>
+</html>
