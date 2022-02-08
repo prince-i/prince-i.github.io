@@ -42,7 +42,7 @@ $(document).ready(function(){
           '<div class="col s12 card">'+
             '<div class="card-image">'+
               '<center>'+
-                  '<img src="'+portfolio[p][0]+'" alt="" class="responsive-img materialboxed" id="system_preview">'+
+                  '<img src="'+portfolio[p][0]+'" alt="" class="responsive-img materialboxed" id="system_preview" style="padding-top:10px;">'+
               '</center>'+
             '</div>'+
             '<div class="card-content">'+
