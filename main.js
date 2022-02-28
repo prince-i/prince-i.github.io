@@ -56,7 +56,7 @@ $(document).ready(function(){
 
         // TYPEWRITER EFFECT
         var i = 0;
-        var txt = 'SYSTEM DEVELOPER/ IT TECHNICIAN/ DATA ANALYST/ ENTREPRENEUR';
+        var txt = 'IT SYSTEM DEVELOPER/ IT TECH SUPPORT/ DATA ANALYST/ ENTREPRENEUR';
         var speed = 50;
         function typeWriter() {
         if (i < txt.length) {
