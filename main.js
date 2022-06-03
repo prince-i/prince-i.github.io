@@ -56,7 +56,7 @@ $(document).ready(function(){
 
         // TYPEWRITER EFFECT
         var i = 0;
-        var txt = 'SYSTEM DEVELOPER / WEB & GRAPHIC DESIGNER / TECH ANALYST / SQL DEVELOPER';
+        var txt = 'SYSTEM DEVELOPER / WEB & GRAPHIC DESIGNER / IT SUPPORT / SQL DEVELOPER';
         var speed = 20;
         function typeWriter() {
         if (i < txt.length) {
