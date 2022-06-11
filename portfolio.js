@@ -25,23 +25,7 @@ let portfolio = [
 	['Image/systems/homeseek_admin.png','HomeSeek Admin','Web App / February 2021']
 ];
 
-// let tech_stack = ['Image/icons/html-5.png',
-// 					'Image/icons/css-3.png',
-// 					'Image/icons/php.png',
-// 					'Image/icons/javascript.png',
-// 					'Image/icons/mysql.png',
-// 					'Image/icons/sql.png',
-// 					'Image/icons/dotnet.png',
-// 					'Image/icons/git.png',
-// 					'Image/icons/visual-studio.png',
-// 					'Image/icons/microsoft.png',
-// 					'Image/icons/github.png',
-// 					'Image/icons/ubuntu.png',
-// 					'Image/icons/reactjs.png',
-// 					'Image/icons/figma.png',
-// 					'Image/icons/npm-logo.png',
-// 					'Image/icons/photoshop.png'
-// 					];
+
 
 let tech_stack = [
 	['Image/icons/html-5.png','HTML5'],

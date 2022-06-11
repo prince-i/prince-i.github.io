@@ -20,7 +20,7 @@ $(document).ready(function(){
 
       //LOAD TECH STACK
       for(t = 0; t <= tech_stack.length - 1;t++){
-        $('#tech_stack').append('<div class="col l2 m2 s2" style="margin-bottom:3%;">'+
+        $('#tech_stack').append('<div class="col l2 m2 s6" style="margin-bottom:3%;">'+
                                 '<img src="'+tech_stack[t][0]+'"  class="responsive-img skill_stack" id="skill_icon">'+
                                 '<p class="center" style="font-size:1rem;">'+ tech_stack[t][1] +'</p>'+
                                 '</div>');
