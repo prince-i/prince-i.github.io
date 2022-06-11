@@ -12,8 +12,6 @@ $(document).ready(function(){
             document.querySelector('#loader').classList.remove("loader");
             $('.tooltipped').tooltip();
             get_theme();
-
-
 });
       //LOAD ABOUT
       for(a = 0; a <= about.length - 1;a++){
@@ -22,15 +20,16 @@ $(document).ready(function(){
 
       //LOAD TECH STACK
       for(t = 0; t <= tech_stack.length - 1;t++){
-        $('#tech_stack').append('<div class="col l2 m2 s2">'+
-                                '<img src="'+tech_stack[t]+'"  class="responsive-img" id="skill_icon">'+
+        $('#tech_stack').append('<div class="col l2 m2 s2" style="margin-bottom:3%;">'+
+                                '<img src="'+tech_stack[t][0]+'"  class="responsive-img skill_stack" id="skill_icon">'+
+                                '<p class="center" style="font-size:1rem;">'+ tech_stack[t][1] +'</p>'+
                                 '</div>');
       }
        
       //LOAD SERVICES
       for(s = 0; s <= services.length -1;s++){
-        $('#services_content').append('<div class="col l4 m4 s12" style="text-align: center;height:40vh;">'+
-                '<img src="'+services[s][0]+'" alt="" style="width:30%;">'+
+        $('#services_content').append('<div class="col l4 m4 s12" style="text-align: center;height:40vh;margin-bottom:5%;">'+
+                '<img src="'+services[s][0]+'" alt="" style="width:30%;" class="services_icon">'+
                 '<p style="font-weight: bold;">'+services[s][1]+'</p>'+
                 '<p>'+services[s][2]+'</p>'+
             '</div>');
@@ -56,7 +55,7 @@ $(document).ready(function(){
 
         // TYPEWRITER EFFECT
         var i = 0;
-        var txt = 'SYSTEM DEVELOPER / WEB & GRAPHIC DESIGNER / IT SPECIALIST / SQL DEVELOPER';
+        var txt = 'SYSTEM DEVELOPER / WEB & GRAPHIC DESIGNER / TECH ENGINEER / SQL DEVELOPER';
         var speed = 20;
         function typeWriter() {
         if (i < txt.length) {
@@ -65,6 +64,9 @@ $(document).ready(function(){
             setTimeout(typeWriter, speed);
             }
         }
+        //DEFAULT DARK MODE ON
+        localStorage.setItem('theme','dark');
+
         const get_theme =()=>{
           localStorage.getItem("theme");
           var theme = localStorage.theme;
@@ -85,6 +87,7 @@ $(document).ready(function(){
             $('#title').removeClass('grey-text text-darken-3 lighten-3');
             $('#title').addClass('white-text');
             $('#bktotopbtn').addClass('white black-text');
+            $('#myPic').css('filter','brightness(70%)');
           }else{
             $('#theme_button').html('Dark Mode<i class="material-icons black-text">brightness_2<i>');
             $('#theme_button_nav').html('<i class="material-icons black-text">brightness_2<i>');
@@ -102,6 +105,7 @@ $(document).ready(function(){
             $('#title').addClass('grey-text text-darken-3 lighten-3');
             $('#title').removeClass('white-text');
             $('#bktotopbtn').removeClass('white black-text');
+             $('#myPic').css('filter','brightness(100%)');
           }
         }
 

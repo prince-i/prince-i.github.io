@@ -1,7 +1,7 @@
 //DATA IN MULTIDIMENSIONAL ARRAY
 var about = [
 	['NAME:','PRINCE ARCE'],
-	['PROFILE:','SYSTEM DEVELOPER / IT SPECIALIST /SQL DEVELOPER'],
+	['PROFILE:','SYSTEM DEVELOPER / TECH ENGINEER /SQL DEVELOPER'],
 	['EMAIL:','PRINCE_ARCE01@OUTLOOK.COM'],
 	['EDUCATION:','BS INFORMATION TECHNOLOGY'],
 	['INDUSTRY KNOWLEDGE:','IT OPERATIONS, COMPUTER NETWORKS, DATA ANALYSIS, DATABASE MANAGEMENT, WEB DEVELOPMENT, DESKTOP APP DEVELOPMENT, PROJECT MANAGEMENT, SEO, SYSTEM ADMINISTRATION']
@@ -25,24 +25,52 @@ let portfolio = [
 	['Image/systems/homeseek_admin.png','HomeSeek Admin','Web App / February 2021']
 ];
 
-let tech_stack = ['Image/icons/html-5.png',
-					'Image/icons/css-3.png',
-					'Image/icons/php.png',
-					'Image/icons/javascript.png',
-					'Image/icons/mysql.png',
-					'Image/icons/sql.png',
-					'Image/icons/dotnet.png',
-					'Image/icons/git.png',
-					'Image/icons/visual-studio.png',
-					'Image/icons/microsoft.png',
-					'Image/icons/github.png',
-					'Image/icons/ubuntu.png'
-					];
+// let tech_stack = ['Image/icons/html-5.png',
+// 					'Image/icons/css-3.png',
+// 					'Image/icons/php.png',
+// 					'Image/icons/javascript.png',
+// 					'Image/icons/mysql.png',
+// 					'Image/icons/sql.png',
+// 					'Image/icons/dotnet.png',
+// 					'Image/icons/git.png',
+// 					'Image/icons/visual-studio.png',
+// 					'Image/icons/microsoft.png',
+// 					'Image/icons/github.png',
+// 					'Image/icons/ubuntu.png',
+// 					'Image/icons/reactjs.png',
+// 					'Image/icons/figma.png',
+// 					'Image/icons/npm-logo.png',
+// 					'Image/icons/photoshop.png'
+// 					];
+
+let tech_stack = [
+	['Image/icons/html-5.png','HTML5'],
+	['Image/icons/css-3.png','CSS3'],
+	['Image/icons/javascript.png','JavaScript'],
+	['Image/icons/php.png','PHP'],
+	['Image/icons/mysql.png','MySQL'],
+	['Image/icons/sql.png','T-SQL(MS SQL)'],
+	['Image/icons/dotnet.png','Visual Basic .Net'],
+	['Image/icons/python.png','Python'],
+	['Image/icons/reactjs.png','ReactJS'],
+	['Image/icons/npm-logo.png','NPM'],
+	['Image/icons/git.png','Git Bash'],
+	['Image/icons/visual-studio.png','VS Code'],
+	['Image/icons/github.png','Github'],
+	['Image/icons/figma.png','Figma'],	
+	['Image/icons/photoshop.png','Photoshop'],
+	['Image/icons/microsoft.png','Windows OS'],
+	['Image/icons/ubuntu.png','Ubuntu/Linux'],
+	['Image/icons/office.png','MS Office'],
+
+
+];
 
 
 let services = [
 	['Image/icons/monitor-screen.svg','WEB DESIGN','As a Web Designer, I have an experience with HTML5, CSS3, Javascript, jQuery and CSS Framework like materializes.'],
 	['Image/icons/coding.svg','WEB DEVELOPMENT','I successfully deployed web-based application in my current workplace, having experience in PHP7, Javascript, AJAX, JSON and MYSQL Database.'],
 	['Image/icons/landing-page.svg','RESPONSIVE DESIGN','Knowledgeable in modern design for any screen size.'],
-	['Image/icons/technical-support.png','IT TECHNICAL SUPPORT','Provide L1 &mdash; L3 IT Support to customers & clients by solving minor or major technical issues.']
+	['Image/icons/technical-support.png','IT TECHNICAL SUPPORT','Provide L1 &mdash; L3 IT Support to customers & clients by solving minor or major technical issues.'],
+	['Image/icons/layers.png','GRAPHIC DESIGN','Provide graphic designs for websites, branding, logos, infographics, PPTs, building layout and social media posts.']
 ];

@@ -7,6 +7,10 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+.skill_stack:hover {
+    opacity: 70%;
+}
+
 
 /*SCROLL BAR*/
 body::-webkit-scrollbar {
