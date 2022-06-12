@@ -12,7 +12,11 @@ $(document).ready(function(){
             document.querySelector('#loader').classList.remove("loader");
             $('.tooltipped').tooltip();
             get_theme();
+
+            $('body'). on('contextmenu', 'img', function(e){ return false; });
 });
+
+
       //LOAD ABOUT
       for(a = 0; a <= about.length - 1;a++){
         $('#profile_info').append('<p class="flow-text"><b>'+ about[a][0]+'</b>&nbsp;'+ about[a][1] +'</p>');
@@ -55,7 +59,7 @@ $(document).ready(function(){
 
         // TYPEWRITER EFFECT
         var i = 0;
-        var txt = 'IT PROGRAMMER / WEB & GRAPHIC DESIGNER / SYSTEM ADMINISTRATOR';
+        var txt = 'IT PROGRAMMER / WEB & GRAPHIC DESIGNER / SYSADMIN';
         var speed = 20;
         function typeWriter() {
         if (i < txt.length) {
