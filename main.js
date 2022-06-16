@@ -59,7 +59,7 @@ $(document).ready(function(){
 
         // TYPEWRITER EFFECT
         var i = 0;
-        var txt = 'IT PROGRAMMER / NOC ANALYST / WEB & GRAPHIC DESIGNER ';
+        var txt = 'IT PROGRAMMER / NOC TECHNICIAN / WEB & GRAPHIC DESIGNER ';
         var speed = 20;
         function typeWriter() {
         if (i < txt.length) {
