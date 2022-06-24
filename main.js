@@ -59,7 +59,7 @@ $(document).ready(function(){
 
         // TYPEWRITER EFFECT
         var i = 0;
-        var txt = 'IT SPECIALIST | IT PROGRAMMER | GRAPHIC DESIGNER | TECH ANALYST';
+        var txt = 'IT SPECIALIST | IT PROGRAMMER | GRAPHIC DESIGNER | NETWORK ANALYST';
         var speed = 20;
         function typeWriter() {
         if (i < txt.length) {
