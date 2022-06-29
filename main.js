@@ -29,7 +29,20 @@ $(document).ready(function(){
                                 '<p class="center" style="font-size:1rem;">'+ tech_stack[t][1] +'</p>'+
                                 '</div>');
       }
-       
+      
+      // LOAD UPSKILL
+      for(u = 0; u <= upskill.length -1;u++){
+        $('#upskill').append('<div class="col s12 l6 m6">' +
+                              '<h5 class="left" class="">'+ parseInt(u + 1) + '. '+ upskill[u][0] +'</h5>'+
+                              '<div class="row">'+
+                                '<div class="col s12">'+ upskill[u][2] +'</div>'+
+                                '<div class="col s12">'+ upskill[u][1] +'</div>'+
+                                '<div class="col s12">'+ '<a href="'+ upskill[u][3] + '" target="_blank">VIEW LEARNER&#8216;S VERIFICATION</div>'+
+                              '</div>'+
+                              '</div>'
+
+          );
+      }
       //LOAD SERVICES
       for(s = 0; s <= services.length -1;s++){
         $('#services_content').append('<div class="col l4 m4 s12" style="text-align: center;height:40vh;margin-bottom:5%;">'+

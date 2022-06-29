@@ -60,3 +60,13 @@ let services = [
 	['Image/icons/technical-support.png','IT TECHNICAL SUPPORT','Provide L1 &mdash; L3 IT Support to customers & clients by solving minor or major technical issues.'],
 	['Image/icons/layers.png','GRAPHIC DESIGN','Provide graphic designs for websites, branding, logos, infographics, PPTs, building layout and social media posts.']
 ];
+
+let upskill = [
+	['Snowflake Cloud Data','May 2022','Cert No: 3565-17286154','https://alison.com/certification/check/$2y$10$xNxclxzKdBOXwD4OKc2tpumQkSh1kUm0nQt4ZAPeQNaVjj1EZpkJG'],
+	['Business Process Automation','Apr 2022','Cert No: 4371-17286154','https://alison.com/certification/check/%242y%2410%24IBY1wIDMp5fjO6IwLY3nmOM78CS.GhfnGytF0xOgsdky63vRqYeLi'],
+	['Introduction To Data Analytics Using Microsoft Power BI','Apr 2022','Cert No: 3547-17286154','https://alison.com/certification/check/$2y$10$PDXNMHzhyPDzlEDexyYOo.y67meettpyPUlCekfn56Ju24NlhJsG'],
+	['Mastering Data Analysis using Microsoft Excel: Formulas and Pivot Tables','Feb 2022','Cert No: 4015-17286154','https://alison.com/certification/check/$2y$10$SsUICibj3DyytQgGNkHCFu0rOFbFPcbRYLNl89lybzLXoYQFTwMcC'],
+	['Diploma in Information Technology Management - Revised 2017','Dec 2021','Cert No: 1247-17286154','https://alison.com/certification/check/$2y$10$daRKfw0nRcTavoT5x6Ofultwhwh0uShgvr98ZqDrns9OghcZbzS'],
+	['JavaScript - Working with the Document Object Model and jQuery Plugins','Dec 2021','Cert No: 1435-17286154','https://alison.com/certification/check/%242y%2410%24sn5erEOVzDAZRcc0IdDlYuVxFRTUoz8JTPIcnafHYrt4fxDUh4vOG'],
+	['Introduction to Layers in a Network and Routing','Jul 2020','Cert No: 2016-17286154','https://alison.com/certification/check/%242y%2410%24HCuHnMByywdGUdpsx1GKO23.gpSc5TL7DenTr.48MvtIjAcs6Xdm']
+];
