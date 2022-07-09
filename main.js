@@ -72,7 +72,7 @@ $(document).ready(function(){
 
         // TYPEWRITER EFFECT
         var i = 0;
-        var txt = 'IT PROGRAMMER | IT SUPPORT | GRAPHIC DESIGNER';
+        var txt = 'IT PROGRAMMER | NETWORK ANALYST | GRAPHIC DESIGNER';
         var speed = 20;
         function typeWriter() {
         if (i < txt.length) {
