@@ -70,3 +70,8 @@ let upskill = [
 	['JavaScript - Working with the Document Object Model and jQuery Plugins','Dec 2021','Cert No: 1435-17286154','https://alison.com/certification/check/%242y%2410%24sn5erEOVzDAZRcc0IdDlYuVxFRTUoz8JTPIcnafHYrt4fxDUh4vOG'],
 	['Introduction to Layers in a Network and Routing','Jul 2020','Cert No: 2016-17286154','https://alison.com/certification/check/%242y%2410%24HCuHnMByywdGUdpsx1GKO23.gpSc5TL7DenTr.48MvtIjAcs6Xdm']
 ];
+
+let sql_dev = [
+	['Image/sql_reports/sales_report_exec.png','EXECUTIVE REPORT SALES','Reports/EXECUTIVE REPORT SALES.pdf'],
+	['Image/sql_reports/moving_average_exec.png','MOVING AVERAGE DATA ANALYSIS REPORT','Reports/REPORT MOVING AVERAGE.pdf']
+];
