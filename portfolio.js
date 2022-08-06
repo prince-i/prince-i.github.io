@@ -68,8 +68,10 @@ let upskill = [
 	['Mastering Data Analysis using Microsoft Excel: Formulas and Pivot Tables','Feb 2022','Cert No: 4015-17286154','https://alison.com/certification/check/$2y$10$SsUICibj3DyytQgGNkHCFu0rOFbFPcbRYLNl89lybzLXoYQFTwMcC'],
 	['Diploma in Information Technology Management - Revised 2017','Dec 2021','Cert No: 1247-17286154','https://alison.com/certification/check/$2y$10$daRKfw0nRcTavoT5x6Ofultwhwh0uShgvr98ZqDrns9OghcZbzS'],
 	['JavaScript - Working with the Document Object Model and jQuery Plugins','Dec 2021','Cert No: 1435-17286154','https://alison.com/certification/check/%242y%2410%24sn5erEOVzDAZRcc0IdDlYuVxFRTUoz8JTPIcnafHYrt4fxDUh4vOG'],
+	['Open Source Intelligence (OSINT)','June 2022','Cert No: ILCDB_R2_COSINT_2022_31','https://dict.gov.ph/'],
 	['Introduction to Layers in a Network and Routing','Jul 2020','Cert No: 2016-17286154','https://alison.com/certification/check/%242y%2410%24HCuHnMByywdGUdpsx1GKO23.gpSc5TL7DenTr.48MvtIjAcs6Xdm'],
-	['Start your Own Profitable Web Design Agency Business','Aug 2022','Cert No: 4065-17286154','https://alison.com/certification/check/$2y$10$4zaJUETzZUsN1BVdOdJFEOQiiXeUqbJgmoVYQdfqNndt18IINd26']
+	['Start your Own Profitable Web Design Agency Business','Aug 2022','Cert No: 4065-17286154','https://alison.com/certification/check/$2y$10$4zaJUETzZUsN1BVdOdJFEOQiiXeUqbJgmoVYQdfqNndt18IINd26'],
+
 
 ];
 
