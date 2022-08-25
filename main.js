@@ -91,7 +91,7 @@ $(document).ready(function(){
 
         // TYPEWRITER EFFECT
         var i = 0;
-        var txt = 'IT PROGRAMMER | GRAPHIC DESIGNER';
+        var txt = 'IT PROGRAMMER | CYBERSECURITY ANALYST TRAINEE | GRAPHIC DESIGNER';
         var speed = 20;
         function typeWriter() {
         if (i < txt.length) {

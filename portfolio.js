@@ -1,7 +1,7 @@
 //DATA IN MULTIDIMENSIONAL ARRAY
 var about = [
 	['NAME:','PRINCE ARCE'],
-	['PROFILE:','IT PROGRAMMER'],
+	['PROFILE:','IT PROGRAMMER | CYBERSECURITY ANALYST TRAINEE'],
 	['EMAIL:','PRINCE_ARCE01@OUTLOOK.COM'],
 	['EDUCATION:','BS INFORMATION TECHNOLOGY'],
 	['INDUSTRY KNOWLEDGE:','IT OPERATIONS, COMPUTER NETWORKS, DATA ANALYSIS, DATABASE MANAGEMENT, WEB DEVELOPMENT, DESKTOP APP DEVELOPMENT, PROJECT MANAGEMENT, SEO, SYSTEM ADMINISTRATION, CYBERSECURITY']
@@ -46,7 +46,7 @@ let tech_stack = [
 	['Image/icons/photoshop.png','Photoshop'],
 	['Image/icons/microsoft.png','Windows OS'],
 	['Image/icons/ubuntu.png','Ubuntu/Linux'],
-	['Image/icons/bash.png','Terminal'],
+	['Image/icons/bash.png','Bash'],
 	['Image/icons/office.png','MS Office'],
 
 
