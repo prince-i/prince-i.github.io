@@ -72,6 +72,7 @@ let upskill = [
 	['Introduction to Layers in a Network and Routing','Jul 2020','Cert No: 2016-17286154','https://alison.com/certification/check/%242y%2410%24HCuHnMByywdGUdpsx1GKO23.gpSc5TL7DenTr.48MvtIjAcs6Xdm'],
 	['Start your Own Profitable Web Design Agency Business','Aug 2022','Cert No: 4065-17286154','https://alison.com/certification/check/$2y$10$4zaJUETzZUsN1BVdOdJFEOQiiXeUqbJgmoVYQdfqNndt18IINd26'],
 	['Database Security for Cyber Professionals','Aug 2022','Cert No: 3544-17286154','https://alison.com/certification/check/$2y$10$ZncpLCpHBPgqFqRfnFxZUuuC10ynwawe4yTFOfJTH75zsDYoZla9m'],
+	['Linux Fundamental','Aug 25, 2022','Cert No: N/A','https://academy.hackthebox.com/achievement/579760/18'],
 
 
 
