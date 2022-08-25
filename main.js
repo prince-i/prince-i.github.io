@@ -32,7 +32,7 @@ $(document).ready(function(){
       
       // LOAD UPSKILL
       for(u = 0; u <= upskill.length -1;u++){
-        $('#upskill').append('<div class="col s12 l6 m6">' +
+        $('#upskill').append('<div class="col s12 l6 m6" style="min-height:30vh;">' +
                               '<h5 class="left" class="">'+ parseInt(u + 1) + '. '+ upskill[u][0] +'</h5>'+
                               '<div class="row">'+
                                 '<div class="col s12">'+ upskill[u][2] +'</div>'+
