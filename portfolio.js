@@ -82,5 +82,6 @@ let upskill = [
 let sql_dev = [
 	['Image/sql_reports/sales_report_exec.png','EXECUTIVE REPORT SALES','Reports/EXECUTIVE REPORT SALES.pdf'],
 	['Image/sql_reports/moving_average_exec.png','MOVING AVERAGE DATA ANALYSIS REPORT','Reports/REPORT MOVING AVERAGE.pdf'],
-	['Image/sql_reports/europe_covid19_2020_sql_report.png','EUROPE COVID-19 DATA ANALYTICS REPORT 2020','Reports/EXECUTIVE REPORT COVID19 EUROPE.pdf']
+	['Image/sql_reports/europe_covid19_2020_sql_report.png','EUROPE COVID-19 DATA ANALYTICS REPORT 2020','Reports/EXECUTIVE REPORT COVID19 EUROPE.pdf'],
+	['Image/sql_reports/monkey_pox_cases2022_eu.png','EUROPE MONKEY POX CASES ANALYTICS REPORT','Reports/MONKEY POX CASES.pdf']
 ];
