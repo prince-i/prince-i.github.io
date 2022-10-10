@@ -72,17 +72,17 @@ $(document).ready(function(){
       }
 
       // SQL DEVELOPER
-      for(r = 0; r <= sql_dev.length -1;r++){
-        $('#sql_development').append('<div class="col l4 m12 s12">'+
+      for(r = 0; r <= reports.length -1;r++){
+        $('#executive_reports').append('<div class="col l4 m12 s12">'+
           '<div class="col s12 card">'+
             '<div class="card-image">'+
               '<center>'+
-                  '<img src="'+sql_dev[r][0]+'" alt="" class="responsive-img materialboxed" id="system_preview" style="padding-top:10px;">'+
+                  '<img src="'+reports[r][0]+'" alt="" class="responsive-img materialboxed" id="system_preview" style="padding-top:10px;">'+
               '</center>'+
             '</div>'+
             '<div class="card-content">'+
-              '<p id="sql_title">'+sql_dev[r][1]+'</p>'+
-              '<a href="'+sql_dev[r][2]+'" target="_blank" class="btn">View</a>'+
+              '<p id="sql_title">'+reports[r][1]+'</p>'+
+              '<a href="'+reports[r][2]+'" target="_blank" class="btn">View</a>'+
             '</div>'+
           '</div>'+
       '</div>');
@@ -124,7 +124,7 @@ $(document).ready(function(){
             $('#title').addClass('white-text');
             $('#bktotopbtn').addClass('white black-text');
             $('#myPic').css('filter','brightness(70%)');
-            $('#sql_development .card').addClass('N/A transparent');
+            $('#executive_reports .card').addClass('N/A transparent');
           }else{
             $('#theme_button').html('Dark Mode<i class="material-icons black-text">brightness_2<i>');
             $('#theme_button_nav').html('<i class="material-icons black-text">brightness_2<i>');
@@ -143,7 +143,7 @@ $(document).ready(function(){
             $('#title').removeClass('white-text');
             $('#bktotopbtn').removeClass('white black-text');
              $('#myPic').css('filter','brightness(100%)');
-             $('#sql_development .card').removeClass('N/A transparent');
+             $('#executive_reports .card').removeClass('N/A transparent');
           }
         }
 
