@@ -24,11 +24,12 @@ let portfolio = [
 	['Image/systems/faculty_scheduling_system.png','School Faculty Scheduling System','Web App(Debug) / December 2021'],
 	['Image/systems/homeseek_admin.png','HomeSeek Admin','Web App / February 2022'],
 	['Image/systems/library_management_sys_qr.jpeg','Library Management System w/ QR Code','Web App (Project Manager)/ June 2022'],
-	['Image/systems/sports_management.png','Sports Management System w/ Data Analytics','Web App (Project Manager)/ Sept 2022']
+	['Image/systems/sports_management.png','Sports Management System w/ Data Analytics','Web App (Project Manager)/ Sept 2022'],
+	['Image/systems/cafe-silangan-ms.png','Cafe Silangan Management System','Web App (Debug) / Oct 2022']
 ];
 
 
-
+// TECH STACK
 let tech_stack = [
 	['Image/icons/html-5.png','HTML5'],
 	['Image/icons/css-3.png','CSS3'],
@@ -78,6 +79,8 @@ let upskill = [
 
 
 ];
+
+// DATA ANALYSIS REPORTS
 
 let reports = [
 	['Image/sql_reports/sales_report_exec.png','EXECUTIVE REPORT SALES','Reports/EXECUTIVE REPORT SALES.pdf'],
