@@ -4,7 +4,7 @@ var about = [
 	['PROFILE:','IT PROGRAMMER | IT SUPPORT'],
 	['EMAIL:','PRINCE_ARCE01@OUTLOOK.COM'],
 	['EDUCATION:','BS INFORMATION TECHNOLOGY'],
-	['INDUSTRY KNOWLEDGE:','IT OPERATIONS, COMPUTER HARDWARE, COMPUTER NETWORKS, DATA ANALYTICS, DATABASE MANAGEMENT, ETL, WEB DEVELOPMENT, DESKTOP APP DEVELOPMENT, PROJECT MANAGEMENT, SEO, SYSTEM ADMINISTRATION, CYBERSECURITY, DISASTER-RECOVERY FRAMEWORK, BACKUP SYSTEMS, BUSINESS PROCESS AUTOMATION']
+	['INDUSTRY KNOWLEDGE:','IT OPERATIONS, COMPUTER HARDWARE, COMPUTER NETWORKS, DATA ANALYTICS, DATABASE MANAGEMENT SYSTEMS, ETL DEVELOPMENT, WEB DEVELOPMENT, DESKTOP APP DEVELOPMENT, PROJECT MANAGEMENT, SEO, SYSTEM ADMINISTRATION, CYBERSECURITY, DISASTER-RECOVERY BACKUP SYSTEMS, BUSINESS PROCESS AUTOMATION']
 ];
 
 //imagepath - system name - system date
@@ -59,7 +59,7 @@ let services = [
 	['Image/icons/monitor-screen.svg','WEB DESIGN','As a Web Designer, I have an experience with HTML5, CSS3, Javascript, jQuery and CSS Framework like materializes.'],
 	['Image/icons/coding.svg','WEB DEVELOPMENT','I successfully deployed web-based application in my current workplace, having experience in PHP7, Javascript, AJAX, JSON and MYSQL Database.'],
 	['Image/icons/landing-page.svg','RESPONSIVE DESIGN','Knowledgeable in modern design for any screen size.'],
-	['Image/icons/technical-support.png','IT TECHNICAL SUPPORT','Provide L1 &mdash; L3 IT Support to customers & clients by solving minor or major technical issues.'],
+	['Image/icons/technical-support.png','IT TECHNICAL SUPPORT','Provide L1 &mdash; L3 IT Support to customers / clients by solving minor or major technical issues.'],
 	['Image/icons/layers.png','GRAPHIC DESIGN','Provide graphic designs for websites, branding, logos, infographics, PPTs, building layout and social media posts.']
 ];
 
