@@ -91,7 +91,7 @@ $(document).ready(function(){
 
         // TYPEWRITER EFFECT
         var i = 0;
-        var txt = 'WEB DEVELOPER & IT TECHNICIAN';
+        var txt = 'PROGRAMMER | IT ADMINISTRATOR | IT TECHNICIAN';
         var speed = 20;
         function typeWriter() {
         if (i < txt.length) {
