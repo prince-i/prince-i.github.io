@@ -15,7 +15,8 @@ $(document).ready(function(){
 
             $('body'). on('contextmenu', 'img', function(e){ return false; });
 });
-
+    
+      
 
       //LOAD ABOUT
       for(a = 0; a <= about.length - 1;a++){
