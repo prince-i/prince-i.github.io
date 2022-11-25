@@ -51,6 +51,7 @@ let tech_stack = [
 	['Image/icons/ubuntu.png','Ubuntu/Linux'],
 	['Image/icons/bash.png','Bash'],
 	['Image/icons/office.png','MS Office'],
+	['Image/icons/Msdos-icon.svg','MS-DOS'],
 
 
 ];
