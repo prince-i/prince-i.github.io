@@ -1,7 +1,7 @@
 //DATA IN MULTIDIMENSIONAL ARRAY
 var about = [
 	['NAME:','PRINCE ARCE'],
-	['PROFILE:','IT PROGRAMMER | SQL DEVELOPER'],
+	['PROFILE:','PROGRAMMER | IT ANALYST'],
 	['EMAIL:','PRINCE_ARCE01@OUTLOOK.COM'],
 	['EDUCATION:','BS INFORMATION TECHNOLOGY'],
 	['INDUSTRY KNOWLEDGE:','IT OPERATIONS, COMPUTER HARDWARE, COMPUTER NETWORKS, DATA ANALYTICS, DATA WAREHOUSING, DATABASE MANAGEMENT SYSTEMS, ETL, WEB DEVELOPMENT, DOTNET DEVELOPMENT, PROJECT MANAGEMENT, SEO, CYBERSECURITY, CLOUD COMPUTING, TECH DOCUMENTATION']
@@ -23,7 +23,7 @@ let portfolio = [
 	['Image/systems/pcamera.png','pCAMERA - Image Classification Camera','Android App / November 2021'],
 	['Image/systems/faculty_scheduling_system.png','School Faculty Scheduling System','Web App(Debug) / December 2021'],
 	['Image/systems/homeseek_admin.png','HomeSeek Admin','Web App / February 2022'],
-	// ['Image/systems/library_management_sys_qr.jpeg','Library Management System w/ QR Code','Web App (Project Manager)/ June 2022'],
+	['Image/systems/library_management_sys_qr.jpeg','Library Management System w/ QR Code','Web App (Project Manager)/ June 2022'],
 	['Image/systems/sports_management.png','Sports Management System w/ Data Analytics','Web App (Project Manager)/ Sept 2022'],
 	['Image/systems/cafe-silangan-ms.png','Cafe Silangan Management System','Web App (Debug) / Oct 2022'],
 	['Image/systems/srmaps.png','Student Record Management System','Web App (Debug) / Oct 2022'],
