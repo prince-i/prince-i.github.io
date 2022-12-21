@@ -92,7 +92,7 @@ $(document).ready(function(){
 
         // TYPEWRITER EFFECT
         var i = 0;
-        var txt = 'WEB DEVELOPER | TECH ANALYST | IT TECHNICIAN | VISUAL DESIGNER';
+        var txt = 'WEB DEVELOPER | TECH ANALYST | VISUAL DESIGNER';
         var speed = 20;
         function typeWriter() {
         if (i < txt.length) {
