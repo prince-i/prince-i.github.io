@@ -92,7 +92,7 @@ $(document).ready(function(){
 
         // TYPEWRITER EFFECT
         var i = 0;
-        var txt = 'WEB DEVELOPER | IT CONSULTANT | VISUAL DESIGNER';
+        var txt = 'LAMP STACK WEB DEVELOPER | IT CONSULTANT | VISUAL DESIGNER';
         var speed = 20;
         function typeWriter() {
         if (i < txt.length) {
