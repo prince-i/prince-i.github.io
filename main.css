@@ -11,6 +11,9 @@
     opacity: 70%;
 }
 
+body{
+    width: 100%;
+}
 
 /*SCROLL BAR*/
 body::-webkit-scrollbar {
