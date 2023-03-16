@@ -45,12 +45,11 @@ let tech_stack = [
 	['Image/icons/git.png','Git Bash'],
 	['Image/icons/visual-studio.png','VS Code'],
 	['Image/icons/github.png','Github'],
-	['Image/icons/figma.png','Figma'],	
-	['Image/icons/photoshop.png','Photoshop'],
+	['Image/icons/figma.png','Figma'],
 	['Image/icons/microsoft.png','Windows OS'],
 	['Image/icons/ubuntu.png','Ubuntu/Linux'],
 	['Image/icons/bash.png','Bash'],
-	['Image/icons/office.png','MS Office'],
+	['Image/icons/office.png','Microsoft 356'],
 	['Image/icons/Msdos-icon.svg','MS-DOS'],
 
 
