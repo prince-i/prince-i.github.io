@@ -27,6 +27,7 @@ let portfolio = [
 	['Image/systems/sports_management.png','Sports Management System w/ Data Analytics','Web App (Project Manager)/ Sept 2022'],
 	['Image/systems/cafe-silangan-ms.png','Cafe Silangan Management System','Web App (Debug) / Oct 2022'],
 	['Image/systems/srmaps.png','Student Record Management System','Web App (Debug) / Oct 2022'],
+	['Image/systems/borrowed_item_invsys.png','Borrowed-Item Inventory System','Web App (Project Manager) / April 2023'],
 ];
 
 
