@@ -90,3 +90,13 @@ let reports = [
 	['Image/sql_reports/europe_covid19_2020_sql_report.png','EUROPE COVID-19 DATA ANALYTICS REPORT 2020','Reports/EXECUTIVE REPORT COVID19 EUROPE.pdf'],
 	['Image/sql_reports/monkey_pox_cases2022_eu.png','EUROPE MONKEY POX CASES ANALYTICS REPORT','Reports/MONKEY POX CASES.pdf']
 ];
+
+
+// NETWORK DESIGNS
+
+let networks = [
+	['Image/network_design/5b916e534e96bc9b46ff7a08151680bd.png'],
+	['Image/network_design/8962c7b64a7912fff034f86578cd1894.png'],
+	['Image/network_design/a51a801439395c141c69cee202ab888e.png'],
+	['Image/network_design/cc7abb117a31f78fd7ad220d50d80db8.png'],
+	];

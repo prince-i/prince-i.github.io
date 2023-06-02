@@ -89,6 +89,19 @@ $(document).ready(function(){
       '</div>');
       }
 
+      // NETWORK DESIGN
+      for(n = 0; n <= networks.length -1;n++){
+        $('#network_design').append('<div class="col l4 m12 s12">'+
+          '<div class="col s12 card">'+
+            '<div class="card-image">'+
+              '<center>'+
+                  '<img src="'+networks[n][0]+'" alt="" class="responsive-img materialboxed" id="system_preview" style="padding-top:10px;">'+
+              '</center>'+
+            '</div>'+
+           
+          '</div>'+
+      '</div>');
+      }
 
         // TYPEWRITER EFFECT
         var i = 0;
