@@ -50,7 +50,7 @@ let tech_stack = [
 	['Image/icons/microsoft.png','Windows OS'],
 	['Image/icons/ubuntu.png','Ubuntu/Linux'],
 	['Image/icons/bash.png','Bash'],
-	['Image/icons/office.png','Microsoft 356'],
+	['Image/icons/office.png','Microsoft 365'],
 	['Image/icons/Msdos-icon.svg','MS-DOS'],
 
 
