@@ -105,7 +105,7 @@ $(document).ready(function(){
 
         // TYPEWRITER EFFECT
         var i = 0;
-        var txt = 'PROGRAMMER | IT CONSULTANT | VISUAL DESIGNER';
+        var txt = 'PROGRAMMER | IT CONSULTANT | UX DESIGNER';
         var speed = 20;
         function typeWriter() {
         if (i < txt.length) {
