@@ -53,7 +53,6 @@ let tech_stack = [
 	['Image/icons/office.png','Microsoft 365'],
 	['Image/icons/Msdos-icon.svg','MS-DOS'],
 
-
 ];
 
 
