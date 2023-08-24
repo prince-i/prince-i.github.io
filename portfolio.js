@@ -76,6 +76,7 @@ let upskill = [
 	['Database Security for Cyber Professionals','Aug 2022','Cert No: 3544-17286154','https://alison.com/certification/check/$2y$10$ZncpLCpHBPgqFqRfnFxZUuuC10ynwawe4yTFOfJTH75zsDYoZla9m'],
 	['Windows 10 Course (2020 Edition)','Oct 13, 2022','Cert No: 2249-17286154','https://alison.com/certification/check/%242y%2410%24WxPagEthiGITHHreAHygTeWxnS1vKuzlSBWejnHXbCeHkL5cvO6'],
 	['DataOps Fundamentals Certification','Nov 21, 2022','Cert No: 18422660104','https://learn.datakitchen.io/certificate/ODIwMDBfMTExNDMxMg'],
+	['Introduction To Information Technology For Managers','Aug 24, 2023','Cert No: 1757-17286154','https://alison.com/certification/check/$2y$10$TQOfQLtyijSdyYP4TK4ciuAv8mX0NDHnPGAaEp1A0Gb39viNCtuW'],
 
 
 
