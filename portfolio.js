@@ -79,7 +79,7 @@ let upskill = [
 	['Introduction To Information Technology For Managers','Aug 24, 2023','Cert No: 1757-17286154','https://alison.com/certification/check/$2y$10$TQOfQLtyijSdyYP4TK4ciuAv8mX0NDHnPGAaEp1A0Gb39viNCtuW'],
 	['ISO/IEC 27001 - Dynamics of Information Security Management System (ISMS)','Aug 30, 2023','Cert No: 2251-17286154','https://alison.com/certification/check/$2y$10$FpSsfjnqgVdt1FLoKdrkrO6rPKiQref04bH8gB6rSkN5G0D3DncIq'],
 	['Diploma in Information Technology Technician','Sept 07, 2023','Cert No: 5993-17286154','https://alison.com/certification/check/2y100qFj14JsChp9NvrPSPW19ejV0ZOPdMSq9SsgQi8aE3TjiK1JQeXAm'],
-
+	['Artificial Intelligence and Machine Learning in Business','Sept 12, 2023','Cert No: 4876-17286154','https://alison.com/certification/check/2y10dZlr47IdrLt04sndX3EyeFFyeYwzRDMWNAhpSWSlXElK0o6JzS']
 
 ];
 
