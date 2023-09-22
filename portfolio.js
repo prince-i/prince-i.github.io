@@ -80,7 +80,8 @@ let upskill = [
 	['ISO/IEC 27001 - Dynamics of Information Security Management System (ISMS)','Aug 30, 2023','Cert No: 2251-17286154','https://alison.com/certification/check/$2y$10$FpSsfjnqgVdt1FLoKdrkrO6rPKiQref04bH8gB6rSkN5G0D3DncIq'],
 	['Diploma in Information Technology Technician','Sep 07, 2023','Cert No: 5993-17286154','https://alison.com/certification/check/2y100qFj14JsChp9NvrPSPW19ejV0ZOPdMSq9SsgQi8aE3TjiK1JQeXAm'],
 	['Artificial Intelligence and Machine Learning in Business','Sep 12, 2023','Cert No: 4876-17286154','https://alison.com/certification/check/2y10dZlr47IdrLt04sndX3EyeFFyeYwzRDMWNAhpSWSlXElK0o6JzS'],
-	['Basics of Prompt Engineering','Sep 21, 2023','Cert No: 6158-17286154','https://alison.com/certification/check/2y10757e8A9Ox7wj350weZE5dlf8tGXf4d652WF2oI1ZahDbun04XTG']
+	['Basics of Prompt Engineering','Sep 21, 2023','Cert No: 6158-17286154','https://alison.com/certification/check/2y10757e8A9Ox7wj350weZE5dlf8tGXf4d652WF2oI1ZahDbun04XTG'],
+	['Data Analysis with Python','Sep 22, 2023','freeCodeCamp','https://freecodecamp.org/certification/fcc1dc30e38-7fc3-4290-aec4-44b9b42fc134/data-analysis-with-python-v7']
 
 ];
 
