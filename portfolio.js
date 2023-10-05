@@ -81,7 +81,8 @@ let upskill = [
 	['Diploma in Information Technology Technician','Sep 07, 2023','Cert No: 5993-17286154','https://alison.com/certification/check/2y100qFj14JsChp9NvrPSPW19ejV0ZOPdMSq9SsgQi8aE3TjiK1JQeXAm'],
 	['Artificial Intelligence and Machine Learning in Business','Sep 12, 2023','Cert No: 4876-17286154','https://alison.com/certification/check/2y10dZlr47IdrLt04sndX3EyeFFyeYwzRDMWNAhpSWSlXElK0o6JzS'],
 	['Basics of Prompt Engineering','Sep 21, 2023','Cert No: 6158-17286154','https://alison.com/certification/check/2y10757e8A9Ox7wj350weZE5dlf8tGXf4d652WF2oI1ZahDbun04XTG'],
-	['Data Analysis with Python','Sep 22, 2023','freeCodeCamp','https://freecodecamp.org/certification/fcc1dc30e38-7fc3-4290-aec4-44b9b42fc134/data-analysis-with-python-v7']
+	['Data Analysis with Python','Sep 22, 2023','freeCodeCamp','https://freecodecamp.org/certification/fcc1dc30e38-7fc3-4290-aec4-44b9b42fc134/data-analysis-with-python-v7'],
+	['Introduction to Artificial Intelligence','Oct 05, 2023','Certificate ID: 3c29394b4e2d66b1a285cea606dbff9ee71301332f50cd1da1c6ef8a9db7f991','https://www.linkedin.com/learning/certificates/3c29394b4e2d66b1a285cea606dbff9ee71301332f50cd1da1c6ef8a9db7f991']
 
 ];
 
