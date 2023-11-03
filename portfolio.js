@@ -61,7 +61,7 @@ let services = [
 	['Image/icons/coding.svg','WEB DEVELOPMENT','I successfully deployed web-based application in my current workplace, having experience in PHP7, Javascript, AJAX, JSON and MYSQL Database.'],
 	['Image/icons/landing-page.svg','RESPONSIVE DESIGN','Knowledgeable in modern design for any screen size.'],
 	['Image/icons/technical-support.png','IT TECHNICAL SUPPORT','Provide L1 &mdash; L3 IT Support to customers / clients by solving minor or major technical issues.'],
-	['Image/icons/layers.png','GRAPHIC DESIGN','Provide graphic designs for websites, branding, logos, infographics, PPTs, building layout and social media posts.']
+	['Image/icons/layers.png','DIGITAL DESIGN','Provide graphic designs for websites, branding, logos, infographics, PPTs, building layout and social media posts.']
 ];
 
 let upskill = [
