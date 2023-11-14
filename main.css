@@ -68,7 +68,7 @@ html{
     border-radius:30px;
     object-fit: cover;
     height:80vh;
-    border: 2px solid white;
+    border: 5px solid white;
 }
 
 #system_preview{
@@ -151,4 +151,19 @@ html{
     border-color:white;
     border-style:solid;
     border-width: 2px;
+}
+
+
+/* Define the keyframes for color transitions */
+@keyframes rgbEffect {
+    0% { border-color: black; }
+    50% { border-color: white; }
+    100% { border-color: black; }
+}
+
+/* Apply the initial border styling */
+.rgb-border {
+    border: 5px solid red; /* Initial border color */
+    border-radius: 50%; /* Creates a circular border */
+    animation: rgbEffect 4s infinite; /* Apply the animation */
 }
