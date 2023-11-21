@@ -147,10 +147,15 @@ html{
   }
 }
 
+#certs{
+
+}
+
 #certs img {
     border-color:white;
     border-style:solid;
     border-width: 2px;
+    flex-wrap:wrap;
 }
 
 
