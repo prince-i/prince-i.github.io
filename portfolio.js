@@ -85,7 +85,8 @@ let upskill = [
 	['Data Analysis with Python','Sep 22, 2023','freeCodeCamp','https://freecodecamp.org/certification/fcc1dc30e38-7fc3-4290-aec4-44b9b42fc134/data-analysis-with-python-v7'],
 	['Introduction to Artificial Intelligence','Oct 05, 2023','Certificate ID: 3c29394b4e2d66b1a285cea606dbff9ee71301332f50cd1da1c6ef8a9db7f991','https://www.linkedin.com/learning/certificates/3c29394b4e2d66b1a285cea606dbff9ee71301332f50cd1da1c6ef8a9db7f991'],
 	['ChatGPT (Open AI) Security, Privacy ','Oct 06, 2023','Certificate ID: 5467-17286154','https://alison.com/certification/check/2y10wsHX8sLCUM8Bm85kH84zgaJshs5dy4KJdsKDc1RZDBU0ZoJta'],
-	['Introduction to Prompt Engineering for Generative AI','Oct 09, 2023','Certificate ID: --','https://www.linkedin.com/learning/certificates/00652d8549bf994935cbdeec9ef5c6781615bc33774a63fdf9a5c0a1d0cfbb02']
+	['Introduction to Prompt Engineering for Generative AI','Oct 09, 2023','Certificate ID: 00652d8549bf994935cbdeec9ef5c6781615bc33774a63fdf9a5c0a1d0cfbb02','https://www.linkedin.com/learning/certificates/00652d8549bf994935cbdeec9ef5c6781615bc33774a63fdf9a5c0a1d0cfbb02'],
+	['Data, Databases and Mining','Nov 24, 2023','Certificate ID: 3318-17286154','https://alison.com/certification/check/2y10QjBW7omaZpSHQWfbu4N1e89Z52xPV70k2dJZCEfxu0zjVNMFq64C']
 
 ];
 
