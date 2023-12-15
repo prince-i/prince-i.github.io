@@ -5,8 +5,7 @@
 #main-screen{
     display:none;
     font-family: 'Montserrat', sans-serif;
-    margin:0;
-    width: 100%;
+
 }
 
 .skill_stack:hover {

@@ -36,7 +36,7 @@ $(document).ready(function(){
         $('#upskill').append('<div class="col s12 l6 m6" style="min-height:30vh;">' +
                               '<h5 class="left" class="">'+ parseInt(u + 1) + '. '+ upskill[u][0] +'</h5>'+
                               '<div class="row">'+
-                                '<div class="col s12">'+ upskill[u][2] +'</div>'+
+                                '<div class="col s12" style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">'+ upskill[u][2] +'</div>'+
                                 '<div class="col s12">'+ upskill[u][1] +'</div>'+
                                 '<div class="col s12">'+ '<a href="'+ upskill[u][3] + '" target="_blank">VIEW LEARNER&#8216;S VERIFICATION</div>'+
                               '</div>'+
