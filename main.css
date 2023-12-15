@@ -58,6 +58,9 @@ body::-webkit-scrollbar-thumb {
       object-fit: contain;
     }
 
+    #title{
+        text-align: center;
+    }
   
 }
 
