@@ -57,6 +57,8 @@ body::-webkit-scrollbar-thumb {
       max-height:300px;
       object-fit: contain;
     }
+
+  
 }
 
 html{
