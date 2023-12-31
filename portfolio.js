@@ -53,6 +53,7 @@ let tech_stack = [
 	['Image/icons/bash.png','Bash'],
 	['Image/icons/office.png','Microsoft 365'],
 	['Image/icons/Msdos-icon.svg','MS-DOS'],
+	['Image/icons/appscript.jpeg','App Script'],
 
 ];
 
