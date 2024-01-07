@@ -90,6 +90,7 @@ let upskill = [
 	['Data, Databases and Mining','Nov 24, 2023','Certificate ID: 3318-17286154','https://alison.com/certification/check/2y10QjBW7omaZpSHQWfbu4N1e89Z52xPV70k2dJZCEfxu0zjVNMFq64C'],
 	['IT Management - Building Information Systems','Nov 24, 2023','Certificate ID: 1878-17286154','https://alison.com/certification/check/2y10mgl7uJeXeoiflP3G4A3zc31GYi7j37a8L3EvOwctNfjLHFYUXXO'],
 	['IT Management - Software and Databases','Nov 24, 2023','Certificate ID: 1758-17286154','https://alison.com/certification/check/2y10B4wUnT51HLdBU9muoiAgLF0oFaxstikyrIeSu42rVqrgEONGwC'],
+	['Introduction to Database Concepts','Jan 7, 2024','Certificate ID: 1416-17286154','https://alison.com/certification/check/2y10Ut1TuVuGMa7x0CnDSOm9OazYcgabSfE0Rl3bBzZFSjVncH2pC6iS'],
 
 ];
 
