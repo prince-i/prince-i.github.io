@@ -58,7 +58,7 @@ body::-webkit-scrollbar-thumb {
       object-fit: contain;
     }
 
-    #title{
+    #title, #myName{
         text-align: center;
     }
   
@@ -182,7 +182,7 @@ html{
 }
 
 .identical_height {
-    max-height: 200px; /* Adjust the height value as needed */
+    max-height: 50%; /* Adjust the height value as needed */
     width: 100%;
     object-fit: contain;
     background-color: white;
