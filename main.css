@@ -180,3 +180,10 @@ html{
     border-radius: 50%; /* Creates a circular border */
     animation: rgbEffect 4s infinite; /* Apply the animation */
 }
+
+.identical_height {
+    max-height: 200px; /* Adjust the height value as needed */
+    width: 100%;
+    object-fit: contain;
+    background-color: white;
+}
