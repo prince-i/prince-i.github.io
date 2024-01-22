@@ -21,15 +21,15 @@ let portfolio = [
 	['Image/systems/pcs_summary_view.png','PROGRESS COUNTER SUMMARY','Web Application / August 2021'],
 	['Image/systems/hr-aris.png','HR Absenteeism Report Information System','Web Application / September 2021'],
 	['Image/systems/pcamera.png','pCAMERA - Image Classification Camera','Android App / November 2021'],
-	['Image/systems/faculty_scheduling_system.png','School Faculty Scheduling System','Web App(Debug) / December 2021'],
-	['Image/systems/homeseek_admin.png','HomeSeek Admin','Web App / February 2022'],
+	['Image/systems/faculty_scheduling_system.png','School Faculty Scheduling System','Web App(Dev) / December 2021'],
+	['Image/systems/homeseek_admin.png','HomeSeek Admin','Web App (Dev) / February 2022'],
 	['Image/systems/library_management_sys_qr.jpeg','Library Management System w/ QR Code','Web App (Project Manager)/ June 2022'],
 	['Image/systems/sports_management.png','Sports Management System w/ Data Analytics','Web App (Project Manager)/ Sept 2022'],
-	['Image/systems/cafe-silangan-ms.png','Cafe Silangan Management System','Web App (Debug) / Oct 2022'],
-	['Image/systems/srmaps.png','Student Record Management System','Web App (Debug) / Oct 2022'],
+	['Image/systems/cafe-silangan-ms.png','Cafe Silangan Management System','Web App (Dev) / Oct 2022'],
+	['Image/systems/srmaps.png','Student Record Management System','Web App (Dev) / Oct 2022'],
 	['Image/systems/borrowed_item_invsys.png','Borrowed-Item Inventory System','Web App (Project Manager) / April 2023'],
-	['Image/systems/balete_mun.jpg','Balete Web Demographic Info Sys','Web App (Project Manager) / October 2023'],
-	['Image/systems/business_permit_sys.jpeg','Web-based Business Permit and Renewal System','Web App (Project Manager/ Programmer) / January 2024'],
+	['Image/systems/balete_mun.jpg','Balete Web Demographic Info Sys','Web App (Project Manager/ Dev) / October 2023'],
+	['Image/systems/business_permit_sys.jpeg','Business Permit Registration and Renewal System','Web App (Project Manager/ Dev) / January 2024'],
 ];
 
 
