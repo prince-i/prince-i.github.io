@@ -29,6 +29,7 @@ let portfolio = [
 	['Image/systems/srmaps.png','Student Record Management System','Web App (Debug) / Oct 2022'],
 	['Image/systems/borrowed_item_invsys.png','Borrowed-Item Inventory System','Web App (Project Manager) / April 2023'],
 	['Image/systems/balete_mun.jpg','Balete Web Demographic Info Sys','Web App (Project Manager) / October 2023'],
+	['Image/systems/business_permit_sys.jpeg','Web-based Business Permit and Renewal System','Web App (Project Manager/ Programmer) / January 2024'],
 ];
 
 
