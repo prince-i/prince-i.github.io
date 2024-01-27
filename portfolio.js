@@ -1,7 +1,7 @@
 //DATA IN MULTIDIMENSIONAL ARRAY
 var about = [
 	['NAME:','PRINCE ARCE'],
-	['PROFILE:','PROGRAMMER | TECH LEAD'],
+	['PROFILE:','PROGRAMMER | PROJECT MANAGER'],
 	['EMAIL:','PRINCE_ARCE01@OUTLOOK.COM'],
 	['EDUCATION:','BS INFORMATION TECHNOLOGY'],
 	['INDUSTRY KNOWLEDGE:','<br>IT OPERATIONS, COMPUTER HARDWARE INSTALLATION, WINDOWS AND LINUX OS, SERVER MANAGEMENT, COMPUTER NETWORKS INSTALLATION, BASIC CLOUD OPERATION, IT DOCUMENTATION, SCRIPTING AND PROGRAMMING, DATA AND DATABASE MANAGEMENT, DATA SECURITY FUNDAMENTALS, PROJECT MANAGEMENT, EXECUTIVE REPORTING']
@@ -23,13 +23,13 @@ let portfolio = [
 	['Image/systems/pcamera.png','pCAMERA - Image Classification Camera','Android App / November 2021'],
 	['Image/systems/faculty_scheduling_system.png','School Faculty Scheduling System','Web App(Dev) / December 2021'],
 	['Image/systems/homeseek_admin.png','HomeSeek Admin','Web App (Dev) / February 2022'],
-	['Image/systems/library_management_sys_qr.jpeg','Library Management System w/ QR Code','Web App (Team Lead)/ June 2022'],
-	['Image/systems/sports_management.png','Sports Management System w/ Data Analytics','Web App (Team Lead)/ Sept 2022'],
+	['Image/systems/library_management_sys_qr.jpeg','Library Management System w/ QR Code','Web App (Project Manager)/ June 2022'],
+	['Image/systems/sports_management.png','Sports Management System w/ Data Analytics','Web App (Project Manager)/ Sept 2022'],
 	['Image/systems/cafe-silangan-ms.png','Cafe Silangan Management System','Web App (Dev) / Oct 2022'],
 	['Image/systems/srmaps.png','Student Record Management System','Web App (Dev) / Oct 2022'],
-	['Image/systems/borrowed_item_invsys.png','Borrowed-Item Inventory System','Web App (Team Lead) / April 2023'],
-	['Image/systems/balete_mun.jpg','Balete Web Demographic Info Sys','Web App (Team Lead/ Dev) / October 2023'],
-	['Image/systems/business_permit_sys.jpeg','Business Permit Registration and Renewal System','Web App (Team Lead/ Dev) / January 2024'],
+	['Image/systems/borrowed_item_invsys.png','Borrowed-Item Inventory System','Web App (Project Manager) / April 2023'],
+	['Image/systems/balete_mun.jpg','Balete Web Demographic Info Sys','Web App (Project Manager/ Dev) / October 2023'],
+	['Image/systems/business_permit_sys.jpeg','Business Permit Registration and Renewal System','Web App (Project Manager/ Dev) / January 2024'],
 ];
 
 
