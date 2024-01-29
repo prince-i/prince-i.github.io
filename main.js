@@ -105,7 +105,7 @@ $(document).ready(function(){
 
         // TYPEWRITER EFFECT
         var i = 0;
-        var txt = 'PHP DEVELOPER | PROJECT MANAGER | TECH CONTRACTOR | DIGITAL DESIGNER';
+        var txt = 'PHP DEVELOPER | PROJECT MANAGER | TECH CONTRACTOR | IT TECHNICIAN';
         var speed = 20;
         function typeWriter() {
         if (i < txt.length) {
