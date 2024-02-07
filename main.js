@@ -105,7 +105,7 @@ $(document).ready(function(){
 
         // TYPEWRITER EFFECT
         var i = 0;
-        var txt = 'PROGRAMMER | PROJECT MANAGER | IT SPECIALIST';
+        var txt = 'PROGRAMMER | TECH LEAD | IT SPECIALIST';
         var speed = 20;
         function typeWriter() {
         if (i < txt.length) {
