@@ -168,9 +168,23 @@ html{
 
 
 /* Define the keyframes for color transitions */
-@keyframes rgbEffect {
+/*@keyframes rgbEffect {
     0% { border-color: black; }
     50% { border-color: white; }
+    100% { border-color: black; }
+}*/
+
+@keyframes rgbEffect {
+    0% { border-color: black; }
+    10% { border-color: #333; }
+    20% { border-color: #666; }
+    30% { border-color: #999; }
+    40% { border-color: #CCC; }
+    50% { border-color: white; }
+    60% { border-color: #CCC; }
+    70% { border-color: #999; }
+    80% { border-color: #666; }
+    90% { border-color: #333; }
     100% { border-color: black; }
 }
 
@@ -178,7 +192,7 @@ html{
 .rgb-border {
     border: 5px solid red; /* Initial border color */
     border-radius: 50%; /* Creates a circular border */
-    animation: rgbEffect 4s infinite; /* Apply the animation */
+    animation: rgbEffect 1s infinite; /* Apply the animation */
 }
 
 .identical_height {
