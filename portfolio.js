@@ -93,6 +93,8 @@ let upskill = [
 	['IT Management - Software and Databases','Nov 24, 2023','Certificate ID: 1758-17286154','https://alison.com/certification/check/2y10B4wUnT51HLdBU9muoiAgLF0oFaxstikyrIeSu42rVqrgEONGwC'],
 	['Introduction to Database Concepts','Jan 7, 2024','Certificate ID: 1416-17286154','https://alison.com/certification/check/2y10Ut1TuVuGMa7x0CnDSOm9OazYcgabSfE0Rl3bBzZFSjVncH2pC6iS'],
 	['What Is Generative AI?','Jan 19, 2024','Certificate ID: 1a59d0676f34af2e4c0cbb3169ee2614e0088bf96f4f12e83f9dedb09eb6db92','https://www.linkedin.com/learning/certificates/1a59d0676f34af2e4c0cbb3169ee2614e0088bf96f4f12e83f9dedb09eb6db92'],
+	['Ethics in the Age of Generative AI','Jan 19, 2024','Certificate ID: 7be16cbbcece1b88227656f3780cf5a149ff3f24d6441290f0ad06b88155f932','https://www.linkedin.com/learning/certificates/e26f392a662e40b544932143614a2e0fd4fca8c1701995376e6f9b9dd4accd7e'],
+	['Data Engineering Foundations','Feb 8, 2024','Certificate ID: 88bf647842ed8ca1c1fe9c60a51f35d18fb63df6f4dca999edde8521d7d96734','https://www.linkedin.com/learning/certificates/4a7b87dc883e1ac9e792bcc56ae31630bd750432609c43cc9e1572e0c7eef451'],
 	// ['','','','']
 
 ];
