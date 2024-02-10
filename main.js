@@ -72,22 +72,7 @@ $(document).ready(function(){
       '</div>');
       }
 
-      // SQL DEVELOPER
-      for(r = 0; r <= reports.length -1;r++){
-        $('#executive_reports').append('<div class="col l4 m12 s12">'+
-          '<div class="col s12 card">'+
-            '<div class="card-image">'+
-              '<center>'+
-                  '<img src="'+reports[r][0]+'" alt="" class="responsive-img materialboxed" id="system_preview" style="padding-top:10px;">'+
-              '</center>'+
-            '</div>'+
-            '<div class="card-content">'+
-              '<p id="sql_title">'+reports[r][1]+'</p>'+
-              '<a href="'+reports[r][2]+'" target="_blank" class="btn">View</a>'+
-            '</div>'+
-          '</div>'+
-      '</div>');
-      }
+    
 
       // NETWORK DESIGN
       for(n = 0; n <= networks.length -1;n++){
