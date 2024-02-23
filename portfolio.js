@@ -107,4 +107,6 @@ let networks = [
 	['Image/network_design/8962c7b64a7912fff034f86578cd1894.png'],
 	['Image/network_design/a51a801439395c141c69cee202ab888e.png'],
 	['Image/network_design/cc7abb117a31f78fd7ad220d50d80db8.png'],
+	['Image/network_design/eirgp_protocol.png'],
+	['Image/network_design/router_ripv2.png'],
 	];
