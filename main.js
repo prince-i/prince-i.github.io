@@ -126,7 +126,7 @@ $(document).ready(function(){
             $('#executive_reports .card').addClass('N/A transparent');
             $('#cert_button').addClass('white black-text');
             $('#cert_button').removeClass('black white-text');
-            $('.badge').css('color','black');
+            
           }else{
             $('#theme_button').html('Dark Mode<i class="material-icons black-text">brightness_2<i>');
             $('#theme_button_nav').html('<i class="material-icons black-text">brightness_2<i>');
