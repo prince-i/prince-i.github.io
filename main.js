@@ -124,6 +124,8 @@ $(document).ready(function(){
             $('#bktotopbtn').addClass('white black-text');
             $('#myPic').css('filter','brightness(70%)');
             $('#executive_reports .card').addClass('N/A transparent');
+            $('#cert_button').addClass('white black-text');
+            $('#cert_button').removeClass('black white-text');
           }else{
             $('#theme_button').html('Dark Mode<i class="material-icons black-text">brightness_2<i>');
             $('#theme_button_nav').html('<i class="material-icons black-text">brightness_2<i>');
@@ -143,6 +145,8 @@ $(document).ready(function(){
             $('#bktotopbtn').removeClass('white black-text');
              $('#myPic').css('filter','brightness(100%)');
              $('#executive_reports .card').removeClass('N/A transparent');
+             $('#cert_button').removeClass('white black-text');
+             $('#cert_button').addClass('black white-text');
           }
         }
 

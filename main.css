@@ -195,9 +195,6 @@ html{
     animation: rgbEffect 1s infinite; /* Apply the animation */
 }
 
-.identical_height {
-    max-height: 50%; /* Adjust the height value as needed */
-    width: 100%;
-    object-fit: contain;
-    background-color: white;
+.badge{
+    color:black;
 }
