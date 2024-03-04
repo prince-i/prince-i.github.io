@@ -90,7 +90,7 @@ $(document).ready(function(){
 
         // TYPEWRITER EFFECT
         var i = 0;
-        var txt = 'PROGRAMMER | TECH LEAD';
+        var txt = 'PROGRAMMER | TECH LEAD | TECHNICIAN';
         var speed = 20;
         function typeWriter() {
         if (i < txt.length) {
