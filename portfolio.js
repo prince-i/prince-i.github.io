@@ -85,16 +85,12 @@ let upskill = [
 	['Artificial Intelligence and Machine Learning in Business','Sep 12, 2023','Cert No: 4876-17286154','https://alison.com/certification/check/2y10dZlr47IdrLt04sndX3EyeFFyeYwzRDMWNAhpSWSlXElK0o6JzS'],
 	['Basics of Prompt Engineering','Sep 21, 2023','Cert No: 6158-17286154','https://alison.com/certification/check/2y10757e8A9Ox7wj350weZE5dlf8tGXf4d652WF2oI1ZahDbun04XTG'],
 	['Data Analysis with Python','Sep 22, 2023','freeCodeCamp','https://freecodecamp.org/certification/fcc1dc30e38-7fc3-4290-aec4-44b9b42fc134/data-analysis-with-python-v7'],
-	['Introduction to Artificial Intelligence','Dec 27, 2023','Certificate ID: 0e15117380e5acdedd4f732be1d48ecc07be80fec643af4d4d1d1f48d52a3b70','https://www.linkedin.com/learning/certificates/0e15117380e5acdedd4f732be1d48ecc07be80fec643af4d4d1d1f48d52a3b70'],
 	['ChatGPT (Open AI) Security, Privacy ','Oct 06, 2023','Certificate ID: 5467-17286154','https://alison.com/certification/check/2y10wsHX8sLCUM8Bm85kH84zgaJshs5dy4KJdsKDc1RZDBU0ZoJta'],
-	['Introduction to Prompt Engineering for Generative AI','Oct 09, 2023','Certificate ID: 00652d8549bf994935cbdeec9ef5c6781615bc33774a63fdf9a5c0a1d0cfbb02','https://www.linkedin.com/learning/certificates/00652d8549bf994935cbdeec9ef5c6781615bc33774a63fdf9a5c0a1d0cfbb02'],
 	['Data, Databases and Mining','Nov 24, 2023','Certificate ID: 3318-17286154','https://alison.com/certification/check/2y10QjBW7omaZpSHQWfbu4N1e89Z52xPV70k2dJZCEfxu0zjVNMFq64C'],
 	['IT Management - Building Information Systems','Nov 24, 2023','Certificate ID: 1878-17286154','https://alison.com/certification/check/2y10mgl7uJeXeoiflP3G4A3zc31GYi7j37a8L3EvOwctNfjLHFYUXXO'],
 	['IT Management - Software and Databases','Nov 24, 2023','Certificate ID: 1758-17286154','https://alison.com/certification/check/2y10B4wUnT51HLdBU9muoiAgLF0oFaxstikyrIeSu42rVqrgEONGwC'],
 	['Introduction to Database Concepts','Jan 7, 2024','Certificate ID: 1416-17286154','https://alison.com/certification/check/2y10Ut1TuVuGMa7x0CnDSOm9OazYcgabSfE0Rl3bBzZFSjVncH2pC6iS'],
-	['What Is Generative AI?','Jan 19, 2024','Certificate ID: 1a59d0676f34af2e4c0cbb3169ee2614e0088bf96f4f12e83f9dedb09eb6db92','https://www.linkedin.com/learning/certificates/1a59d0676f34af2e4c0cbb3169ee2614e0088bf96f4f12e83f9dedb09eb6db92'],
-	['Ethics in the Age of Generative AI','Jan 19, 2024','Certificate ID: 7be16cbbcece1b88227656f3780cf5a149ff3f24d6441290f0ad06b88155f932','https://www.linkedin.com/learning/certificates/e26f392a662e40b544932143614a2e0fd4fca8c1701995376e6f9b9dd4accd7e'],
-	['Data Engineering Foundations','Feb 8, 2024','Certificate ID: 88bf647842ed8ca1c1fe9c60a51f35d18fb63df6f4dca999edde8521d7d96734','https://www.linkedin.com/learning/certificates/4a7b87dc883e1ac9e792bcc56ae31630bd750432609c43cc9e1572e0c7eef451'],
+	
 	// ['','','','']
 
 ];
