@@ -96,7 +96,7 @@ $(document).ready(function(){
 
         // TYPEWRITER EFFECT
         var i = 0;
-        var txt = 'PROGRAMMER | TECH LEAD | NETWORK ADMIN';
+        var txt = 'PROGRAMMER | IT CONSULTANT';
         var speed = 20;
         function typeWriter() {
         if (i < txt.length) {
