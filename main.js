@@ -89,9 +89,9 @@ $(document).ready(function(){
       }
 
 
-      for(b = 0; b <= badges.length -1;b++){
-        $('#badges').append(badges[b][0]);
-      }
+      // for(b = 0; b <= badges.length -1;b++){
+      //   $('#badges').append(badges[b][0]);
+      // }
 
 
         // TYPEWRITER EFFECT
