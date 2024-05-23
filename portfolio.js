@@ -90,7 +90,13 @@ let upskill = [
 	['IT Management - Building Information Systems','Nov 24, 2023','Certificate ID: 1878-17286154','https://alison.com/certification/check/2y10mgl7uJeXeoiflP3G4A3zc31GYi7j37a8L3EvOwctNfjLHFYUXXO'],
 	['IT Management - Software and Databases','Nov 24, 2023','Certificate ID: 1758-17286154','https://alison.com/certification/check/2y10B4wUnT51HLdBU9muoiAgLF0oFaxstikyrIeSu42rVqrgEONGwC'],
 	['Introduction to Database Concepts','Jan 7, 2024','Certificate ID: 1416-17286154','https://alison.com/certification/check/2y10Ut1TuVuGMa7x0CnDSOm9OazYcgabSfE0Rl3bBzZFSjVncH2pC6iS'],
-	
+	['Network Technician Career Path','February 23, 2024','Cisco','https://www.credly.com/badges/3729ad7f-e139-4f94-ba6e-00953736fcf5/linked_in_profile'],
+	['Introduction to IoT','February 26, 2024','Cisco','https://www.credly.com/badges/f21a0fd3-6e8f-4ccf-a587-1ad2dfd55e4d/linked_in_profile'],
+	['Network Support and Security','February 27, 2024','Cisco','https://www.credly.com/badges/1fdfa7c6-5aea-4517-ad2d-681dcf288c27/linked_in_profile'],
+	['Computer Hardware Basics','March 10, 2024','Cisco','https://www.credly.com/badges/1ff2c8d0-427f-426f-8c0b-0329e77fa6a0/linked_in_profile'],
+	['Operating Systems Basics','March 16, 2024','Cisco','https://www.credly.com/badges/41897309-616e-4626-a18c-93af760b63d8/linked_in_profile'],
+	['Email Marketing','May 23, 2024','Certificate ID: 16819683495c4936bdedbc76768a3217','https://app.hubspot.com/academy/achievements/l44xlth7/en/1/prince-arce/email-marketing'],
+
 	// ['','','','']
 
 ];
