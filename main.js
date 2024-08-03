@@ -132,6 +132,8 @@ $(document).ready(function(){
             $('#executive_reports .card').addClass('N/A transparent');
             $('#cert_button').addClass('white black-text');
             $('#cert_button').removeClass('black white-text');
+            $('#badges_button').addClass('white black-text');
+            $('#badges_button').removeClass('black white-text');
             
           }else{
             $('#theme_button').html('Dark Mode<i class="material-icons black-text">brightness_2<i>');
@@ -154,6 +156,8 @@ $(document).ready(function(){
              $('#executive_reports .card').removeClass('N/A transparent');
              $('#cert_button').removeClass('white black-text');
              $('#cert_button').addClass('black white-text');
+             $('#badges_button').removeClass('white black-text');
+             $('#badges_button').addClass('black white-text');
           }
         }
 
