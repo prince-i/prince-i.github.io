@@ -20,7 +20,7 @@ $(document).ready(function(){
 
       //LOAD ABOUT
       for(a = 0; a <= about.length - 1;a++){
-        $('#profile_info').append('<p class="flow-text"><b>'+ about[a][0]+'</b>&nbsp;'+ about[a][1].replace(/,/g,"<br>") +'</p>');
+        $('#profile_info').append('<p class="flow-text"><b>'+ about[a][0]+'</b>&nbsp;'+ about[a][1] +'</p>');
       }
 
       //LOAD TECH STACK
