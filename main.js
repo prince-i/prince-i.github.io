@@ -5,7 +5,10 @@ $(document).ready(function() {
         inDuration: 600,
         outDuration: 500
     });
-    $('.modal').modal();
+    $('.modal').modal({
+      inDuration:600,
+      outDuration:500
+    });
     $('.tooltipped').tooltip();
     $('.parallax').parallax();
     $('.materialboxed').materialbox();
