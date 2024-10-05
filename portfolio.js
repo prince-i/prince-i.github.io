@@ -114,12 +114,4 @@ let networks = [
 	['Image/network_design/vlan_config_l3.png'],
 	];
 
-let badges = [
-		['<div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="3729ad7f-e139-4f94-ba6e-00953736fcf5" data-share-badge-host="https://www.credly.com"></div>'],
-		['<div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="f21a0fd3-6e8f-4ccf-a587-1ad2dfd55e4d" data-share-badge-host="https://www.credly.com"></div>'],
-		['<div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="1fdfa7c6-5aea-4517-ad2d-681dcf288c27" data-share-badge-host="https://www.credly.com"></div>'],
-		['<div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="1ff2c8d0-427f-426f-8c0b-0329e77fa6a0" data-share-badge-host="https://www.credly.com"></div>'],
-		['<div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="41897309-616e-4626-a18c-93af760b63d8" data-share-badge-host="https://www.credly.com"></div>'],
-		['<div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="d8b1bb1c-325c-40a8-b788-4f77e8ebba22" data-share-badge-host="https://www.credly.com"></div>'],
-	]
 
