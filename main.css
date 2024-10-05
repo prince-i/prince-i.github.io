@@ -38,6 +38,9 @@ body::-webkit-scrollbar-thumb {
     #work {
         text-align: center;
     }
+    #certBtns{
+        text-align: center;
+    }
     #stat_cont{
         border-bottom:1px solid #b0b0b0;
         padding:15px;
