@@ -167,13 +167,6 @@ html{
 }
 
 
-/* Define the keyframes for color transitions */
-/*@keyframes rgbEffect {
-    0% { border-color: black; }
-    50% { border-color: white; }
-    100% { border-color: black; }
-}*/
-
 @keyframes rgbEffect {
     0% { border-color: black; }
     10% { border-color: #333; }
