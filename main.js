@@ -45,28 +45,40 @@ for (var a = 0; a <= about.length - 1; a++) {
 }
 
 
-// LOAD TECH STACK
+/* LOAD TECH STACK */
+
 for (var t = 0; t <= tech_stack.length - 1; t++) {
-    $('#tech_stack').append('<div class="col l2 m4 s6" style="margin-bottom:3%;">' +
+    $('#tech_stack').append('<div class="col l2 m4 s4" style="margin-bottom:3%;">' +
                             '<img src="' + tech_stack[t][0] + '" class="responsive-img skill_stack" id="skill_icon">' +
                             '<p class="center" style="font-size:1rem;">' + tech_stack[t][1] + '</p>' +
                             '</div>');
 }
 
-    
-// LOAD UPSKILL
-for (var u = 0; u <= upskill.length - 1; u++) {
-    $('#upskill').append('<div class="col s12 l6 m6" style="min-height:30vh;">' +
-        '<h5 class="left">' + (u + 1) + '. ' + upskill[u][0] + '</h5>' +
-        '<div class="row">' +
-            '<div class="col s12" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">' + upskill[u][2] + '</div>' +
-            '<div class="col s12">' + upskill[u][1] + '</div>' +
-            '<div class="col s12">' +
-                '<a href="' + upskill[u][3] + '" target="_blank">VIEW LEARNER&#8216;S VERIFICATION</a>' +
+/* LOAD TRAININGS */
+
+const initialItems = 8;
+function renderSkills(start, end) {
+    for (let u = start; u < end; u++) {
+        $('#upskill').append('<div class="col s12 l6 m6" style="min-height:30vh;">' +
+            '<h5 class="left">' + (u + 1) + '. ' + upskill[u][0] + '</h5>' +
+            '<div class="row">' +
+                '<div class="col s12" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">' + upskill[u][2] + '</div>' +
+                '<div class="col s12">' + upskill[u][1] + '</div>' +
+                '<div class="col s12">' +
+                    '<a href="' + upskill[u][3] + '" target="_blank">VIEW LEARNER&#8216;S VERIFICATION</a>' +
+                '</div>' +
             '</div>' +
-        '</div>' +
-    '</div>');
+        '</div>');
+    }
 }
+renderSkills(0, initialItems);
+$('#upskill').append('<button id="viewMore" class="btn">View More</button>');
+$('#viewMore').click(function() {
+    renderSkills(initialItems, upskill.length);
+    $(this).hide();
+    get_theme();
+});
+
 
 // LOAD SERVICES
 for (var s = 0; s <= services.length - 1; s++) {
@@ -119,13 +131,11 @@ const speed = 100;
 
 function typeWriter() {
     if (i < txt.length) {
-        document.getElementById("title").innerHTML = txt.substring(0, i + 1) + '▮'; // Add pipe at the end
+        document.getElementById("title").innerHTML = txt.substring(0, i + 1) + ' &#x258E;';
         i++;
         setTimeout(typeWriter, speed);
     }
 }
-
-
 
 
 // DEFAULT DARK MODE ON
@@ -151,7 +161,9 @@ const get_theme = () => {
         $('#executive_reports .card').addClass('N/A transparent');
         $('#cert_button').addClass('white black-text').removeClass('black white-text');
         $('#badges_button').addClass('white black-text').removeClass('black white-text');
-
+        $('#viewMore').addClass('white black-text').removeClass('black white-text');
+        $('#upskill a').removeClass('black-text').addClass('white-text');
+        $('.divider').removeClass('black').addClass('white');
     } else {
         $('#theme_button').html('Dark Mode<i class="material-icons black-text">brightness_2</i>');
         $('#theme_button_nav').html('<i class="material-icons black-text">brightness_2</i>');
@@ -169,6 +181,9 @@ const get_theme = () => {
         $('#executive_reports .card').removeClass('N/A transparent');
         $('#cert_button').removeClass('white black-text').addClass('black white-text');
         $('#badges_button').removeClass('white black-text').addClass('black white-text');
+        $('#viewMore').removeClass('white black-text').addClass('black white-text');
+        $('#upskill a').removeClass('white-text').addClass('black-text');
+        $('.divider').removeClass('white').addClass('black');
     }
 };
 
@@ -176,24 +191,20 @@ const get_theme = () => {
 // TOGGLE LIGHT MODE AND DARK MODE
 $('#theme_button').click(function() {
     const currentTheme = localStorage.getItem("theme");
-
     if (!currentTheme || currentTheme === 'light') {
         localStorage.setItem("theme", "dark");
     } else {
         localStorage.setItem("theme", "light");
     }
-
-    get_theme(); // Update the theme
+    get_theme();
 });
 
 $('#theme_button_nav').click(function() {
     const currentTheme = localStorage.getItem("theme");
-
     if (!currentTheme || currentTheme === 'light') {
         localStorage.setItem("theme", "dark");
     } else {
         localStorage.setItem("theme", "light");
     }
-
-    get_theme(); // Update the theme
+    get_theme();
 });
