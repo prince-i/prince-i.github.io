@@ -60,11 +60,12 @@ let tech_stack = [
 
 
 let services = [
-	['Image/icons/monitor-screen.svg','WEB DESIGN','As a Web Designer, I have an experience with HTML5, CSS3, Javascript, jQuery and CSS Framework like <a href="https://materializecss.com" target="_blank">Materialize-CSS</a>.'],
-	['Image/icons/coding.svg','WEB DEVELOPMENT','I successfully deployed web-based application in my current workplace, having experience in PHP7, Javascript, AJAX, JSON and MYSQL Database.'],
+	['Image/icons/monitor-screen.svg','WEB DESIGN','Skilled web designer with experience in front-end languages (HTML5, CSS3, JavaScript) and libraries (jQuery, <a href="https://materializecss.com" target="_blank">Materialize-CSS</a>.)'],
+	['Image/icons/coding.svg','WEB DEVELOPMENT','Deployed web applications using PHP7, JavaScript, AJAX, JSON, NodeJS and MySQL.'],
 	['Image/icons/landing-page.svg','RESPONSIVE DESIGN','Knowledgeable in modern design for any screen size.'],
 	['Image/icons/technical-support.png','IT TECHNICAL SUPPORT','Provide L1 &mdash; L3 IT Support to customers / clients by solving minor or major technical issues.'],
-	['Image/icons/layers.png','DIGITAL DESIGN','Provide graphic designs for websites, branding, logos, infographics, PPTs, building layout and social media posts.']
+	['Image/icons/layers.png','DIGITAL DESIGN','Create visual designs for websites, branding, logos, infographics, presentations, and social media.'],
+	['Image/icons/ai.png','AI TRAINING','Develop a data-driven AI model using machine learning techniques with frameworks like PyTorch, NLTK, Scikit-learn, Keras, OpenCV, or TensorFlow.']
 ];
 
 let upskill = [
