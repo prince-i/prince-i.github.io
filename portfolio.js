@@ -65,7 +65,7 @@ let services = [
 	['Image/icons/landing-page.svg','RESPONSIVE DESIGN','Knowledgeable in modern design for any screen size.'],
 	['Image/icons/technical-support.png','IT TECHNICAL SUPPORT','Provide L1 &mdash; L3 IT Support to customers / clients by solving minor or major technical issues.'],
 	['Image/icons/layers.png','DIGITAL DESIGN','Create visual designs for websites, branding, logos, infographics, presentations, and social media.'],
-	['Image/icons/ai.png','AI TRAINING','Train narrow AI models using machine learning techniques with frameworks like PyTorch, NLTK, Scikit-learn, Keras, OpenCV, or TensorFlow.']
+	['Image/icons/ai.png','AI TRAINING','Train narrow AI models using machine learning techniques with frameworks like YOLOv5, PyTorch, NLTK, Scikit-learn, Keras, OpenCV, or TensorFlow.']
 ];
 
 let upskill = [
