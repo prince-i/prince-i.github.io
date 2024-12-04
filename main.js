@@ -126,7 +126,7 @@ for (var n = 0; n <= networks.length - 1; n++) {
 
 // TYPEWRITER EFFECT
 let i = 0;
-const txt = 'PROGRAMMER | IT CONSULTANT';
+const txt = 'PROGRAMMER | TECHNICAL LEAD';
 const speed = 100;
 
 function typeWriter() {
