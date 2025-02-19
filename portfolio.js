@@ -1,7 +1,7 @@
 //DATA IN MULTIDIMENSIONAL ARRAY
 var about = [
 	['NAME:','PRINCE ARCE'],
-	['PROFILE:','PROGRAMMER | TECHNICAL LEAD'],
+	['PROFILE:','IT GENERALIST'],
 	['EMAIL:','PRINCE_ARCE01@OUTLOOK.COM'],
 	['EDUCATION:','<ul><li>BACHELOR OF SCIENCE IN INFORMATION TECHNOLOGY: GRADUATED</li><li>MASTER IN INFORMATION TECHNOLOGY: ONGOING</li></ul>'],
 	['INDUSTRY KNOWLEDGE:','<ul><li>AI/MACHINE LEARNING</li><li>DATA MANAGEMENT</li><li>IT OPERATIONS</li><li>PROGRAMMING</li><li>PROJECT AND IT MANAGEMENT</li><li>TECH SUPPORT</li><li>TECHNOLOGY AND INFRASTRUCTURE</li><li>TECHNICAL RESEARCH AND DOCUMENTATION</li></ul>']
@@ -64,9 +64,9 @@ let services = [
 	['Image/icons/monitor-screen.svg','WEB DESIGN','Skilled web designer with experience in front-end languages (HTML5, CSS3, JavaScript) and libraries (jQuery, <a href="https://materializecss.com" target="_blank">Materialize-CSS</a>.)'],
 	['Image/icons/coding.svg','WEB DEVELOPMENT','Deployed web applications using PHP7, JavaScript, AJAX, JSON, NodeJS and MySQL.'],
 	['Image/icons/landing-page.svg','RESPONSIVE DESIGN','Knowledgeable in modern design for any screen size.'],
-	['Image/icons/technical-support.png','IT TECHNICAL SUPPORT','Provide L1 &mdash; L3 IT Support to customers / clients by solving minor or major technical issues.'],
+	['Image/icons/technical-support.png','IT & OT TECHNICAL SUPPORT','Provide L1 &mdash; L3 IT Support to customers / clients by solving minor or major technical issues.'],
 	['Image/icons/layers.png','DIGITAL DESIGN','Create visual designs for websites, branding, logos, infographics, presentations, and social media.'],
-	['Image/icons/ai.png','DATA SCIENCE & AI TRAINING','Analyze data and train narrow AI models using machine learning techniques with frameworks like YOLOv5, PyTorch, NLTK, Scikit-learn, Keras, OpenCV, or TensorFlow.']
+	['Image/icons/ai.png','DATA SCIENCE & AI MODELING','Analyze data and train narrow AI models using machine learning techniques with frameworks like YOLOv5, PyTorch, NLTK, Scikit-learn, Keras, OpenCV, or TensorFlow.']
 ];
 
 let upskill = [
