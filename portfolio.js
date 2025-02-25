@@ -30,6 +30,7 @@ let portfolio = [
 	['Image/systems/borrowed_item_invsys.png','Borrowed-Item Inventory System','Web App (Technical Lead) / April 2023'],
 	['Image/systems/balete_mun.jpg','Balete Web Demographic Info Sys','Web App (Technical Lead/ Dev) / October 2023'],
 	['Image/systems/business_permit_sys.jpeg','Business Permit Registration and Renewal System','Web App (Technical Lead/ Dev) / January 2024'],
+	['Image/systems/financial_fraud_detection.png','Financial Fraud Detection','Data Science | Research (Programmer) / May 2024'],
 	['Image/systems/pnh_floyd_warshall.jpg','PNH Water Station Management System','Web App (Technical Lead/ Dev) / January 2025'],
 	['Image/systems/predictive_maintenance.png','Predictive Maintenance','Data Science (Programmer) / February 2025'],
 ];
