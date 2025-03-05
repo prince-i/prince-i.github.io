@@ -54,30 +54,6 @@ for (var t = 0; t <= tech_stack.length - 1; t++) {
                             '</div>');
 }
 
-/* LOAD TRAININGS */
-
-const initialItems = 8;
-function renderSkills(start, end) {
-    for (let u = start; u < end; u++) {
-        $('#upskill').append('<div class="col s12 l6 m6" style="min-height:30vh;">' +
-            '<h5 class="left">' + (u + 1) + '. ' + upskill[u][0] + '</h5>' +
-            '<div class="row">' +
-                '<div class="col s12" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">' + upskill[u][2] + '</div>' +
-                '<div class="col s12">' + upskill[u][1] + '</div>' +
-                '<div class="col s12">' +
-                    '<a href="' + upskill[u][3] + '" target="_blank">VIEW LEARNER&#8216;S VERIFICATION</a>' +
-                '</div>' +
-            '</div>' +
-        '</div>');
-    }
-}
-renderSkills(0, initialItems);
-$('#upskill').append('<button id="viewMore" class="btn">View More</button>');
-$('#viewMore').click(function() {
-    renderSkills(initialItems, upskill.length);
-    $(this).hide();
-    get_theme();
-});
 
 
 // LOAD SERVICES
@@ -127,7 +103,7 @@ for (var n = 0; n <= networks.length - 1; n++) {
 // TYPEWRITER EFFECT
 let i = 0;
 const txt = 'IT SPECIALIST | CONTRACTOR | ANALYST';
-const speed = 100;
+const speed = 60;
 
 function typeWriter() {
     if (i < txt.length) {
