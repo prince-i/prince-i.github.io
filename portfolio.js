@@ -1,7 +1,7 @@
 //DATA IN MULTIDIMENSIONAL ARRAY
 var about = [
-	['NAME:','Prince Arce'],
-	['PROFILE:','Programmer'],
+	['NAME:','PRINCE'],
+	['PROFILE:','IT GENERALIST'],
 	['EDUCATION:','<ul><li>Bachelor of Science in Information Technology: GRADUATED</li><li>Master in Information Technology: ONGOING</li></ul>'],
 	['INDUSTRY KNOWLEDGE:','<ul><li>Data Science & AI</li><li>IT Operations</li><li>Programming</li><li>Project and IT Management</li><li>Tech Support</li><li>Technology and Infrastructure</li><li>Technical Research and Documentation</li></ul>']
 
@@ -70,7 +70,7 @@ let services = [
 	['Image/icons/landing-page.svg','RESPONSIVE DESIGN','Knowledgeable in modern design for any screen size.'],
 	['Image/icons/technical-support.png','IT & OT TECHNICAL SUPPORT','Provide L1 &mdash; L3 IT Support to customers / clients by solving minor or major technical issues.'],
 	['Image/icons/layers.png','DIGITAL DESIGN','Create visual designs for websites, branding, logos, infographics, presentations, and social media.'],
-	['Image/icons/ai.png','DATA SCIENCE & AI MODELING','Analyze data and train narrow AI models using machine learning techniques with frameworks like YOLOv5, PyTorch, NLTK, Scikit-learn, Keras, OpenCV, or TensorFlow.']
+	['Image/icons/ai.png','Data & AI','Analyze data and train AI models using frameworks like YOLOv5, PyTorch, NLTK, Scikit-learn, Keras, OpenCV, and TensorFlow.']
 ];
 
 
