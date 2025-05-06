@@ -55,7 +55,6 @@ for (var t = 0; t <= tech_stack.length - 1; t++) {
 }
 
 
-
 // LOAD SERVICES
 for (var s = 0; s <= services.length - 1; s++) {
     $('#services_content').append('<div class="col l4 m4 s12" style="text-align: center; height: 40vh; margin-bottom: 5%;">' +
@@ -102,7 +101,7 @@ for (var n = 0; n <= networks.length - 1; n++) {
 
 // TYPEWRITER EFFECT
 let i = 0;
-const txt = 'WEB DEVELOPER | TECHNICAL LEAD | CONTRACTOR';
+const txt = 'PROGRAMMER | FREELANCE PROJECT MANAGER | TECHNICIAN';
 const speed = 15;
 
 function typeWriter() {
