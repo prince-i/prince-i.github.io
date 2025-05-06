@@ -68,7 +68,7 @@ let services = [
 	['Image/icons/landing-page.svg','RESPONSIVE DESIGN','Knowledgeable in modern design for any screen size.'],
 	['Image/icons/technical-support.png','IT & OT TECHNICAL SUPPORT','Provide L1 &mdash; L3 IT Support to customers / clients by solving minor or major technical issues.'],
 	['Image/icons/layers.png','DIGITAL DESIGN','Create visual designs for websites, branding, logos, infographics, presentations, and social media.'],
-	['Image/icons/ai.png','Data & AI','Analyze data and train AI models using frameworks like YOLOv5, PyTorch, NLTK, Scikit-learn, Keras, OpenCV, and TensorFlow.']
+	['Image/icons/ai.png','Data Analytics & AI','Analyze data and data models using machine learning frameworks like YOLOv5, PyTorch, NLTK, Scikit-learn, Keras, OpenCV, and TensorFlow.']
 ];
 
 
