@@ -64,11 +64,11 @@ let tech_stack = [
 
 let services = [
 	['Image/icons/monitor-screen.svg','WEB DESIGN','Skilled web designer with experience in front-end languages (HTML5, CSS3, JavaScript) and libraries (jQuery, <a href="https://materializecss.com" target="_blank">Materialize-CSS</a>.)'],
-	['Image/icons/coding.svg','WEB DEVELOPMENT','Deployed web applications using PHP7, JavaScript, AJAX, JSON, NodeJS and MySQL.'],
+	['Image/icons/coding.svg','WEB DEVELOPMENT','Deployed web applications using PHP7, JavaScript, AJAX, JSON, NodeJS, and MySQL.'],
 	['Image/icons/landing-page.svg','RESPONSIVE DESIGN','Knowledgeable in modern design for any screen size.'],
-	['Image/icons/technical-support.png','IT & OT TECHNICAL SUPPORT','Provide L1 &mdash; L3 IT Support to customers / clients by solving minor or major technical issues.'],
-	['Image/icons/layers.png','DIGITAL DESIGN','Create visual designs for websites, branding, logos, infographics, presentations, and social media.'],
-	['Image/icons/ai.png','Data Analytics & AI','Analyze data and data models using machine learning frameworks like YOLOv5, PyTorch, NLTK, Scikit-learn, Keras, OpenCV, and TensorFlow.']
+	['Image/icons/technical-support.png','IT & OT TECHNICAL SUPPORT','Deliver L1 - L3 IT support by resolving a range of technical issues for customers and clients.'],
+	['Image/icons/layers.png','DIGITAL DESIGN','Design visuals for websites, branding, logos, infographics, presentations, and social media.'],
+	['Image/icons/ai.png','Data Analytics & AI','Analyze data and models using ML frameworks such as YOLOv5, PyTorch, NLTK, Scikit-learn, Keras, OpenCV, and TensorFlow.']
 ];
 
 
