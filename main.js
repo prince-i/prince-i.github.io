@@ -101,7 +101,7 @@ for (var n = 0; n <= networks.length - 1; n++) {
 
 // TYPEWRITER EFFECT
 let i = 0;
-const txt = 'PROGRAMMER | IT CONTRACTOR | IT TECHNICIAN';
+const txt = 'PROGRAMMER | TECH LEAD';
 const speed = 15;
 
 function typeWriter() {
@@ -120,25 +120,6 @@ const get_theme = () => {
     console.log(theme);
 
     if (theme === 'dark') {
-        // $('#theme_button').html('Light Mode<i class="material-icons white-text">brightness_5</i>');
-        // $('#theme_button_nav').html('<i class="material-icons white-text">brightness_5</i>');
-        // $('nav').removeClass('white').addClass('#212121 grey darken-4');
-        // $('nav a').addClass('white-text');
-        // $('.brand-logo').addClass('white-text');
-        // $('.sidenav-trigger').addClass('white-text');
-        // $('.sidenav').addClass('#212121 grey darken-4');
-        // $('.sidenav a').addClass('white-text');
-        // $('body').addClass('#212121 grey darken-4 white-text');
-        // $('#work .card').addClass('N/A transparent');
-        // $('#title').removeClass('grey-text text-darken-3 lighten-3').addClass('white-text');
-        // $('#bktotopbtn').addClass('white black-text');
-        // $('#myPic').css('filter', 'brightness(70%)');
-        // $('#executive_reports .card').addClass('N/A transparent');
-        // $('#cert_button').addClass('white black-text').removeClass('black white-text');
-        // $('#badges_button').addClass('white black-text').removeClass('black white-text');
-        // $('#viewMore').addClass('white black-text').removeClass('black white-text');
-        // $('#upskill a').removeClass('black-text').addClass('white-text');
-        // $('.divider').removeClass('black').addClass('white');
 
         $('#theme_button').html('Light Mode<i class="material-icons white-text">brightness_5</i>');
         $('#theme_button_nav').html('<i class="material-icons white-text">brightness_5</i>');
@@ -172,22 +153,15 @@ const get_theme = () => {
 
 
 // TOGGLE LIGHT MODE AND DARK MODE
-$('#theme_button').click(function() {
+function toggleTheme() {
     const currentTheme = localStorage.getItem("theme");
-    if (!currentTheme || currentTheme === 'light') {
-        localStorage.setItem("theme", "dark");
-    } else {
-        localStorage.setItem("theme", "light");
-    }
-    get_theme();
+    const newTheme = (currentTheme === 'dark') ? 'light' : 'dark';  // Toggle between light and dark
+    localStorage.setItem("theme", newTheme);
+    get_theme(); // Apply the new theme
+}
+
+// Event listener for theme toggle on button click
+$('#theme_button, #theme_button_nav').click(function() {
+    toggleTheme();
 });
 
-$('#theme_button_nav').click(function() {
-    const currentTheme = localStorage.getItem("theme");
-    if (!currentTheme || currentTheme === 'light') {
-        localStorage.setItem("theme", "dark");
-    } else {
-        localStorage.setItem("theme", "light");
-    }
-    get_theme();
-});
