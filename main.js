@@ -157,23 +157,16 @@ const get_theme = () => {
     } else {
         $('#theme_button').html('Dark Mode<i class="material-icons black-text">brightness_2</i>');
         $('#theme_button_nav').html('<i class="material-icons black-text">brightness_2</i>');
-        $('nav').addClass('white').removeClass('#212121 grey darken-4');
-        $('nav a').removeClass('white-text').addClass('black-text');
-        $('.brand-logo').removeClass('white-text');
-        $('.sidenav-trigger').removeClass('white-text');
-        $('.sidenav').removeClass('#212121 grey darken-4');
-        $('.sidenav a').removeClass('white-text');
+        $('nav, .sidenav').removeClass('#212121 grey darken-4').addClass('white');
+        $('nav a, .sidenav a, #upskill a').removeClass('white-text').addClass('black-text');
+        $('.brand-logo, .sidenav-trigger').removeClass('white-text');
         $('body').removeClass('#212121 grey darken-4 white-text');
-        $('#work .card').removeClass('N/A transparent');
-        $('#title').addClass('grey-text text-darken-3 lighten-3').removeClass('white-text');
-        $('#bktotopbtn').removeClass('white black-text');
+        $('#work .card, #executive_reports .card').removeClass('N/A transparent');
+        $('#title').removeClass('white-text').addClass('grey-text text-darken-3 lighten-3');
+        $('#bktotopbtn, #cert_button, #badges_button, #viewMore').removeClass('white black-text').addClass('black white-text');
         $('#myPic').css('filter', 'brightness(100%)');
-        $('#executive_reports .card').removeClass('N/A transparent');
-        $('#cert_button').removeClass('white black-text').addClass('black white-text');
-        $('#badges_button').removeClass('white black-text').addClass('black white-text');
-        $('#viewMore').removeClass('white black-text').addClass('black white-text');
-        $('#upskill a').removeClass('white-text').addClass('black-text');
         $('.divider').removeClass('white').addClass('black');
+
     }
 };
 
