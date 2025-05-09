@@ -34,6 +34,13 @@ $(document).ready(function() {
     $('#certModal').on('modalclose', function() {
         $('#pdfIframe').attr('src', '');
     });
+
+    
+    // WORKS COUNTER
+    $('#works_completed_count').html(achievements.works_completed);
+    $('#yrs_of_exp').html(achievements.years_of_exp);
+    $('#total_clients').html(achievements.total_clients);
+    $('#total_awards').html(achievements.awards);
 });
 
 
