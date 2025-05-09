@@ -34,6 +34,7 @@ let portfolio = [
 	['Image/systems/cyber_attack_pre_detection.png','Cyberattack Pre-detection Model','Data Science | Research (Programmer) / July 2024'],
 	['Image/systems/pnh_floyd_warshall.jpg','PNH Water Station Management System','Web App (Technical Lead) / January 2025'],
 	['Image/systems/predictive_maintenance.png','Predictive Maintenance','Data Science (Programmer) / February 2025'],
+	['Image/systems/lian_up_site.png','Lian Up! Tourism Site','Web Design (Web Designer) / April 2025'],
 ];
 
 
