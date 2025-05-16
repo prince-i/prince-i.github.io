@@ -72,17 +72,16 @@
             <!-- ------------------------------------------------------------------------- -->
             <!-- {PDF CERT MODAL} -->
 
-            <div class="modal bottom-sheet  modal-fixed-footer #212121 grey darken-4" id="certModal" style="min-height: 100vh;">
-                <div class="modal-content " id="certModalContent">
-                    <div class="responsive-iframe">
-                        <iframe id="pdfIframe" src="" frameborder="0" style="min-height: 90vh;"></iframe>
+           <div class="modal bottom-sheet modal-fixed-footer #212121 grey darken-4" id="certModal" style="min-height: 100vh; overflow: hidden;">
+                <div class="modal-content" id="certModalContent" style="padding: 0; height: 100%; overflow: hidden;">
+                    <div class="responsive-iframe" style="height: 100%; overflow: hidden;">
+                        <iframe id="pdfIframe" src="" frameborder="0" style="width: 100%; height: 100%;"></iframe>
                     </div>
                 </div>
-                <div class="modal-footer #212121 grey darken-4">
+                <div class="modal-footer #212121 grey darken-4" style="background-color: #212121;">
                     <a href="#!" class="modal-close waves-effect waves-green btn-flat white-text">Close</a>
                 </div>
             </div>
-
 
             <!-- ------------------------------------------------------------------------- -->
             
