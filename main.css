@@ -8,14 +8,29 @@
 
 }
 
+
+.skill_stack {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
 .skill_stack:hover {
-    opacity: 70%;
+  opacity: 70%;
+  transform: scale(0.95);
+}
+
+
+.services_icon {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.services_icon:hover {
+  opacity: 70%;
+  transform: scale(0.95);
 }
 
 body{
     width: 100%;
-    margin:0;
-    
+    margin:0;  
 }
 
 /*SCROLL BAR*/
@@ -73,7 +88,7 @@ html{
     display: none;
 }
 
-#skill_icon {
+.skill_icon {
     width: 200px;
 }
 

@@ -59,7 +59,7 @@ for (var t = 0; t < tech_stack.length; t++) {
     }
     $('#row_' + Math.floor(t / 6)).append(
         '<div class="col l2 m4 s4" style="margin-bottom:3%;">' +
-        '<img src="' + tech_stack[t][0] + '" class="responsive-img skill_stack" id="skill_icon">' +
+        '<img src="' + tech_stack[t][0] + '" class="responsive-img skill_stack skill_icon">' +
         '<p class="center" style="font-size:1rem;">' + tech_stack[t][1] + '</p>' +
         '</div>'
     );
@@ -176,4 +176,3 @@ function toggleTheme() {
 $('#theme_button, #theme_button_nav').click(function() {
     toggleTheme();
 });
-
