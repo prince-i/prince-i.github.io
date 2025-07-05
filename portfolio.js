@@ -64,7 +64,7 @@ let tech_stack = [
 
 
 let services = [
-	['Image/icons/landing-page.png','WEB DESIGN','Skilled web designer with experience in front-end languages (HTML5, CSS3, JavaScript) and libraries (jQuery, <a href="https://materializecss.com" target="_blank">Materialize-CSS</a>.)'],
+	['Image/icons/landing-page.png','WEB DESIGN','Skilled web designer with experience in front-end languages (HTML5, CSS3, JavaScript) and libraries such as jQuery and <a href="https://materializecss.com" target="_blank" rel="noopener noreferrer">Materialize-CSS</a>. Proficient with website builders including Google Sites, WordPress, Webflow, and Squarespace.'],
 	['Image/icons/coding.svg','WEB DEVELOPMENT','Deployed web applications using PHP7, JavaScript, AJAX, JSON, NodeJS, and MySQL.'],
 	['Image/icons/responsive-design.png','RESPONSIVE DESIGN','Knowledgeable in modern web design for any screen size.'],
 	['Image/icons/technical-support.png','IT & OT TECHNICAL SUPPORT','Deliver L1 - L3 IT support by resolving a range of technical issues for clients or organizations.'],
