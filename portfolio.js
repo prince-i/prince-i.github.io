@@ -35,7 +35,7 @@ let portfolio = [
 	['Image/systems/pnh_floyd_warshall.jpg','PNH Water Station Management System','Web App (Technical Lead) / January 2025'],
 	['Image/systems/predictive_maintenance.png','Predictive Maintenance','Data Science (Programmer) / February 2025'],
 	['Image/systems/lian_up_site.png','<a href="https://sites.google.com/view/lianup/home" target="_blank">Lian Up! Tourism Site</a>','Web Design (Web Designer) / April 2025'],
-	['Image/systems/mint.png','<a href="https://mis.batelec2.ph/mint/index.php" target="_blank">MINT &mdash BATELEC II</a>','Web App (Programmer) / July 2025'],
+	['Image/systems/mint.png','<a href="https://mis.batelec2.ph/mint/index.php" target="_blank">MINT &mdash; BATELEC II</a>','Web App (Programmer) / July 2025'],
 ];
 
 
