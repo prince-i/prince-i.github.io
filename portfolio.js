@@ -85,6 +85,8 @@ let networks = [
 	['Image/network_design/eirgp_protocol.png'],
 	['Image/network_design/router_ripv2.png'],
 	['Image/network_design/vlan_config_l3.png'],
+	['Image/network_design/pi-fileserver-filegator.jpg']
+
 	];
 
 
