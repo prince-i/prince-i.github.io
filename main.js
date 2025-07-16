@@ -41,6 +41,46 @@ $(document).ready(function() {
     $('#yrs_of_exp').html(achievements.years_of_exp);
     $('#total_clients').html(achievements.total_clients);
     $('#total_awards').html(achievements.awards);
+
+
+    //TEXT SCRAMBLE
+    const specialChars = "!@#$%^&*()_+-=[]{}|;:',.<>?/`~";
+    document.querySelectorAll('.scramble-on-hover').forEach(element => {
+      const originalText = element.textContent;
+      let interval = null;
+      let hasCompleted = false;
+
+      element.addEventListener('mouseenter', () => {
+        if (hasCompleted) return;
+
+        let iterations = 0;
+
+        if (interval) clearInterval(interval);
+
+        interval = setInterval(() => {
+          const scrambled = originalText
+            .split('')
+            .map((char, i) => {
+              if (char === ' ') return ' ';
+              if (i < iterations) return originalText[i];
+              return specialChars[Math.floor(Math.random() * specialChars.length)];
+            })
+            .join('');
+
+          element.textContent = scrambled;
+
+          iterations += 1 / 3;
+          if (iterations >= originalText.length) {
+            clearInterval(interval);
+            element.textContent = originalText;
+            hasCompleted = true;
+          }
+        }, 30);
+      });
+    });
+
+
+    // ----------
 });
 
 
@@ -113,14 +153,26 @@ for (var n = 0; n <= networks.length - 1; n++) {
 
 // TYPEWRITER EFFECT
 let i = 0;
-const txt = 'PROGRAMMER | IT CONTRACTOR | SERVER ADMIN';
-const speed = 15;
+const txt = 'PROGRAMMER | IT CONTRACTOR | IT OPS';
+const speed = 60;
+const sChars = "!@#$%^&*()_+-=[]{}|;:',.<>?/`~";
 
 function typeWriter() {
-    if (i < txt.length) {
-        document.getElementById("title").innerHTML = txt.substring(0, i + 1) + ' &#x258E;';
+    if (i <= txt.length) {
+        const scrambled = txt
+            .split('')
+            .map((char, index) => {
+                if (char === ' ') return ' ';
+                if (index < i) return txt[index];
+                return sChars[Math.floor(Math.random() * sChars.length)];
+            })
+            .join('');
+
+        document.getElementById("title").innerHTML = scrambled + ' &#x258E;';
         i++;
         setTimeout(typeWriter, speed);
+    } else {
+        document.getElementById("title").innerHTML = txt; // final clean text
     }
 }
 
