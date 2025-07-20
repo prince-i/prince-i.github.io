@@ -65,8 +65,8 @@ html{
 #myPic{
     border-radius:30px;
     object-fit: cover;
-    height:70vh;
-    border: 5px solid white;
+    /*height:70vh;*/
+    /*border: 5px solid white;*/
 }
 
 #system_preview{
