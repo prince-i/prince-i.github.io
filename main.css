@@ -188,3 +188,9 @@ html{
     text-decoration: underline;
     font-weight: bold;
 }
+
+/*SHADOW FILTER*/
+
+.drop_shadow_filter {
+    filter: drop-shadow(16px 10px 6px #D21369);
+}

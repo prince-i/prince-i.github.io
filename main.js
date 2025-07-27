@@ -99,7 +99,7 @@ for (var t = 0; t < tech_stack.length; t++) {
     }
     $('#row_' + Math.floor(t / 6)).append(
         '<div class="col l2 m4 s4" style="margin-bottom:3%;">' +
-        '<img src="' + tech_stack[t][0] + '" class="responsive-img skill_stack skill_icon">' +
+        '<img src="' + tech_stack[t][0] + '" class="responsive-img skill_stack skill_icon drop_shadow_filter">' +
         '<p class="center" style="font-size:1rem;">' + tech_stack[t][1] + '</p>' +
         '</div>'
     );
@@ -110,7 +110,7 @@ for (var t = 0; t < tech_stack.length; t++) {
 // LOAD SERVICES
 for (var s = 0; s <= services.length - 1; s++) {
     $('#services_content').append('<div class="col l4 m4 s12" style="text-align: center; height: 40vh; margin-bottom: 5%;">' +
-        '<img src="' + services[s][0] + '" alt="" style="width: 30%;" class="services_icon">' +
+        '<img src="' + services[s][0] + '" alt="" style="width: 30%;" class="services_icon drop_shadow_filter">' +
         '<p style="font-weight: bold;">' + services[s][1] + '</p>' +
         '<p>' + services[s][2] + '</p>' +
     '</div>');
