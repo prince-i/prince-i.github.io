@@ -192,5 +192,6 @@ html{
 /*SHADOW FILTER*/
 
 .drop_shadow_filter {
-    filter: drop-shadow(16px 10px 6px #D21369);
+    filter: drop-shadow(5px 4px 2px gray);
+
 }
