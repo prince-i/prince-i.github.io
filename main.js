@@ -153,7 +153,7 @@ for (var n = 0; n <= networks.length - 1; n++) {
 
 // TYPEWRITER EFFECT
 let i = 0;
-const txt = 'PROGRAMMER | IT CONTRACTOR | IT SPECIALIST';
+const txt = 'PROGRAMMER | IT CONTRACTOR | IT OFFICER';
 const speed = 60;
 const sChars = "!@#$%^&*()_+-=[]{}|;:',.<>?/`~";
 
