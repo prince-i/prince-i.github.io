@@ -45,17 +45,18 @@ $(document).ready(function() {
 
     //TEXT SCRAMBLE
     const specialChars = "!@#$%^&*()_+-=[]{}|;:',.<>?/`~";
+
     document.querySelectorAll('.scramble-on-hover').forEach(element => {
       const originalText = element.textContent;
       let interval = null;
+      let hasStarted = false;
       let hasCompleted = false;
 
       element.addEventListener('mouseenter', () => {
-        if (hasCompleted) return;
+        if (hasCompleted || hasStarted) return;
 
+        hasStarted = true;
         let iterations = 0;
-
-        if (interval) clearInterval(interval);
 
         interval = setInterval(() => {
           const scrambled = originalText
@@ -74,12 +75,11 @@ $(document).ready(function() {
             clearInterval(interval);
             element.textContent = originalText;
             hasCompleted = true;
+            hasStarted = false; // Reset for safety, though it's no longer used
           }
         }, 30);
       });
     });
-
-
     // ----------
 });
 
