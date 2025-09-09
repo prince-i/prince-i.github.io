@@ -70,7 +70,7 @@ let services = [
 	['Image/icons/responsive-design.png','RESPONSIVE DESIGN','Knowledgeable in modern web design for any screen size.'],
 	['Image/icons/technical-support.png','IT & OT TECHNICAL SUPPORT','Deliver L1 - L3 IT support by resolving a range of technical issues for clients or organizations.'],
 	['Image/icons/digital-art.png','DIGITAL DESIGN','Design visuals for websites, branding, logos, infographics, presentations, and social media.'],
-	['Image/icons/ai.png','MACHINE LEARNING','Analyze data and models using ML frameworks such as YOLOv5, PyTorch, NLTK, Scikit-learn, Keras, OpenCV, and TensorFlow.'],
+	['Image/icons/ai.png','DATA SCIENCE','Analyze data and models using ML frameworks such as YOLOv5, PyTorch, NLTK, Scikit-learn, Keras, OpenCV, and TensorFlow.'],
 	['Image/icons/server-storage.png','SERVER ADMINISTRATION','Manages and maintains server infrastructure to ensure optimal performance and security.']
 ];
 
