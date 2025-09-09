@@ -23,19 +23,21 @@ let portfolio = [
 	['Image/systems/pcamera.png','pCAMERA - Image Classification Camera','Android App / November 2021'],
 	['Image/systems/faculty_scheduling_system.png','School Faculty Scheduling System','Web App(Programmer) / December 2021'],
 	['Image/systems/homeseek_admin.png','HomeSeek Admin','Web App (Programmer) / February 2022'],
-	['Image/systems/library_management_sys_qr.jpeg','Library Management System w/ QR Code','Web App (Technical Lead)/ June 2022'],
-	['Image/systems/sports_management.png','Sports Management System w/ Data Analytics','Web App (Technical Lead)/ Sept 2022'],
+	['Image/systems/library_management_sys_qr.jpeg','Library Management System w/ QR Code','Web App (Tech Lead)/ June 2022'],
+	['Image/systems/sports_management.png','Sports Management System w/ Data Analytics','Web App (Tech Lead)/ Sept 2022'],
 	['Image/systems/cafe-silangan-ms.png','Cafe Silangan Management System','Web App (Programmer) / Oct 2022'],
 	['Image/systems/srmaps.png','Student Record Management System','Web App (Programmer) / Oct 2022'],
-	['Image/systems/borrowed_item_invsys.png','Borrowed-Item Inventory System','Web App (Technical Lead) / April 2023'],
-	['Image/systems/balete_mun.jpg','Balete Web Demographic Info Sys','Web App (Technical Lead) / October 2023'],
-	['Image/systems/business_permit_sys.jpeg','Business Permit Registration and Renewal System','Web App (Technical Lead) / January 2024'],
+	['Image/systems/borrowed_item_invsys.png','Borrowed-Item Inventory System','Web App (Tech Lead) / April 2023'],
+	['Image/systems/balete_mun.jpg','Balete Web Demographic Info Sys','Web App (Tech Lead) / October 2023'],
+	['Image/systems/business_permit_sys.jpeg','Business Permit Registration and Renewal System','Web App (Tech Lead) / January 2024'],
 	['Image/systems/financial_fraud_detection.png','Financial Fraud Detection','Data Science | Research (Programmer) / May 2024'],
 	['Image/systems/cyber_attack_pre_detection.png','Cyberattack Pre-detection Model','Data Science | Research (Programmer) / July 2024'],
-	['Image/systems/pnh_floyd_warshall.jpg','PNH Water Station Management System','Web App (Technical Lead) / January 2025'],
+	['Image/systems/pnh_floyd_warshall.jpg','PNH Water Station Management System','Web App (Tech Lead) / January 2025'],
 	['Image/systems/predictive_maintenance.png','Predictive Maintenance','Data Science (Programmer) / February 2025'],
 	['Image/systems/lian_up_site.png','<a href="https://sites.google.com/view/lianup/home" target="_blank">Lian Up! Tourism Site</a>','Web Design (Web Designer) / April 2025'],
 	['Image/systems/mint.png','<a href="https://mis.batelec2.ph/mint/index.php" target="_blank">MINT &mdash; BATELEC II</a>','Web App (Programmer) / July 2025'],
+	['Image/systems/paytrack.png','PayTrack - Payroll with Attendance Mgmt. using RFID Auth','Web App (Tech Lead) / August 2025'],
+	['Image/systems/motorpool.png','Motorpool Vehicle Profile and Maintenance Sys','Web App (Programmer) / August 2025'],
 ];
 
 
@@ -93,6 +95,6 @@ let networks = [
 let achievements = {
 	works_completed: 29,
 	years_of_exp:5,
-	total_clients:27,
+	total_clients:28,
 	awards:0
 };
