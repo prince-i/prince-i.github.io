@@ -153,7 +153,7 @@ for (var n = 0; n <= networks.length - 1; n++) {
 
 // TYPEWRITER EFFECT
 let i = 0;
-const txt = 'PROGRAMMER | IT CONTRACTOR | IT OFFICER';
+const txt = 'PROGRAMMER | TECH LEAD';
 const speed = 40;
 const sChars = "!@#$%^&*()_+-=[]{}|;:',.<>?/`~";
 
@@ -172,7 +172,7 @@ function typeWriter() {
         i++;
         setTimeout(typeWriter, speed);
     } else {
-        document.getElementById("title").innerHTML = txt; // final clean text
+        document.getElementById("title").innerHTML = txt;
     }
 }
 
