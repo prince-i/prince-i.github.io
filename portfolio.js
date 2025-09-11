@@ -1,7 +1,7 @@
 //DATA IN MULTIDIMENSIONAL ARRAY
 var about = [
 	['NAME:','Prince'],
-	['PROFILE:','Programmer &bull; IT  &bull; IT Technician'],
+	['PROFILE:','Programmer &bull; IT Contractor &bull; IT Technician'],
 	['EDUCATION:','<ul><li>Bachelor of Science in Information Technology: GRADUATED</li><li>Master in Information Technology: ONGOING</li></ul>'],
 	['INDUSTRY KNOWLEDGE:','<ul><li>DATA MANAGEMENT</li><li>PROGRAMMING</li><li>PROJECT AND IT MANAGEMENT</li><li>IT OPERATIONS AND INFRASTRUCTURE</li><li>TECHNICAL SUPPORT</li><li>TECHNICAL DOCUMENTATION</li></ul>']
 
