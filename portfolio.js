@@ -38,7 +38,7 @@ let portfolio = [
 	['Image/systems/mint.png','<a href="https://mis.batelec2.ph/mint/index.php" target="_blank">MINT &mdash; BATELEC II</a>','Web App (Programmer) / July 2025'],
 	['Image/systems/paytrack.png','PayTrack - Payroll with Attendance Mgmt. using RFID Auth','Web App (Tech Lead) / August 2025'],
 	['Image/systems/motorpool.png','Motorpool Vehicle Profile and Maintenance Sys','Web App (Programmer) / August 2025'],
-	['Image/systems/chatbot.png','Batelec II - FB AI and Rule-based Chatbot','Bot/Webhook (Programmer) / September 2025'],
+	['Image/systems/chatbot.png','Batelec II - Rule-Based Chatbot using Natural Language Processing','NLP/Bot/Webhook (Programmer) / September 2025'],
 ];
 
 
