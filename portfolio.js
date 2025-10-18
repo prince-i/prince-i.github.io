@@ -1,7 +1,7 @@
 //DATA IN MULTIDIMENSIONAL ARRAY
 var about = [
 	['NAME:','Prince'],
-	['PROFILE:','Programmer &bull; IT Contractor &bull; IT Technician'],
+	['PROFILE:','Programmer'],
 	['EDUCATION:','<ul><li>Bachelor of Science in Information Technology: GRADUATED</li><li>Master in Information Technology: ONGOING</li></ul>'],
 	['INDUSTRY KNOWLEDGE:','<ul><li>DATA MANAGEMENT</li><li>PROGRAMMING</li><li>PROJECT AND IT MANAGEMENT</li><li>IT OPERATIONS AND INFRASTRUCTURE</li><li>TECHNICAL SUPPORT</li><li>TECHNICAL DOCUMENTATION</li></ul>']
 
@@ -79,7 +79,6 @@ let services = [
 
 
 // NETWORK DESIGNS
-
 let networks = [
 	['Image/network_design/5b916e534e96bc9b46ff7a08151680bd.png'],
 	['Image/network_design/8962c7b64a7912fff034f86578cd1894.png'],
@@ -89,12 +88,11 @@ let networks = [
 	['Image/network_design/router_ripv2.png'],
 	['Image/network_design/vlan_config_l3.png'],
 	['Image/network_design/pi-fileserver-filegator.png']
-
 	];
 
 
 let achievements = {
-	works_completed: 29,
+	works_completed: 33,
 	years_of_exp:5,
 	total_clients:28,
 	awards:0

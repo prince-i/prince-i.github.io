@@ -87,144 +87,167 @@ $(document).ready(function() {
 // DATA -------------------------------------------------------------------------------------------------------------------------
    
 // LOAD ABOUT
-for (var a = 0; a <= about.length - 1; a++) {
-    $('#profile_info').append('<p class="flow-text"><b>' + about[a][0] + '</b>&nbsp;' + about[a][1] + '</p>');
+const aboutContainer = $('#profile_info');
+let aboutHTML = '';
+for (let a = 0; a < about.length; a++) {
+  aboutHTML += `<p class="flow-text"><b>${about[a][0]}</b>&nbsp;${about[a][1]}</p>`;
 }
+aboutContainer.append(aboutHTML);
 
 
 /* LOAD TECH STACK */
-for (var t = 0; t < tech_stack.length; t++) {
-    if (t % 6 === 0) {
-        $('#tech_stack').append('<div class="row" id="row_' + Math.floor(t / 6) + '"></div>');
-    }
-    $('#row_' + Math.floor(t / 6)).append(
-        '<div class="col l2 m4 s4" style="margin-bottom:3%;">' +
-        '<img src="' + tech_stack[t][0] + '" class="responsive-img skill_stack skill_icon drop_shadow_filter">' +
-        '<p class="center" style="font-size:1rem;">' + tech_stack[t][1] + '</p>' +
-        '</div>'
-    );
+const techContainer = $('#tech_stack');
+for (let t = 0; t < tech_stack.length; t++) {
+  if (t % 6 === 0) techContainer.append(`<div class="row" id="row_${Math.floor(t / 6)}"></div>`);
+  $(`#row_${Math.floor(t / 6)}`).append(`
+    <div class="col l2 m4 s4" style="margin-bottom:3%;">
+      <img src="${tech_stack[t][0]}" class="responsive-img skill_stack skill_icon drop_shadow_filter">
+      <p class="center" style="font-size:1rem;">${tech_stack[t][1]}</p>
+    </div>
+  `);
 }
-
 
 
 // LOAD SERVICES
-for (var s = 0; s <= services.length - 1; s++) {
-    $('#services_content').append('<div class="col l4 m4 s12" style="text-align: center; height: 40vh; margin-bottom: 5%;">' +
-        '<img src="' + services[s][0] + '" alt="" style="width: 30%;" class="services_icon drop_shadow_filter">' +
-        '<p style="font-weight: bold;">' + services[s][1] + '</p>' +
-        '<p>' + services[s][2] + '</p>' +
-    '</div>');
+const servicesContainer = $('#services_content');
+let servicesHTML = '';
+for (let s = 0; s < services.length; s++) {
+  servicesHTML += `
+    <div class="col l4 m4 s12" style="text-align:center; height:40vh; margin-bottom:5%;">
+      <img src="${services[s][0]}" alt="" style="width:30%;" class="services_icon drop_shadow_filter">
+      <p style="font-weight:bold;">${services[s][1]}</p>
+      <p>${services[s][2]}</p>
+    </div>
+  `;
 }
+servicesContainer.append(servicesHTML);
 
 
 // LOAD PORTFOLIO
-for (var p = 0; p <= portfolio.length - 1; p++) {
-    $('#work').append('<div class="col l4 m12 s12">' +
-        '<div class="col s12 card">' +
-            '<div class="card-image">' +
-                '<center>' +
-                    '<img src="' + portfolio[p][0] + '" alt="" class="responsive-img materialboxed" id="system_preview" style="padding-top:10px;">' +
-                '</center>' +
-            '</div>' +
-            '<div class="card-content">' +
-                '<p id="system_name">' + portfolio[p][1] + '</p>' +
-                '<p id="system_info">' + portfolio[p][2] + '</p>' +
-            '</div>' +
-        '</div>' +
-    '</div>');
+const portfolioContainer = $('#work');
+let portfolioHTML = '';
+for (let p = 0; p < portfolio.length; p++) {
+  portfolioHTML += `
+    <div class="col l4 m12 s12">
+      <div class="col s12 card">
+        <div class="card-image center-align">
+          <img src="${portfolio[p][0]}" alt="" class="responsive-img materialboxed" id="system_preview" style="padding-top:10px;">
+        </div>
+        <div class="card-content">
+          <p id="system_name">${portfolio[p][1]}</p>
+          <p id="system_info">${portfolio[p][2]}</p>
+        </div>
+      </div>
+    </div>
+  `;
 }
+portfolioContainer.append(portfolioHTML);
 
 
 // NETWORK DESIGN
-for (var n = 0; n <= networks.length - 1; n++) {
-    $('#network_design').append('<div class="col l4 m12 s12">' +
-        '<div class="col s12 card">' +
-            '<div class="card-image">' +
-                '<center>' +
-                    '<img src="' + networks[n][0] + '" alt="" class="responsive-img materialboxed" id="system_preview" style="padding-top:10px;">' +
-                '</center>' +
-            '</div>' +
-        '</div>' +
-    '</div>');
+const networkContainer = $('#network_design');
+let networkHTML = '';
+for (let n = 0; n < networks.length; n++) {
+  networkHTML += `
+    <div class="col l4 m12 s12">
+      <div class="col s12 card">
+        <div class="card-image center-align">
+          <img src="${networks[n][0]}" alt="" class="responsive-img materialboxed" id="system_preview" style="padding-top:10px;">
+        </div>
+      </div>
+    </div>
+  `;
 }
-
+networkContainer.append(networkHTML);
 
 // END DATA ------------------------------------------------------------------------------------------------------------------------------------------------
 
-// TYPEWRITER EFFECT
-let i = 0;
-const txt = 'PROGRAMMER | IT CONTRACTOR | IT TECHNICIAN';
-const speed = 40;
+// TYPEWRITER
+const txt = 'PROGRAMMER | ETL DEVELOPER';
+const speed = 30;
 const sChars = "!@#$%^&*()_+-=[]{}|;:',.<>?/`~";
+let i = 0;
+const titleEl = document.getElementById("title");
 
 function typeWriter() {
-    if (i <= txt.length) {
-        const scrambled = txt
-            .split('')
-            .map((char, index) => {
-                if (char === ' ') return ' ';
-                if (index < i) return txt[index];
-                return sChars[Math.floor(Math.random() * sChars.length)];
-            })
-            .join('');
-
-        document.getElementById("title").innerHTML = scrambled + ' &#x258E;';
-        i++;
-        setTimeout(typeWriter, speed);
-    } else {
-        document.getElementById("title").innerHTML = txt; // final clean text
+  if (i <= txt.length) {
+    let scrambled = '';
+    for (let j = 0; j < txt.length; j++) {
+      if (txt[j] === ' ') scrambled += ' ';
+      else scrambled += j < i ? txt[j] : sChars[Math.floor(Math.random() * sChars.length)];
     }
+    titleEl.innerHTML = scrambled + ' &#x258E;';
+    i++;
+    setTimeout(typeWriter, speed);
+  } else {
+    titleEl.innerHTML = txt;
+  }
 }
 
 
-// DEFAULT DARK MODE ON
-localStorage.setItem('theme', 'dark');
+
+// DEFAULT TO DARKMODE (only if no value exists)
+if (!localStorage.getItem('theme')) {
+  localStorage.setItem('theme', 'dark');
+}
+
 const get_theme = () => {
-    const theme = localStorage.getItem("theme");
-    console.log(theme);
+  const theme = localStorage.getItem("theme");
+  console.log(theme);
 
-    if (theme === 'dark') {
+  const isDark = theme === 'dark';
 
-        $('#theme_button').html('Light Mode<i class="material-icons white-text">brightness_5</i>');
-        $('#theme_button_nav').html('<i class="material-icons white-text">brightness_5</i>');
-        $('nav').removeClass('white').addClass('#212121 grey darken-4')
-          .find('a, .brand-logo, .sidenav-trigger').addClass('white-text');
-        $('.sidenav').addClass('#212121 grey darken-4').find('a').addClass('white-text');
-        $('body').addClass('#212121 grey darken-4 white-text');
-        $('#work .card, #executive_reports .card').addClass('N/A transparent');
-        $('#title').removeClass('grey-text text-darken-3 lighten-3').addClass('white-text');
-        $('#bktotopbtn, #cert_button, #badges_button, #viewMore').addClass('white black-text')
-          .removeClass('black white-text');
-        $('#upskill a').removeClass('black-text').addClass('white-text');
-        $('.divider').removeClass('black').addClass('white');
-        $('#myPic').css('filter', 'brightness(70%)');
+  const $nav = $('nav');
+  const $sidenav = $('.sidenav');
+  const $body = $('body');
+  const $title = $('#title');
+  const $buttons = $('#bktotopbtn, #cert_button, #badges_button, #viewMore');
+  const $cards = $('#work .card, #executive_reports .card');
+  const $divider = $('.divider');
+  const $upskillLinks = $('#upskill a');
+  const $myPic = $('#myPic');
 
-    } else {
-        $('#theme_button').html('Dark Mode<i class="material-icons black-text">brightness_2</i>');
-        $('#theme_button_nav').html('<i class="material-icons black-text">brightness_2</i>');
-        $('nav, .sidenav').removeClass('#212121 grey darken-4').addClass('white');
-        $('nav a, .sidenav a, #upskill a').removeClass('white-text').addClass('black-text');
-        $('.brand-logo, .sidenav-trigger').removeClass('white-text');
-        $('body').removeClass('#212121 grey darken-4 white-text');
-        $('#work .card, #executive_reports .card').removeClass('N/A transparent');
-        $('#title').removeClass('white-text').addClass('grey-text text-darken-3 lighten-3');
-        $('#bktotopbtn, #cert_button, #badges_button, #viewMore').removeClass('white black-text').addClass('black white-text');
-        $('#myPic').css('filter', 'brightness(100%)');
-        $('.divider').removeClass('white').addClass('black');
+  if (isDark) {
+    $('#theme_button').html('Light Mode<i class="material-icons white-text">brightness_5</i>');
+    $('#theme_button_nav').html('<i class="material-icons white-text">brightness_5</i>');
 
-    }
+    $nav.removeClass('white').addClass('grey darken-4')
+      .find('a, .brand-logo, .sidenav-trigger').addClass('white-text');
+    $sidenav.addClass('grey darken-4').find('a').addClass('white-text');
+    $body.addClass('grey darken-4 white-text');
+    $cards.addClass('transparent');
+    $title.removeClass('grey-text text-darken-3 lighten-3').addClass('white-text');
+    $buttons.addClass('white black-text').removeClass('black white-text');
+    $upskillLinks.removeClass('black-text').addClass('white-text');
+    $divider.removeClass('black').addClass('white');
+    $myPic.css('filter', 'brightness(70%)');
+
+  } else {
+    $('#theme_button').html('Dark Mode<i class="material-icons black-text">brightness_2</i>');
+    $('#theme_button_nav').html('<i class="material-icons black-text">brightness_2</i>');
+
+    $nav.add($sidenav).removeClass('grey darken-4').addClass('white');
+    $nav.add($sidenav).find('a, .brand-logo, .sidenav-trigger').removeClass('white-text').addClass('black-text');
+    $body.removeClass('grey darken-4 white-text');
+    $cards.removeClass('transparent');
+    $title.removeClass('white-text').addClass('grey-text text-darken-3 lighten-3');
+    $buttons.removeClass('white black-text').addClass('black white-text');
+    $upskillLinks.removeClass('white-text').addClass('black-text');
+    $divider.removeClass('white').addClass('black');
+    $myPic.css('filter', 'brightness(100%)');
+  }
 };
 
 
-// TOGGLE LIGHT MODE AND DARK MODE
+// TOGGLE
 function toggleTheme() {
-    const currentTheme = localStorage.getItem("theme");
-    const newTheme = (currentTheme === 'dark') ? 'light' : 'dark';  // Toggle between light and dark
-    localStorage.setItem("theme", newTheme);
-    get_theme(); // Apply the new theme
+  const theme = localStorage.getItem("theme") === "dark" ? "light" : "dark";
+  localStorage.setItem("theme", theme);
+  get_theme();
 }
 
-// Event listener for theme toggle on button click
-$('#theme_button, #theme_button_nav').click(function() {
-    toggleTheme();
-});
+// EVENT LISTENER FOR TOGGLE
+$('#theme_button, #theme_button_nav').on('click', toggleTheme);
+
+// APPLY THEME ON PAGE LOAD
+$(document).ready(get_theme);
