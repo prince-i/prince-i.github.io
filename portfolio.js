@@ -43,7 +43,7 @@ let portfolio = [
 
 
 // TECH STACK
-let tech_stack = [
+let tech_tools = [
 	['Image/icons/html-5.png','HTML5'],
 	['Image/icons/css-3.png','CSS3'],
 	['Image/icons/javascript.png','JavaScript'],
@@ -63,7 +63,7 @@ let tech_stack = [
 	['Image/icons/Msdos-icon.svg','MS-DOS'],
 	['Image/icons/google-apps-script.png','App Script'],
 	['Image/icons/jupyter-icon-sm.png','Jupyter Notebook'],
-
+	['Image/icons/colab.png','Google Colab']
 ];
 
 
