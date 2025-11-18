@@ -15,7 +15,7 @@ let portfolio = [
 	['Image/systems/andonsystem.jpg','ANDON SYSTEM','Web Application / October 2020'],
 	['Image/systems/progress_counter_control_panel.jpg','PROGRESS COUNTER ADMIN','Web Application / November 2020'],
 	['Image/systems/prf_system.png','PRF APPROVAL SYSTEM','Web Application / February 2021'],
-	['Image/systems/furukawalima.png','FALP- OFFICAL WEBSITE','Web Hosting / February 2021'],
+	['Image/systems/furukawalima.png','FALP - OFFICAL WEBSITE','Web Hosting / February 2021'],
 	['Image/systems/server-ping.png','SERVER AND NETWORK PING TOOL','VB .Net Application / April 2021'],
 	['Image/systems/tubemaking_system.png','TUBEMAKING KANBAN SYSTEM','Web Application / July 2021'],
 	['Image/systems/pcs_summary_view.png','PROGRESS COUNTER SUMMARY','Web Application / August 2021'],
@@ -94,7 +94,7 @@ let networks = [
 
 
 let achievements = {
-	works_completed: 33,
+	works_completed: 36,
 	years_of_exp:5,
 	total_clients:28,
 	awards:0
