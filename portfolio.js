@@ -40,6 +40,7 @@ let portfolio = [
 	['Image/systems/motorpool.png','Motorpool Vehicle Profile and Maintenance Sys','Web App (Programmer) / August 2025'],
 	['Image/systems/chatbot.png','Batelec II - Rule-Based Chatbot using Natural Language Processing','NLP/Bot/Webhook (Programmer) / September 2025'],
 	['Image/systems/cert-gen.png','Certificate Multiplier Generating Tool','Python Web App/ Replit (Programmer) / November 2025'],
+	['Image/systems/emp-movement.png','Employee Movement Portal - For Internal or External Recruitment Monitoring','Web App (Programmer) / November 2025'],
 	['Image/systems/brgystoninolipaportal.png','<a href="https://barangaystoninolipa.com" target="_blank">Barangay Sto. Nino Lipa Portal - Capstone</a>','Web App/ ReactJS (Systems Engineer - Reverse & Deploy) / November 2025'],
 ];
 
