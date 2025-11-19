@@ -35,12 +35,12 @@ let portfolio = [
 	['Image/systems/pnh_floyd_warshall.jpg','PNH Water Station Management System','Web App (Tech Lead) / January 2025'],
 	['Image/systems/predictive_maintenance.png','Predictive Maintenance','Data Science (Programmer) / February 2025'],
 	['Image/systems/lian_up_site.png','<a href="https://sites.google.com/view/lianup/home" target="_blank">Lian Up! Tourism Site</a>','Web Design (Web Designer) / April 2025'],
-	['Image/systems/mint.png','<a href="https://mis.batelec2.ph/mint/index.php" target="_blank">MINT &mdash; BATELEC II</a>','Web App (Programmer) / July 2025'],
+	['Image/systems/mint.png','<a href="https://mis.batelec2.ph/mint/index.php" target="_blank"> MINT &mdash; BATELEC II</a>','Web App (Programmer) / July 2025'],
 	['Image/systems/paytrack.png','PayTrack - Payroll with Attendance Mgmt. using RFID Auth','Web App (Tech Lead) / August 2025'],
-	['Image/systems/motorpool.png','Motorpool Vehicle Profile and Maintenance Sys','Web App (Programmer) / August 2025'],
-	['Image/systems/chatbot.png','Batelec II - Rule-Based Chatbot using Natural Language Processing','NLP/Bot/Webhook (Programmer) / September 2025'],
+	['Image/systems/motorpool.png','BATELEC II - Motorpool Vehicle Profile and Maintenance Sys','Web App (Programmer) / August 2025'],
+	['Image/systems/chatbot.png','BATELEC II - Rule-Based Chatbot using Natural Language Processing','NLP/Bot/Webhook (Programmer) / September 2025'],
 	['Image/systems/cert-gen.png','Certificate Multiplier Generating Tool','Python Web App/ Replit (Programmer) / November 2025'],
-	['Image/systems/emp-movement.png','Employee Movement Portal - For Internal &amp; External Recruitment Monitoring','Web App (Programmer) / November 2025'],
+	['Image/systems/emp-movement.png','BATELEC II - Employee Movement Portal - For Internal &amp; External Recruitment Monitoring','Web App (Programmer) / November 2025'],
 	['Image/systems/brgystoninolipaportal.png','<a href="https://barangaystoninolipa.com" target="_blank">Barangay Sto. Nino Lipa Portal - Capstone</a>','Web App/ ReactJS (Systems Engineer - Reverse & Deploy) / November 2025'],
 ];
 
