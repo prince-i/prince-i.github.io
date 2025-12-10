@@ -163,7 +163,7 @@ networkContainer.append(networkHTML);
 // END DATA ------------------------------------------------------------------------------------------------------------------------------------------------
 
 // TYPEWRITER
-const txt = 'PROGRAMMER | ETL DEVELOPER';
+const txt = 'PHP DEVELOPER | ETL DEVELOPER';
 const speed = 30;
 const sChars = "!@#$%^&*()_+-=[]{}|;:',.<>?/`~";
 let i = 0;

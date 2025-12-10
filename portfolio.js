@@ -4,7 +4,7 @@ var about = [
 	['PROFILE:','IT professional with experience in software development, IT operations, and technical support.'],
 	['EDUCATION:','<ul><li>Bachelor of Science in Information Technology: GRADUATED</li><li>Master in Information Technology: ONGOING</li></ul>'],
 	['INDUSTRY KNOWLEDGE:','<ul><li>DATA MANAGEMENT</li><li>PROJECT AND IT MANAGEMENT</li><li>IT OPERATIONS AND INFRASTRUCTURE</li></ul>'],
-	['SKILLS','<ul><li>PROGRAMMING & CODE ANALYSIS</li><li>RESEARCH & TECHNICAL DOCUMENTATION</li><li>DESIGN THINKING</li><li>TECHNICAL SUPPORT</li></ul>']
+	['SKILLS','<ul><li>PROGRAMMING & DATA ANALYSIS</li><li>RESEARCH & TECHNICAL DOCUMENTATION</li><li>DESIGN THINKING</li><li>TECHNICAL SUPPORT</li></ul>']
 ];
 
 //imagepath - system name - system date
