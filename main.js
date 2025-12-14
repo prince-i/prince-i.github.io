@@ -186,7 +186,7 @@ function typeWriter() {
 
 
 
-// DEFAULT TO DARKMODE (only if no value exists)
+// DEFAULT TO DARKMODE
 if (!localStorage.getItem('theme')) {
   localStorage.setItem('theme', 'dark');
 }
