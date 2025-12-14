@@ -27,6 +27,7 @@ let portfolio = [
 	['Image/systems/sports_management.png','Sports Management System w/ Data Analytics','Web App (Tech Lead)/ Sept 2022'],
 	['Image/systems/cafe-silangan-ms.png','Cafe Silangan Management System','Web App (Programmer) / Oct 2022'],
 	['Image/systems/srmaps.png','Student Record Management System','Web App (Programmer) / Oct 2022'],
+	['Image/systems/ovas_lipa.png','Online Vet and Peto Shop Mgmt. System - Capstone','Web App (Programmer - Reverse & Debug) / Dec 2022'],
 	['Image/systems/borrowed_item_invsys.png','Borrowed-Item Inventory System','Web App (Tech Lead) / April 2023'],
 	['Image/systems/balete_mun.jpg','Balete Web Demographic Info Sys','Web App (Tech Lead) / October 2023'],
 	['Image/systems/business_permit_sys.jpeg','Business Permit Registration and Renewal System','Web App (Tech Lead) / January 2024'],
