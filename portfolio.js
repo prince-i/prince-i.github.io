@@ -22,7 +22,7 @@ let portfolio = [
 	['Image/systems/hr-aris.png','HR Absenteeism Report Information System','Web Application / September 2021'],
 	['Image/systems/pcamera.png','pCAMERA - Image Classification Camera','Android App / November 2021'],
 	['Image/systems/faculty_scheduling_system.png','School Faculty Scheduling System','Web App(Programmer) / December 2021'],
-	['Image/systems/homeseek_admin.png','HomeSeek Admin','Web App (Programmer) / February 2022'],
+	['Image/systems/bookaholic.png','Bookaholic Admin - Book Renting Portal','Web App (Programmer) / February 2022'],
 	['Image/systems/library_management_sys_qr.jpeg','Library Management System w/ QR Code','Web App (Tech Lead)/ June 2022'],
 	['Image/systems/sports_management.png','Sports Management System w/ Data Analytics','Web App (Tech Lead)/ Sept 2022'],
 	['Image/systems/cafe-silangan-ms.png','Cafe Silangan Management System','Web App (Programmer) / Oct 2022'],
