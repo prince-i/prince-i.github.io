@@ -163,7 +163,7 @@ networkContainer.append(networkHTML);
 // END DATA ------------------------------------------------------------------------------------------------------------------------------------------------
 
 // TYPEWRITER
-const txt = 'BACKEND & ETL ENGINEER | TECH SPECIALIST';
+const txt = 'DATA & APPLICATIONS PROGRAMMER | IT ETHICIST';
 const speed = 30;
 const sChars = "!@#$%^&*()_+-=[]{}|;:',.<>?/`~";
 let i = 0;
