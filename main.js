@@ -114,7 +114,7 @@ let servicesHTML = '';
 for (let s = 0; s < services.length; s++) {
   servicesHTML += `
     <div class="col l4 m4 s12" style="text-align:center; height:40vh; margin-bottom:5%;">
-      <img src="${services[s][0]}" alt="" style="width:30%;" class="services_icon drop_shadow_filter">
+      <img src="${services[s][0]}" alt="" style="width:30%;" class="services_icon drop_shadow_filter rotate_hover">
       <p style="font-weight:bold;">${services[s][1]}</p>
       <p>${services[s][2]}</p>
     </div>

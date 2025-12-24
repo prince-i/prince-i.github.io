@@ -1,13 +1,13 @@
 @font-face {
     font-family: Montserrat;
-    src: url('Fonts/Ubuntu-Regular.ttf');
+    src: url('Fonts/Montserrat-Regular.ttf');
 }
+
 #main-screen{
     display:none;
     font-family: 'Montserrat', sans-serif;
 
 }
-
 
 .skill_stack {
   transition: transform 0.3s ease, opacity 0.3s ease;
@@ -189,3 +189,10 @@ html{
     font-weight: bold;
 }
 
+.rotate_hover {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+.rotate_hover:hover {
+  transform: rotate(15deg);
+}
