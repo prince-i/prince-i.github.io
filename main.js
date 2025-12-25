@@ -75,7 +75,7 @@ $(document).ready(function() {
             clearInterval(interval);
             element.textContent = originalText;
             hasCompleted = true;
-            hasStarted = false; // Reset for safety, though it's no longer used
+            hasStarted = false;
           }
         }, 30);
       });
@@ -101,7 +101,7 @@ for (let t = 0; t < tech_tools.length; t++) {
   if (t % 6 === 0) techContainer.append(`<div class="row" id="row_${Math.floor(t / 6)}"></div>`);
   $(`#row_${Math.floor(t / 6)}`).append(`
     <div class="col l2 m4 s4" style="margin-bottom:3%;">
-      <img src="${tech_tools[t][0]}" class="responsive-img skill_stack skill_icon drop_shadow_filter">
+      <img src="${tech_tools[t][0]}" class="responsive-img skill_stack skill_icon drop_shadow_filter grayscale-50">
       <p class="center" style="font-size:1rem;">${tech_tools[t][1]}</p>
     </div>
   `);
@@ -113,8 +113,8 @@ const servicesContainer = $('#services_content');
 let servicesHTML = '';
 for (let s = 0; s < services.length; s++) {
   servicesHTML += `
-    <div class="col l4 m4 s12" style="text-align:center; height:40vh; margin-bottom:5%;">
-      <img src="${services[s][0]}" alt="" style="width:30%;" class="services_icon drop_shadow_filter rotate_hover">
+    <div class="col l4 m4 s12" style="text-align:center; height:40dvh; margin-bottom:3%;">
+      <img src="${services[s][0]}" alt="" style="width:30%;" class="services_icon drop_shadow_filter rotate_hover grayscale-50">
       <p style="font-weight:bold;">${services[s][1]}</p>
       <p>${services[s][2]}</p>
     </div>
@@ -129,7 +129,7 @@ let portfolioHTML = '';
 for (let p = 0; p < portfolio.length; p++) {
   portfolioHTML += `
     <div class="col l4 m12 s12">
-      <div class="col s12 card">
+      <div class="col s12 card" style="border-radius:30px;">
         <div class="card-image center-align">
           <img src="${portfolio[p][0]}" alt="" class="responsive-img materialboxed" id="system_preview" style="padding-top:10px;">
         </div>
@@ -214,13 +214,13 @@ const get_theme = () => {
     $nav.removeClass('white').addClass('grey darken-4')
       .find('a, .brand-logo, .sidenav-trigger').addClass('white-text');
     $sidenav.addClass('grey darken-4').find('a').addClass('white-text');
-    $body.addClass('grey darken-4 white-text');
+    $body.addClass('grey darken-3 white-text');
     $cards.addClass('transparent');
     $title.removeClass('grey-text text-darken-3 lighten-3').addClass('white-text');
     $buttons.addClass('white black-text').removeClass('black white-text');
     $upskillLinks.removeClass('black-text').addClass('white-text');
     $divider.removeClass('black').addClass('white');
-    $myPic.css('filter', 'brightness(70%)');
+    $myPic.css('filter', 'brightness(90%)');
 
   } else {
     $('#theme_button').html('Dark Mode<i class="material-icons black-text">brightness_2</i>');

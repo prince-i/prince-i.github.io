@@ -21,7 +21,7 @@
 <body>
     <div class="loader" id="loader"></div>
     <main id="main-screen">
-        <div class="navbar-fixed ">
+        <div class="navbar-fixed">
             <nav class="nav-extended white">
                 <div class="nav-wrapper">
                     <a href="#" class="brand-logo" style="color:black;" id="logo"></a>
@@ -49,8 +49,8 @@
         </ul>
 
 
-        <div class="row center">
-            <img src="Image/bkg.gif" class="responsive-img"style="width:100%;max-height: 70vh;object-fit: cover;">
+        <div class="row center" style="margin-top: -30px; z-index: -1; position: relative;">
+            <img src="Image/bkg.gif" class="responsive-img" style="width:100%; max-height: 60dvh; object-fit: cover; border-bottom-left-radius: 30px; border-bottom-right-radius: 30px;">
         </div>
 
         <!-- CONTENT -->
@@ -64,7 +64,7 @@
                     <!-- VIEW CERT -->
                     <div class="row col s12" id="certBtns">
                         <a data-target="certModal" id="cert_button" class="btn btn-small modal-trigger">CERTIFICATES</a>
-                        <a href="https://www.credly.com/users/prince-arce" id="badges_button" class="btn btn-small">BADGES</a>
+                        <a href="https://www.credly.com/users/prince-arce" id="badges_button" class="btn btn-small gradient-button">BADGES</a>
                     </div>
                 </div>
             </div>
@@ -87,18 +87,46 @@
             
         </div>
 
+        <!-- STATS -->
+        <div class="divider"></div>
+        <div class="row col s12" id="stats_content" style="margin-top:30px; margin-bottom:30px;">
+            <div class="col l3 m3 s12" style="text-align: center;" id="stat_cont">
+                <img src="Image/icons/puzzle.png" alt="" style="width:30%;" class="responsive-img rotate_hover grayscale-50">
+                <p style="font-size:30px;font-weight:bold;" id="works_completed_count">-</p>
+                <p>WORKS COMPLETED</p>
+            </div>
+
+            <div class="col l3 m3 s12" style="text-align: center;"  id="stat_cont">
+                <img src="Image/icons/schedule.svg" alt="" style="width:30%;" class="responsive-img rotate_hover grayscale-50">
+                <p style="font-size:30px;font-weight:bold;" id="yrs_of_exp">-</p>
+                <p>YEARS OF EXPERIENCE</p>
+            </div>
+
+            <div class="col l3 m3 s12" style="text-align: center;" id="stat_cont">
+                <img src="Image/icons/customer-engagement.png" alt="" style="width:30%;" class="responsive-img rotate_hover grayscale-50">
+                <p style="font-size:30px;font-weight:bold;" id="total_clients">-</p>
+                <p>TOTAL CLIENTS</p>
+            </div>
+
+            <div class="col l3 m3 s12" style="text-align: center;" id="stat_cont">
+                <img src="Image/icons/trophy.svg" alt="" style="width:30%;" class="responsive-img rotate_hover grayscale-50">
+                <p style="font-size:30px;font-weight:bold;" id="total_awards">-</p>
+                <p>AWARDS WON</p>
+            </div>
+        </div>
+
 
         <!-- ABOUT -->
         <div class="row" style="padding:10px;margin-top:5%;" id="about">
             <div class="row col s12 center">
-                <img src="Image/icon.png" style="width:10%;border-style:solid;border-width:10px;border-color:white;">
+                <img src="Image/icon.png" style="width:8%;border-style:solid;border-width:10px;border-color:white;">
             </div>
             <h2 class="center scramble-on-hover">About Me</h2>
             <div class="col l12 m12 s12" id="about_content">
                 <div class="row">
 					<div class="col s12">
 					  <!-- Flex wrapper -->
-					  <div class="row" style="display: flex; flex-wrap: wrap; align-items: stretch;">
+					  <div class="row card transparent" style="display: flex; flex-wrap: wrap; align-items: stretch;border-radius: 30px;">
 
 						<!-- G1 -->
 						<div class="col l3 m6 s12 center align-right" style="display: flex; flex-direction: column;">
@@ -106,7 +134,7 @@
 						</div>
 
 						<!-- G2 -->
-						<div class="col l3 m6 s12 align-left" id="profile_info" style="">
+						<div class="col l3 m6 s12 align-left" id="profile_info" style="display: flex; flex-direction: column; justify-content: center;">
 						  <!-- DATA WILL RENDER HERE FROM PORTFOLIO.JS -->
 						</div>
 
@@ -137,12 +165,12 @@
                     <h4 style="font-weight: bold;" class="center scramble-on-hover">CREDENTIALS</h4>
                     <div class="row">
                         <div class="col l4 m6 s12">
-                            <div class="card transparent">
+                            <div class="card transparent" style="border-radius: 30px;">
                                 <div class="card-content">
                                     <h5 class="scramble-on-hover">APP PROGRAMMER / MIS</h5> 
                                     <span>
                                         <i class="tiny material-icons">business</i> BATELEC II MAIN <br> 
-                                        <i class="tiny material-icons">date_range</i> (May 05, 2025 &mdash; Present) <span class="yellow-text">[ 7 mos. ]</span>
+                                        <i class="tiny material-icons">date_range</i> (May 05, 2025 &mdash; Present) <span class="green-text">[ 7 mos. ]</span>
                                         <br>
                                     </span>
                                     
@@ -154,12 +182,12 @@
                         </div>
 
                         <div class="col l4 m6 s12">
-                            <div class="card transparent">
+                            <div class="card transparent" style="border-radius: 30px;">
                                 <div class="card-content">
                                     <h5 class="scramble-on-hover">JUNIOR PROGRAMMER</h5>
                                     <span>
                                         <i class="tiny material-icons">business</i> PRECISION DATA SOLUTION <br> 
-                                        <i class="tiny material-icons">date_range</i> (November 11, 2021 &mdash; April 30, 2025) <span class="yellow-text">[ 3 yrs. and 5 mos. ]</span>
+                                        <i class="tiny material-icons">date_range</i> (November 11, 2021 &mdash; April 30, 2025) <span class="green-text">[ 3 yrs. and 5 mos. ]</span>
                                         <br>
                                     </span>
                                     
@@ -171,12 +199,12 @@
                         </div>
                         
                         <div class="col l4 m6 s12">
-                            <div class="card transparent">
+                            <div class="card transparent" style="border-radius: 30px;">
                                 <div class="card-content">
                                     <h5 class="scramble-on-hover">IT JUNIOR STAFF</h5>
                                     <span>
                                         <i class="tiny material-icons">business</i> FURUKAWA AUTOMATIVE SYSTEMS LIMA PHILIPPINES <br> 
-                                        <i class="tiny material-icons">date_range</i> (June 01, 2021 – November 04, 2021) <span class="yellow-text">[ 5 mos. ]</span>
+                                        <i class="tiny material-icons">date_range</i> (June 01, 2021 – November 04, 2021) <span class="green-text">[ 5 mos. ]</span>
                                         <br>
                                     </span>
                                     
@@ -188,12 +216,12 @@
                         </div>
 
                         <div class="col l4 m6 s12">
-                            <div class="card transparent">
+                            <div class="card transparent" style="border-radius: 30px;">
                                 <div class="card-content">
                                     <h5 class="scramble-on-hover">IT ASSOCIATE</h5>
                                     <span>
                                         <i class="tiny material-icons">business</i> FURUKAWA AUTOMATIVE SYSTEMS LIMA PHILIPPINES <br> 
-                                        <i class="tiny material-icons">date_range</i> (January 16, 2020 – May 30, 2021) <span class="yellow-text">[ 1 yr. and 5 mos. ]</span>
+                                        <i class="tiny material-icons">date_range</i> (January 16, 2020 – May 30, 2021) <span class="green-text">[ 1 yr. and 5 mos. ]</span>
                                         <br>
                                     </span>
                                    
@@ -240,36 +268,7 @@
         </div>
     </div>
 
-    <!-- STATS -->
-        <!-- <div class="row divider"></div> -->
-        <div class="row col s12" id="stats_content" style="margin-top:30px; margin-bottom:30px;">
-            <div class="col l3 m3 s12" style="text-align: center;" id="stat_cont">
-                <img src="Image/icons/completed-task.svg" alt="" style="width:30%;" class="responsive-img rotate_hover">
-                <p style="font-size:30px;font-weight:bold;" id="works_completed_count">-</p>
-                <p>WORKS COMPLETED</p>
-            </div>
-
-            <div class="col l3 m3 s12" style="text-align: center;"  id="stat_cont">
-                <img src="Image/icons/schedule.svg" alt="" style="width:30%;" class="responsive-img rotate_hover">
-                <p style="font-size:30px;font-weight:bold;" id="yrs_of_exp">-</p>
-                <p>YEARS OF EXPERIENCE</p>
-            </div>
-
-            <div class="col l3 m3 s12" style="text-align: center;" id="stat_cont">
-                <img src="Image/icons/target.svg" alt="" style="width:30%;" class="responsive-img rotate_hover">
-                <p style="font-size:30px;font-weight:bold;" id="total_clients">-</p>
-                <p>TOTAL CLIENTS</p>
-            </div>
-
-            <div class="col l3 m3 s12" style="text-align: center;" id="stat_cont">
-                <img src="Image/icons/trophy.svg" alt="" style="width:30%;" class="responsive-img rotate_hover">
-                <p style="font-size:30px;font-weight:bold;" id="total_awards">-</p>
-                <p>AWARD WON</p>
-            </div>
-
-        </div>
-
-    <!-- <div class="row divider"></div> -->
+    
     <!-- WORK -->
 
     <div class="row" id="work">

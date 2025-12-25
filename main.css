@@ -63,7 +63,9 @@ html{
 }
 
 #myPic{
-    border-radius:30px;
+    /* border-radius:30px; */
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
     object-fit: cover;
     /*height:70vh;*/
     /*border: 5px solid white;*/
@@ -78,6 +80,11 @@ html{
 
 #system_name, #nav-mobile a, #mobile-demo a, #logo {
     font-weight: bold;
+}
+
+nav {
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
 }
 
 #system_info {
@@ -135,8 +142,19 @@ html{
   }
 }
 
-#certs{
-
+.gradient-button{
+    background: linear-gradient(45deg, #ff6b6b, #f06595, #cc5de8, #845ef7, #5c7cfa, #339af0, #22b8cf, #20c997, #51cf66, #94d82d, #fcc419, #ff922b, #ff6b6b);
+    background-size: 300% 300%;
+    animation: gradientAnimation 5s ease infinite;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
 }
 
 #certs img {
@@ -196,3 +214,7 @@ html{
 .rotate_hover:hover {
   transform: rotate(15deg);
 }
+
+.grayscale-50 {
+    filter: grayscale(50%);
+} 
