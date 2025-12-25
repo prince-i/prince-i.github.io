@@ -50,7 +50,7 @@ body::-webkit-scrollbar-thumb {
     #work, #certBtns, #qoute, #contact_section, #title, #myName { text-align: center; }
     #stat_cont { border-bottom: 1px solid #b0b0b0; padding: 15px; margin-top: 1%; }
     #loader { object-fit: contain; }
-    #myPic { max-height: 300px; object-fit: contain; }
+    #myPic { max-height: 300px; object-fit: contain; border-radius:30px;}
 }
 
 
