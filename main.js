@@ -150,7 +150,7 @@ let networkHTML = '';
 for (let n = 0; n < networks.length; n++) {
   networkHTML += `
     <div class="col l4 m12 s12">
-      <div class="col s12 card">
+      <div class="col s12 card" style="border-radius:30px;">
         <div class="card-image center-align">
           <img src="${networks[n][0]}" alt="" class="responsive-img materialboxed" id="system_preview" style="padding-top:10px;">
         </div>
