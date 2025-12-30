@@ -64,7 +64,7 @@
                     <!-- VIEW CERT -->
                     <div class="row col s12" id="certBtns">
                         <a data-target="certModal" id="cert_button" class="btn btn-small modal-trigger">CERTIFICATES</a>
-                        <a href="https://www.credly.com/users/prince-arce" id="badges_button" class="btn btn-small gradient-button">BADGES</a>
+                        <a href="https://www.credly.com/users/prince-arce" target="_blank" id="badges_button" class="btn btn-small gradient-button">BADGES</a>
                     </div>
                 </div>
             </div>
@@ -126,7 +126,7 @@
                 <div class="row">
 					<div class="col s12">
 					  <!-- Flex wrapper -->
-					  <div class="row card transparent" style="display: flex; flex-wrap: wrap; align-items: stretch;border-radius: 30px;padding:10px;">
+					  <div class="row card transparent" style="display: flex; flex-wrap: wrap; align-items: stretch;border-radius: 20px;padding:10px;">
 
 						<!-- G1 -->
 						<div class="col l3 m6 s12 center align-right" style="display: flex; flex-direction: column;">
@@ -163,74 +163,8 @@
                 <!-- EXPERIENCE CREDENTIALS -->
                 <div class="col l12 m12 s12">
                     <h4 style="font-weight: bold;" class="center scramble-on-hover">CREDENTIALS</h4>
-                    <div class="row">
-                        <div class="col l4 m6 s12">
-                            <div class="card transparent" style="border-radius: 30px;">
-                                <div class="card-content">
-                                    <h5 class="scramble-on-hover">APP PROGRAMMER / MIS</h5> 
-                                    <span>
-                                        <i class="tiny material-icons">business</i> BATELEC II MAIN <br> 
-                                        <i class="tiny material-icons">date_range</i> (May 05, 2025 &mdash; Present) <span class="green-text">[ 7 mos. ]</span>
-                                        <br>
-                                    </span>
-                                    
-                                    <p style="text-justify:inherit;text-align: left;margin-top:15px;">
-                                       &mdash; Develop and deploy web applications that support digital transformation and paperless operations. Install, configure, and maintain secure and efficient web and database servers to ensure reliable system performance.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col l4 m6 s12">
-                            <div class="card transparent" style="border-radius: 30px;">
-                                <div class="card-content">
-                                    <h5 class="scramble-on-hover">JUNIOR PROGRAMMER</h5>
-                                    <span>
-                                        <i class="tiny material-icons">business</i> PRECISION DATA SOLUTION <br> 
-                                        <i class="tiny material-icons">date_range</i> (November 11, 2021 &mdash; April 30, 2025) <span class="green-text">[ 3 yrs. and 5 mos. ]</span>
-                                        <br>
-                                    </span>
-                                    
-                                    <p style="text-justify:inherit;text-align: left;margin-top:15px;">
-                                       &mdash; Design, troubleshoot, and optimize PHP-based ETL pipelines for efficient data integration and workflow automation. Develop process automation solutions and provide internal technical support to maintain smooth, reliable IT operations across teams.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="col l4 m6 s12">
-                            <div class="card transparent" style="border-radius: 30px;">
-                                <div class="card-content">
-                                    <h5 class="scramble-on-hover">IT JUNIOR STAFF</h5>
-                                    <span>
-                                        <i class="tiny material-icons">business</i> FURUKAWA AUTOMATIVE SYSTEMS LIMA PHILIPPINES <br> 
-                                        <i class="tiny material-icons">date_range</i> (June 01, 2021 – November 04, 2021) <span class="green-text">[ 5 mos. ]</span>
-                                        <br>
-                                    </span>
-                                    
-                                    <p style="text-justify:inherit;text-align: left;margin-top:15px;">
-                                      &mdash; Oversee system enhancements, maintain and support deployed applications, configure web servers, manage databases, and develop or debug software. Provide training and guidance to new web team members to ensure effective onboarding and continuous skill development.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col l4 m6 s12">
-                            <div class="card transparent" style="border-radius: 30px;">
-                                <div class="card-content">
-                                    <h5 class="scramble-on-hover">IT ASSOCIATE</h5>
-                                    <span>
-                                        <i class="tiny material-icons">business</i> FURUKAWA AUTOMATIVE SYSTEMS LIMA PHILIPPINES <br> 
-                                        <i class="tiny material-icons">date_range</i> (January 16, 2020 – May 30, 2021) <span class="green-text">[ 1 yr. and 5 mos. ]</span>
-                                        <br>
-                                    </span>
-                                   
-                                    <p style="text-justify:inherit;text-align: left;margin-top:15px;">
-                                      &mdash; Provide technical support in production environments, including system setup, network monitoring, LAMP-based web development, and server configuration. Manage system enhancements and maintain comprehensive technical documentation to improve operational efficiency.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="row col s12" id="credential_data">
+                        <!-- RENDER CREDENTIALS HERE -->
                     </div>
                 </div>
                 <!-- END CREDS -->
@@ -238,8 +172,8 @@
             </div>
 
             <div class="col s12" id="skills_content">
-                <h3 class="center hide-on-med-and-down scramble-on-hover">CORE TECHNICAL TOOLS</h3>
-                <h3 class="center hide-on-large-only scramble-on-hover">CORE TECH TOOLS</h3>
+                <h4 style="font-weight: bold;" class="center hide-on-med-and-down scramble-on-hover">CORE TECHNICAL TOOLS</h4>
+                <h4 style="font-weight: bold;" class="center hide-on-large-only scramble-on-hover">CORE TECH TOOLS</h4>
                 <div class="row" id="skills_content_sub">
                     <div class="col s12" id="tech_tools">
                         <!-- RENDER STACK TECH -->
@@ -253,13 +187,13 @@
     
     <!-- SERVICES -->
 
-     <div class="col s12">
-        <div class="parallax-container" style="height:500px;">
-        <div class="parallax"><img src="Image/hardware.jpg"></div>
+    <div class="col s12">
+        <div class="parallax-container" style="height:400px;">
+        <div class="parallax"><img src="Image/hardware.jpg" class="grayscale-50"></div>
     </div>
 
     <div class="col s12 container" id="services">
-        <h1 class="center scramble-on-hover">SERVICES</h1>
+        <h4 style="font-weight: bold;" class="center scramble-on-hover">SERVICES</h4>
         <p class="center scramble-on-hover">What can I do?</p>
         <!-- CARDS -->
             <div class="row" id="services_content">
@@ -270,11 +204,10 @@
 
     
     <!-- WORK -->
-
     <div class="row" id="work">
-        <h1 class="center scramble-on-hover">PORTFOLIO</h1>
-        <p class="center">My previous works...</p>
-        <div class="col l12 m12 s12" id="work">
+        <h4 style="font-weight: bold;" class="center scramble-on-hover">PORTFOLIO</h4>
+        <p class="center green-text">[My previous works...]</p>
+        <div class="row col s12" id="portfolio_content">
             <!-- WORKS WILL RENDER HERE -->
         </div> 
     </div>
@@ -282,7 +215,7 @@
 
     <!-- NETWORK DESIGN -->
     <div class="row">
-        <h3 class="center scramble-on-hover">IT NETWORKING AND OPS</h3>
+        <h4 style="font-weight: bold;" class="center scramble-on-hover">IT NETWORKING AND OPS</h4>
         <div class="col l12 m12 s12" id="network_design">
             <!-- NETWORK DESIGNS WILL RENDER HERE -->
         </div> 
@@ -291,8 +224,7 @@
    <div class="row"></div>
     <!--</CONTENT>  -->
 
-    
-
+    <!-- CONTACT -->
     <div class="row" id="contact">
         <div class="row" style="align-items: center;">
 			<div class="col l6 m6 s12" style="display: flex; justify-content: center; align-items: center;">
@@ -315,7 +247,7 @@
 			</div>
         </div>
     </div>
-    <!-- <div class="row divider"></div> -->
+
     <div class="row center">
         <a href="#main-screen" id="bktotopbtn" class="btn black btn-large z-depth-1" style="font-size:20px;border-radius: 30px;">Back to top</a>
     </div>

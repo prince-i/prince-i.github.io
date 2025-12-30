@@ -80,11 +80,10 @@ $(document).ready(function() {
         }, 30);
       });
     });
-    // ----------
 });
 
 
-// DATA -------------------------------------------------------------------------------------------------------------------------
+// ==========================================================================================================================================================
    
 // LOAD ABOUT
 const aboutContainer = $('#profile_info');
@@ -124,14 +123,16 @@ servicesContainer.append(servicesHTML);
 
 
 // LOAD PORTFOLIO
-const portfolioContainer = $('#work');
+const portfolioContainer = $('#portfolio_content');
 let portfolioHTML = '';
 for (let p = 0; p < portfolio.length; p++) {
+  if (p % 3 === 0) portfolioHTML += `<div class="row">`; // new row every 3 cards
+
   portfolioHTML += `
     <div class="col l4 m12 s12">
-      <div class="col s12 card" style="border-radius:30px;">
+      <div class="card">
         <div class="card-image center-align">
-          <img src="${portfolio[p][0]}" alt="" class="responsive-img materialboxed" id="system_preview" style="padding-top:10px;">
+          <img src="${portfolio[p][0]}" alt="" class="responsive-img materialboxed" style="padding-top:10px;">
         </div>
         <div class="card-content">
           <p id="system_name">${portfolio[p][1]}</p>
@@ -140,7 +141,10 @@ for (let p = 0; p < portfolio.length; p++) {
       </div>
     </div>
   `;
+
+  if (p % 3 === 2 || p === portfolio.length - 1) portfolioHTML += `</div>`; // close row
 }
+
 portfolioContainer.append(portfolioHTML);
 
 
@@ -160,7 +164,26 @@ for (let n = 0; n < networks.length; n++) {
 }
 networkContainer.append(networkHTML);
 
-// END DATA ------------------------------------------------------------------------------------------------------------------------------------------------
+// LOAD CREDENTIALS
+const credentialContainer = $('#credential_data');
+let credentialHTML = '';
+for (let c = 0; c < credentials.length; c++) {
+  credentialHTML += `
+    <div class="l4 m6 col s12">
+      <div class="card transparent" style="border-radius: 30px; margin-bottom: 20px;">
+        <div class="card-content">
+          <h5 style="font-weight: bold;">${credentials[c][0]}</h5>
+          <h6 style="font-style: italic; margin-bottom: 10px;">${credentials[c][1]}</h6>
+          <p><b class="green-text">[ ${credentials[c][2]} ]</b></p>
+          <p>${credentials[c][3]}</p>
+        </div>
+      </div>
+    </div>
+  `;
+}
+credentialContainer.append(credentialHTML);
+
+// ===========================================================================================================================================================
 
 // TYPEWRITER
 const txt = 'DATA & APPLICATIONS PROGRAMMER | IT ETHICIST';
@@ -185,8 +208,8 @@ function typeWriter() {
 }
 
 
-
-// DEFAULT TO DARKMODE
+// ===========================================================================================================================================================
+// THEME TOGGLER - DEFAULT TO DARKMODE
 if (!localStorage.getItem('theme')) {
   localStorage.setItem('theme', 'dark');
 }
@@ -214,7 +237,7 @@ const get_theme = () => {
     $nav.removeClass('white').addClass('grey darken-4')
       .find('a, .brand-logo, .sidenav-trigger').addClass('white-text');
     $sidenav.addClass('grey darken-4').find('a').addClass('white-text');
-    $body.addClass('grey darken-3 white-text');
+    $body.addClass('grey darken-4 white-text');
     $cards.addClass('transparent');
     $title.removeClass('grey-text text-darken-3 lighten-3').addClass('white-text');
     $buttons.addClass('white black-text').removeClass('black white-text');
@@ -251,3 +274,5 @@ $('#theme_button, #theme_button_nav').on('click', toggleTheme);
 
 // APPLY THEME ON PAGE LOAD
 $(document).ready(get_theme);
+
+// ===========================================================================================================================================================
