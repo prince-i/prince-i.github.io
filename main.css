@@ -3,9 +3,13 @@
     src: url('Fonts/Montserrat-Regular.ttf');
 }
 
+@font-face{
+  font-family: Consolas_Custom;
+  src: url('Fonts/CONSOLA.TTF');
+}
 #main-screen{
     display:none;
-    font-family:consolas;
+    font-family:Consolas_Custom;
 }
 
 html{
