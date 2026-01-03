@@ -186,7 +186,7 @@ credentialContainer.append(credentialHTML);
 // ===========================================================================================================================================================
 
 // TYPEWRITER
-const txt = 'DATA & APPLICATIONS PROGRAMMER | IT ETHICIST';
+const txt = 'APPLICATIONS PROGRAMMER | IT ETHICIST';
 const speed = 30;
 const sChars = "!@#$%^&*()_+-=[]{}|;:',.<>?/`~";
 let i = 0;
