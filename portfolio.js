@@ -10,6 +10,7 @@ var about = [
 
 // PORTFOLIO DATA
 let portfolio = [
+	['Image/systems/ama-ogcs-capstone.png','AMA Lipa Online Graduate Completion Portal - Capstone Project','Web Application / April 2019'],
 	['Image/systems/it_installer.jpg','IT System Installer and Web Directory Portal','Web Application / July 2020'],
 	['Image/systems/PE.PNG','PE Application Launcher','Desktop Application / August 2020'],
 	['Image/systems/progresscounter.jpg','Production Progress Counter','Web Application / November 2020'],
