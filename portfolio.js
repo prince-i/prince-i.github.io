@@ -41,7 +41,7 @@ let portfolio = [
 	['Image/systems/mint.png','<a href="https://mis.batelec2.ph/mint/index.php" target="_blank"> MIS Integrated Network of Tickets [MINT] &mdash; BATELEC II</a>','Web App (Programmer) / July 2025'],
 	['Image/systems/paytrack.png','PayTrack - Payroll with Attendance Management with RFID-based Time Tracking','Web App (Tech Lead) / August 2025'],
 	['Image/systems/motorpool.png','Motorpool Vehicle and Maintenance Management System [MpVMMS] - BATELEC II','Web App (Programmer) / August 2025'],
-	['Image/systems/chatbot.png','Rule-Based Social Media Chatbot Assistant using Natural Language Processing - BATELEC II','NLP/Bot/Webhook (Programmer) / September 2025'],
+	['Image/systems/chatbot.png','An NLP-Based Automated Social Media Chatbot Using Term Frequency-Inverse Document Frequency Vectorization and Cosine Similarity with N-gram Tokenization and A Rule-based Responses - BATELEC II','NLP/Bot/Webhook (Programmer) / September 2025'],
 	['Image/systems/cert-gen.png','Certificate Multiplier Generating Tool','Python Web App/ Replit (Programmer) / November 2025'],
 	['Image/systems/emp-movement.png','Employee Movement Portal - For Internal &amp; External Recruitment Monitoring - BATELEC II','Web App (Programmer) / November 2025'],
 	['Image/systems/brgystoninolipaportal.png','<a href="https://barangaystoninolipa.com" target="_blank">Barangay Sto. Nino Lipa Portal - Capstone</a>','Web App/ ReactJS (Reverse & Deploy) / November 2025'],
@@ -127,8 +127,8 @@ let credentials = [
 
 // ACHIEVEMENTS
 let achievements = {
-	works_completed: 36,
-	years_of_exp:5,
+	works_completed: 37,
+	years_of_exp:6,
 	total_clients:28,
 	awards:0
 };
