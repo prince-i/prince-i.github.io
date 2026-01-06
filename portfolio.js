@@ -101,7 +101,7 @@ let credentials = [
      [
         "APP PROGRAMMER / MIS",
         "BATELEC II MAIN (May 05, 2025 — Present)",
-        "7 mos.",
+        "8 mos.",
         "&mdash; Develop and deploy web applications that support digital transformation and paperless operations. Install, configure, and maintain secure and efficient web and database servers to ensure reliable system performance."
     ],
     [
