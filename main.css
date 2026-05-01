@@ -94,8 +94,36 @@ nav {
     display: none;
 }
 
-.skill_icon {
-    width: 200px;
+#tech_tools .skill_icon {
+  width: 100%;
+  max-width: 110px;
+  height: 84px;
+  object-fit: contain;
+}
+
+#tech_tools .tech-stack-item {
+  margin-bottom: 3%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#tech_tools .tech-label {
+  font-size: 0.95rem;
+  line-height: 1.25;
+  min-height: 2.5em;
+}
+
+@media (max-width: 600px) {
+  #tech_tools .skill_icon {
+    max-width: 84px;
+    height: 72px;
+  }
+
+  #tech_tools .tech-label {
+    font-size: 0.8rem;
+  }
 }
 
 .loader,

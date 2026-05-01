@@ -97,11 +97,10 @@ aboutContainer.append(aboutHTML);
 /* LOAD TECH STACK */
 const techContainer = $('#tech_tools');
 for (let t = 0; t < tech_tools.length; t++) {
-  if (t % 6 === 0) techContainer.append(`<div class="row" id="row_${Math.floor(t / 6)}"></div>`);
-  $(`#row_${Math.floor(t / 6)}`).append(`
-    <div class="col l2 m4 s4" style="margin-bottom:3%;">
+  techContainer.append(`
+    <div class="col l2 m4 s4 tech-stack-item">
       <img src="${tech_tools[t][0]}" class="responsive-img skill_stack skill_icon drop_shadow_filter grayscale-50">
-      <p class="center" style="font-size:1rem;">${tech_tools[t][1]}</p>
+      <p class="center tech-label">${tech_tools[t][1]}</p>
     </div>
   `);
 }
