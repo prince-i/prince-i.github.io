@@ -75,11 +75,11 @@ let tech_tools = [
 // SERVICES OFFERED
 let services = [
 	['Image/icons/landing-page.png','WEB DESIGN','Skilled web designer with experience in front-end languages (HTML5, CSS3, JavaScript) and libraries such as jQuery and <a href="https://materializecss.com" target="_blank" rel="noopener noreferrer">Materialize-CSS</a>. Proficient with website builders including Google Sites, WordPress, Webflow, and Squarespace.'],
-	['Image/icons/coding.svg','WEB DEVELOPMENT','Deployed web applications using PHP7, JavaScript, AJAX, JSON, NodeJS, and MySQL.'],
+	['Image/icons/coding.svg','PROGRAMMING','Proficient in developing applications using PHP7, MySQL, MSSQL, AJAX, JavaScript, Node.js, VB WinForms, and Python, with experience in scripting and automation using MSDOS, PowerShell, and Bash.'],
 	['Image/icons/responsive-design.png','RESPONSIVE DESIGN','Knowledgeable in modern web design for any screen size.'],
-	['Image/icons/technical-support.png','IT & OT TECHNICAL SUPPORT','Deliver L1 - L3 IT support by resolving a range of technical issues for clients or organizations.'],
+	['Image/icons/technical-support.png','IT & OT TECHNICAL SUPPORT','Provide L1–L3 IT and OT support by troubleshooting software, hardware, network, and operational technology systems for clients and organizations.'],
 	['Image/icons/digital-art.png','DIGITAL DESIGN','Design visuals for websites, branding, logos, infographics, presentations, and social media.'],
-	['Image/icons/ai.png','DATA SCIENCE','Analyzing NLP and data models uses frameworks like PyTorch, TensorFlow, Keras, YOLOv8/ YOLOv10, Scikit-learn, NLTK, TF-IDF, cosine similarity, and OpenCV to process text and images.'],
+	['Image/icons/ai.png','DATA SCIENCE & AI','Experience in AI and Data Science: NLP using TF-IDF, Cosine Similarity, and N-grams; pretrained LLMs, RAG, and fine-tuning; Computer Vision with YOLOv8, YOLOv10, and YOLO26; and analytics including forecasting, predictive modeling, time series analysis, and data visualization using Python, Pandas, Scikit-learn, SQL, Grafana, Power BI, and Excel.'],
 	['Image/icons/server-storage.png','SERVER ADMINISTRATION','Manages and maintains server infrastructure to ensure optimal performance and security.']
 ];
 
