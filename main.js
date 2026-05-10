@@ -169,7 +169,7 @@ let credentialHTML = '';
 for (let c = 0; c < credentials.length; c++) {
   credentialHTML += `
     <div class="l4 m6 col s12">
-      <div class="card transparent" style="border-radius: 30px; margin-bottom: 20px;">
+      <div class="card transparent" style="border-radius: 30px; margin-bottom: 10px;">
         <div class="card-content">
           <h5 style="font-weight: bold;">${credentials[c][0]}</h5>
           <h6 style="font-style: italic; margin-bottom: 10px;">${credentials[c][1]}</h6>

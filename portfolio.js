@@ -45,6 +45,7 @@ let portfolio = [
 	['Image/systems/cert-gen.png','Certificate Multiplier Generating Tool','Python Web App/ Replit (Programmer) / November 2025'],
 	['Image/systems/emp-movement.png','Employee Movement Portal - For Internal &amp; External Recruitment Monitoring - BATELEC II','Web App (Programmer) / November 2025'],
 	['Image/systems/brgystoninolipaportal.png','<a href="https://barangaystoninolipa.com" target="_blank">Barangay Sto. Nino Lipa Portal - Capstone</a>','Web App/ ReactJS (Reverse & Deploy) / November 2025'],
+	['Image/systems/batelec_ddcc.png','<a href="https://mis.batelec2.ph/ddcc_portal" target="_blank">BATELEC II DDCC & Grid Operations Monitoring Portal</a>','Web App (Programmer) / December 2025']
 ];
 
 
@@ -79,8 +80,8 @@ let services = [
 	['Image/icons/responsive-design.png','RESPONSIVE DESIGN','Knowledgeable in modern web design for any screen size.'],
 	['Image/icons/technical-support.png','IT & OT TECHNICAL SUPPORT','Provide L1–L3 IT and OT support by troubleshooting software, hardware, network, and operational technology systems for clients and organizations.'],
 	['Image/icons/digital-art.png','DIGITAL DESIGN','Design visuals for websites, branding, logos, infographics, presentations, and social media.'],
-	['Image/icons/ai.png','DATA SCIENCE & AI','Experience in AI and Data Science: NLP using TF-IDF, Cosine Similarity, and N-grams; pretrained LLMs, RAG, and fine-tuning; Computer Vision with YOLOv8, YOLOv10, and YOLO26; and analytics including forecasting, predictive modeling, time series analysis, and data visualization using Python, Pandas, Scikit-learn, SQL, Grafana, Power BI, and Excel.'],
-	['Image/icons/server-storage.png','SERVER ADMINISTRATION','Manages and maintains server infrastructure to ensure optimal performance and security.']
+	['Image/icons/ai.png','DATA SCIENCE & AI','Experience in AI and Data Science: NLP with TF-IDF, cosine similarity, and n-grams; pretrained LLMs, RAG, and fine-tuning; computer vision with YOLOv8, YOLOv10, and YOLO26; and analytics with Python, Pandas, Scikit-learn, SQL, Grafana and Power BI.'],
+	['Image/icons/server-storage.png','SERVER ADMINISTRATION','Manages and maintains server infrastructure to support reliable performance, security, and operational efficiency.']
 ];
 
 
@@ -101,7 +102,7 @@ let credentials = [
      [
         "APP PROGRAMMER / MIS",
         "BATELEC II MAIN (May 05, 2025 — Present)",
-        "9 mos.",
+        "1 Yr.",
         "&mdash; Develop and deploy web applications that support digital transformation and paperless operations. Install, configure, and maintain secure and efficient web and database servers to ensure reliable system performance."
     ],
     [
