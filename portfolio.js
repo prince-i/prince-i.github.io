@@ -45,7 +45,9 @@ let portfolio = [
 	['Image/systems/cert-gen.png','Certificate Multiplier Generating Tool','Python Web App/ Replit (Programmer) / November 2025'],
 	['Image/systems/emp-movement.png','Employee Movement Portal - For Internal &amp; External Recruitment Monitoring - BATELEC II','Web App (Programmer) / November 2025'],
 	['Image/systems/brgystoninolipaportal.png','<a href="https://barangaystoninolipa.com" target="_blank">Barangay Sto. Nino Lipa Portal - Capstone</a>','Web App/ ReactJS (Reverse & Deploy) / November 2025'],
-	['Image/systems/batelec_ddcc.png','<a href="https://mis.batelec2.ph/ddcc_portal" target="_blank">BATELEC II DDCC & Grid Operations Monitoring Portal</a>','Web App (Programmer) / December 2025']
+	['Image/systems/batelec_ddcc.png','<a href="https://mis.batelec2.ph/ddcc_portal" target="_blank">BATELEC II DDCC & Grid Operations Monitoring Portal</a>','Web App (Programmer) / December 2025'],
+	// ['Image/systems/energy_hourly_summarizer.png','Hourly Energy and NGCP Metering Summary System','Web App / Automation (Programmer) / May 2026'],
+	['Image/systems/lwapforecaster.png','LWAP Forecaster','Web App / Data Model (Programmer) / May 2026'],
 ];
 
 
