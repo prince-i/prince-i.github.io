@@ -82,7 +82,7 @@ let services = [
 	['Image/icons/responsive-design.png','RESPONSIVE DESIGN','Knowledgeable in modern web design for any screen size.'],
 	['Image/icons/technical-support.png','IT & OT TECHNICAL SUPPORT','Provide L1–L3 IT and OT support by troubleshooting software, hardware, network, and operational technology systems for clients and organizations.'],
 	['Image/icons/digital-art.png','DIGITAL DESIGN','Design visuals for websites, branding, logos, infographics, presentations, and social media.'],
-	['Image/icons/ai.png','DATA SCIENCE & AI','Experience in AI and Data Science: NLP with TF-IDF, cosine similarity, and n-grams; pretrained LLMs, RAG, and fine-tuning; computer vision with YOLOv8, YOLOv10, and YOLO26; and analytics with Python, Pandas, Scikit-learn, SQL, Grafana and Power BI.'],
+	['Image/icons/ai.png','AI','Experience in AI and Data Science: NLP with TF-IDF, cosine similarity, and n-grams; pretrained LLMs, RAG, and fine-tuning; computer vision with YOLOv8, YOLOv10, and YOLO26; and analytics with Python, Pandas, Scikit-learn, SQL, Grafana and Power BI.'],
 	['Image/icons/server-storage.png','SERVER ADMINISTRATION','Manages and maintains server infrastructure to support reliable performance, security, and operational efficiency.']
 ];
 
@@ -130,7 +130,7 @@ let credentials = [
 
 // ACHIEVEMENTS
 let achievements = {
-	works_completed: 37,
+	works_completed: 39,
 	years_of_exp:6,
 	total_clients:28,
 	awards:0
