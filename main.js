@@ -24,11 +24,6 @@ $(document).ready(function() {
     });
 
     // PDF MODAL
-    $('#cert_button').on('click', function() {
-        var pdfUrl = 'Image/certification/CERT-COMPILATION.pdf'; // Replace with your PDF URL
-        $('#pdfIframe').attr('src', pdfUrl);
-        $('#certModal').modal('open'); // Open the modal
-    });
 
     // Clear the iframe source when the modal is closed
     $('#certModal').on('modalclose', function() {
