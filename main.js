@@ -1,85 +1,85 @@
-$(document).ready(function() {
-    $('#main-screen').fadeIn(1500);
-    $('.sidenav').sidenav({
-        draggable: true,
-        inDuration: 600,
-        outDuration: 500
+$(document).ready(function () {
+  $('#main-screen').fadeIn(1500);
+  $('.sidenav').sidenav({
+    draggable: true,
+    inDuration: 600,
+    outDuration: 500
+  });
+  $('.modal').modal({
+    inDuration: 600,
+    outDuration: 500
+  });
+  $('.tooltipped').tooltip();
+  $('.parallax').parallax();
+  $('.materialboxed').materialbox();
+  typeWriter();
+
+  document.querySelector('#loader').classList.remove("loader");
+
+  $('.tooltipped').tooltip();
+  get_theme();
+
+  $('body').on('contextmenu', 'img', function (e) {
+    return false;
+  });
+
+  // PDF MODAL
+
+  // Clear the iframe source when the modal is closed
+  $('#certModal').on('modalclose', function () {
+    $('#pdfIframe').attr('src', '');
+  });
+
+
+  // WORKS COUNTER
+  $('#works_completed_count').html(achievements.works_completed);
+  $('#yrs_of_exp').html(achievements.years_of_exp);
+  $('#total_clients').html(achievements.total_clients);
+  $('#total_awards').html(achievements.awards);
+
+
+  //TEXT SCRAMBLE
+  const specialChars = "!@#$%^&*()_+-=[]{}|;:',.<>?/`~";
+
+  document.querySelectorAll('.scramble-on-hover').forEach(element => {
+    const originalText = element.textContent;
+    let interval = null;
+    let hasStarted = false;
+    let hasCompleted = false;
+
+    element.addEventListener('mouseenter', () => {
+      if (hasCompleted || hasStarted) return;
+
+      hasStarted = true;
+      let iterations = 0;
+
+      interval = setInterval(() => {
+        const scrambled = originalText
+          .split('')
+          .map((char, i) => {
+            if (char === ' ') return ' ';
+            if (i < iterations) return originalText[i];
+            return specialChars[Math.floor(Math.random() * specialChars.length)];
+          })
+          .join('');
+
+        element.textContent = scrambled;
+
+        iterations += 1 / 3;
+        if (iterations >= originalText.length) {
+          clearInterval(interval);
+          element.textContent = originalText;
+          hasCompleted = true;
+          hasStarted = false;
+        }
+      }, 30);
     });
-    $('.modal').modal({
-      inDuration:600,
-      outDuration:500
-    });
-    $('.tooltipped').tooltip();
-    $('.parallax').parallax();
-    $('.materialboxed').materialbox();
-    typeWriter();
-    
-    document.querySelector('#loader').classList.remove("loader");
-    
-    $('.tooltipped').tooltip();
-    get_theme();
-
-    $('body').on('contextmenu', 'img', function(e) {
-        return false;
-    });
-
-    // PDF MODAL
-
-    // Clear the iframe source when the modal is closed
-    $('#certModal').on('modalclose', function() {
-        $('#pdfIframe').attr('src', '');
-    });
-
-    
-    // WORKS COUNTER
-    $('#works_completed_count').html(achievements.works_completed);
-    $('#yrs_of_exp').html(achievements.years_of_exp);
-    $('#total_clients').html(achievements.total_clients);
-    $('#total_awards').html(achievements.awards);
-
-
-    //TEXT SCRAMBLE
-    const specialChars = "!@#$%^&*()_+-=[]{}|;:',.<>?/`~";
-
-    document.querySelectorAll('.scramble-on-hover').forEach(element => {
-      const originalText = element.textContent;
-      let interval = null;
-      let hasStarted = false;
-      let hasCompleted = false;
-
-      element.addEventListener('mouseenter', () => {
-        if (hasCompleted || hasStarted) return;
-
-        hasStarted = true;
-        let iterations = 0;
-
-        interval = setInterval(() => {
-          const scrambled = originalText
-            .split('')
-            .map((char, i) => {
-              if (char === ' ') return ' ';
-              if (i < iterations) return originalText[i];
-              return specialChars[Math.floor(Math.random() * specialChars.length)];
-            })
-            .join('');
-
-          element.textContent = scrambled;
-
-          iterations += 1 / 3;
-          if (iterations >= originalText.length) {
-            clearInterval(interval);
-            element.textContent = originalText;
-            hasCompleted = true;
-            hasStarted = false;
-          }
-        }, 30);
-      });
-    });
+  });
 });
 
 
 // ==========================================================================================================================================================
-   
+
 // LOAD ABOUT
 const aboutContainer = $('#profile_info');
 let aboutHTML = '';

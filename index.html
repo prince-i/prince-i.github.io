@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="shortcut icon" href="Image/icon.png" type="image/x-icon">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Prince Arce, IT Specialist, Full-Stack Developer, AI Developer, AI Enthusiast, Data Science, Machine Learning, Web Developer, Backend Developer, System Analyst, IT Operations, Server Administration, DevOps, Database Management, Technical Lead, Project Manager, Automation, IT Infrastructure, Software Development, Freelance IT, Tech Consultant, Web Applications, Cloud Deployment, Programming Expert, Python, PHP, JavaScript, SQL, AI Solutions, Digital Transformation, UI/UX, Enterprise Systems, IT Strategy, IT Leadership">
+    <meta name="keywords"
+        content="Prince Arce, IT Specialist, Full-Stack Developer, AI Developer, AI Enthusiast, Data Science, Machine Learning, Web Developer, Backend Developer, System Analyst, IT Operations, Server Administration, DevOps, Database Management, Technical Lead, Project Manager, Automation, IT Infrastructure, Software Development, Freelance IT, Tech Consultant, Web Applications, Cloud Deployment, Programming Expert, Python, PHP, JavaScript, SQL, AI Solutions, Digital Transformation, UI/UX, Enterprise Systems, IT Strategy, IT Leadership">
     <meta name="description" content="APPLICATIONS PROGRAMMER | IT OFFICER">
     <meta http-equiv="Access-Control-Allow-Origin" content="*">
     <meta name="robots" content="noindex, nofollow">
     <title>Prince Arce</title>
-    <link rel ="preconnect" href="materialize/css/materialize.min.css"/>
+    <link rel="preconnect" href="materialize/css/materialize.min.css" />
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="materialize/css/materialize.min.css">
-    <link rel ="preconnect" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel ="manifest" href="manifest.json"/>
-    
+    <link rel="manifest" href="manifest.json" />
+
 </head>
+
 <body>
     <div class="loader" id="loader"></div>
     <main id="main-screen">
@@ -25,17 +28,19 @@
             <nav class="nav-extended white">
                 <div class="nav-wrapper">
                     <a href="#" class="brand-logo" style="color:black;" id="logo"></a>
-                    <a href="#" data-target="mobile-demo" class="sidenav-trigger" style="color:black;"><i class="material-icons">menu</i></a>
-                    <ul id="nav-mobile" class="right hide-on-med-and-down nav-linked" >
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger" style="color:black;"><i
+                            class="material-icons">menu</i></a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down nav-linked">
                         <li><a href="#" class="scramble-on-hover">Home</a></li>
                         <li><a href="#about" class="scramble-on-hover">About</a></li>
                         <li><a href="#services" class="scramble-on-hover">Services</a></li>
                         <li><a href="#work" class="scramble-on-hover">Works</a></li>
                         <li><a href="#contact" class="scramble-on-hover">Contact</a></li>
-                        <li><a href="javascript:void()" id="theme_button_nav">Dark Mode<i class="material-icons black-text" id="theme_icon">brightness_2</i></a></li>
+                        <li><a href="javascript:void()" id="theme_button_nav">Dark Mode<i
+                                    class="material-icons black-text" id="theme_icon">brightness_2</i></a></li>
                     </ul>
                 </div>
-              </nav>
+            </nav>
         </div>
 
 
@@ -45,12 +50,14 @@
             <li><a href="#services" class="sidenav-close scramble-on-hover">Services</a></li>
             <li><a href="#work" class="sidenav-close scramble-on-hover">Work</a></li>
             <li><a href="#contact" class="sidenav-close scramble-on-hover">Contact</a></li>
-            <li><a href="javascript:void()" class="flow-text sidenav-close" style="color:black;" id="theme_button">Dark Mode<i class="material-icons black-text" id="theme_icon">brightness_2</i></a></li>
+            <li><a href="javascript:void()" class="flow-text sidenav-close" style="color:black;" id="theme_button">Dark
+                    Mode<i class="material-icons black-text" id="theme_icon">brightness_2</i></a></li>
         </ul>
 
 
         <div class="row center" style="margin-top: -20px; z-index: -1; position: relative;">
-            <img src="Image/Kyoto.png" class="responsive-img" style="width:100%; max-height: 60dvh; object-fit: cover; border-bottom-left-radius: 30px; border-bottom-right-radius: 30px;">
+            <img src="Image/Kyoto.png" class="responsive-img"
+                style="width:100%; max-height: 60dvh; object-fit: cover; border-bottom-left-radius: 30px; border-bottom-right-radius: 30px;">
         </div>
 
         <!-- CONTENT -->
@@ -63,15 +70,18 @@
 
                     <!-- VIEW CERT -->
                     <div class="row col s12" id="certBtns">
-                        <a href="Image/certification/CERT-COMPILATION.pdf" target="_blank" id="cert_button" class="btn btn-small modal-trigger">CERTIFICATES</a>
-                        <a href="https://www.credly.com/users/prince-arce" target="_blank" id="badges_button" class="btn btn-small gradient-button">BADGES</a>
+                        <a href="Image/certification/CERT-COMPILATION.pdf" target="_blank" id="cert_button"
+                            class="btn btn-small modal-trigger">CERTIFICATES</a>
+                        <a href="https://www.credly.com/users/prince-arce" target="_blank" id="badges_button"
+                            class="btn btn-small gradient-button">BADGES</a>
                     </div>
                 </div>
             </div>
 
             <!-- ------------------------------------------------------------------------- -->
             <!-- {PDF CERT MODAL} -->
-           <div class="modal bottom-sheet modal-fixed-footer #212121 grey darken-4" id="certModal" style="min-height: 100vh; overflow: hidden;">
+            <div class="modal bottom-sheet modal-fixed-footer #212121 grey darken-4" id="certModal"
+                style="min-height: 100vh; overflow: hidden;">
                 <div class="modal-content" id="certModalContent" style="padding: 0; height: 100%; overflow: hidden;">
                     <div class="responsive-iframe" style="height: 100%; overflow: hidden;">
                         <iframe id="pdfIframe" src="" frameborder="0" style="width: 100%; height: 100%;"></iframe>
@@ -87,25 +97,29 @@
         <div class="divider"></div>
         <div class="row col s12" id="stats_content" style="margin-top:30px; margin-bottom:30px;">
             <div class="col l3 m3 s12" style="text-align: center;" id="stat_cont">
-                <img src="Image/icons/puzzle.png" alt="" style="width:30%;" class="responsive-img rotate_hover grayscale-50">
+                <img src="Image/icons/puzzle.png" alt="" style="width:30%;"
+                    class="responsive-img rotate_hover grayscale-50">
                 <p style="font-size:30px;font-weight:bold;" id="works_completed_count">-</p>
                 <p>WORKS COMPLETED</p>
             </div>
 
-            <div class="col l3 m3 s12" style="text-align: center;"  id="stat_cont">
-                <img src="Image/icons/schedule.svg" alt="" style="width:30%;" class="responsive-img rotate_hover grayscale-50">
+            <div class="col l3 m3 s12" style="text-align: center;" id="stat_cont">
+                <img src="Image/icons/schedule.svg" alt="" style="width:30%;"
+                    class="responsive-img rotate_hover grayscale-50">
                 <p style="font-size:30px;font-weight:bold;" id="yrs_of_exp">-</p>
                 <p>YEARS OF EXPERIENCE</p>
             </div>
 
             <div class="col l3 m3 s12" style="text-align: center;" id="stat_cont">
-                <img src="Image/icons/customer-engagement.png" alt="" style="width:30%;" class="responsive-img rotate_hover grayscale-50">
+                <img src="Image/icons/customer-engagement.png" alt="" style="width:30%;"
+                    class="responsive-img rotate_hover grayscale-50">
                 <p style="font-size:30px;font-weight:bold;" id="total_clients">-</p>
                 <p>TOTAL CLIENTS</p>
             </div>
 
             <div class="col l3 m3 s12" style="text-align: center;" id="stat_cont">
-                <img src="Image/icons/trophy.svg" alt="" style="width:30%;" class="responsive-img rotate_hover grayscale-50">
+                <img src="Image/icons/trophy.svg" alt="" style="width:30%;"
+                    class="responsive-img rotate_hover grayscale-50">
                 <p style="font-size:30px;font-weight:bold;" id="total_awards">-</p>
                 <p>AWARDS WON</p>
             </div>
@@ -120,35 +134,51 @@
             <h2 class="center scramble-on-hover">About Me</h2>
             <div class="col l12 m12 s12" id="about_content">
                 <div class="row">
-					<div class="col s12">
-					  <!-- Flex wrapper -->
-					  <div class="row card transparent" style="display: flex; flex-wrap: wrap; align-items: stretch;border-radius: 20px;padding:10px;">
+                    <div class="col s12">
+                        <!-- Flex wrapper -->
+                        <div class="row card transparent"
+                            style="display: flex; flex-wrap: wrap; align-items: stretch;border-radius: 20px;padding:10px;">
 
-						<!-- G1 -->
-						<div class="col l3 m6 s12 center align-right" style="display: flex; flex-direction: column;">
-						  <img src="Image/ai_engineer.png" alt="" class="responsive-img" id="myPic" style="margin: auto;height:100%;">
-						</div>
+                            <!-- G1 -->
+                            <div class="col l3 m6 s12 center align-right"
+                                style="display: flex; flex-direction: column;">
+                                <img src="Image/ai_engineer.png" alt="" class="responsive-img" id="myPic"
+                                    style="margin: auto;height:100%;">
+                            </div>
 
-						<!-- G2 -->
-						<div class="col l3 m6 s12 align-left" id="profile_info" style="display: flex; flex-direction: column; justify-content: center;">
-						  <!-- DATA WILL RENDER HERE FROM PORTFOLIO.JS -->
-						</div>
+                            <!-- G2 -->
+                            <div class="col l3 m6 s12 align-left" id="profile_info"
+                                style="display: flex; flex-direction: column; justify-content: center;">
+                                <!-- DATA WILL RENDER HERE FROM PORTFOLIO.JS -->
+                            </div>
 
-						<!-- G3 -->
-						<div class="col l6 m12 s12" style="display: flex; flex-direction: column;">
-                            <p class="flow-text" style="text-indent: 3em; text-align: justify;">
-                                I am a software professional who translates intricate problems into robust, scalable solutions. My expertise spans the entire development lifecycle, from designing and implementing efficient code to optimizing performance, debugging complex issues, and ensuring seamless deployment. Driven by continuous learning and abstract thinking, I bring a logical, analytical approach to every technical challenge. I further leverage capabilities in data analysis and project organization to deliver well-structured and impactful outcomes.
-                            </p>
-                            <p class="flow-text" style="text-align: justify;">
-                                Have led and contributed to development teams on projects involving web applications, information systems, and digital transformation. Experienced in delivering scalable web solutions, supporting data analytics initiatives, and providing IT consulting aligned with organizational goals and process improvement.
-                            </p>
-                            <p class="flow-text" style="text-align: justify;">
-                                If you need a reliable IT professional to enhance systems, automate workflows, and deliver efficient, well-engineered solutions, I’m ready to contribute. Focused on driving innovation and operational efficiency through practical, data-driven technology initiatives.
-                            </p>
-						</div>
-						<!-- END -->
-					  </div>
-					</div>
+                            <!-- G3 -->
+                            <div class="col l6 m12 s12" style="display: flex; flex-direction: column;">
+                                <p class="flow-text" style="text-indent: 3em; text-align: justify;">
+                                    I am a software professional who translates intricate problems into robust, scalable
+                                    solutions. My expertise spans the entire development lifecycle, from designing and
+                                    implementing efficient code to optimizing performance, debugging complex issues, and
+                                    ensuring seamless deployment. Driven by continuous learning and abstract thinking, I
+                                    bring a logical, analytical approach to every technical challenge. I further
+                                    leverage capabilities in data analysis and project organization to deliver
+                                    well-structured and impactful outcomes.
+                                </p>
+                                <p class="flow-text" style="text-align: justify;">
+                                    Have led and contributed to development teams on projects involving web
+                                    applications, information systems, and digital transformation. Experienced in
+                                    delivering scalable web solutions, supporting data analytics initiatives, and
+                                    providing IT consulting aligned with organizational goals and process improvement.
+                                </p>
+                                <p class="flow-text" style="text-align: justify;">
+                                    If you need a reliable IT professional to enhance systems, automate workflows, and
+                                    deliver efficient, well-engineered solutions, I’m ready to contribute. Focused on
+                                    driving innovation and operational efficiency through practical, data-driven
+                                    technology initiatives.
+                                </p>
+                            </div>
+                            <!-- END -->
+                        </div>
+                    </div>
                 </div>
 
                 <!-- EXPERIENCE CREDENTIALS -->
@@ -162,7 +192,8 @@
             </div>
 
             <div class="col s12" id="skills_content">
-                <h4 style="font-weight: bold;" class="center hide-on-med-and-down scramble-on-hover">CORE TECHNICAL TOOLS</h4>
+                <h4 style="font-weight: bold;" class="center hide-on-med-and-down scramble-on-hover">CORE TECHNICAL
+                    TOOLS</h4>
                 <h4 style="font-weight: bold;" class="center hide-on-large-only scramble-on-hover">CORE TECH TOOLS</h4>
                 <div class="row" id="skills_content_sub">
                     <div class="col s12" id="tech_tools">
@@ -172,76 +203,83 @@
             </div>
         </div>
 
-    <div class="row"></div>
+        <div class="row"></div>
 
-    <!-- SERVICES -->
-    <div class="col s12">
-        <div class="parallax-container" style="height:400px;">
-        <div class="parallax"><img src="Image/hardware.jpg" class="grayscale-50"></div>
-    </div>
+        <!-- SERVICES -->
+        <div class="col s12">
+            <div class="parallax-container" style="height:400px;">
+                <div class="parallax"><img src="Image/hardware.jpg" class="grayscale-50"></div>
+            </div>
 
-    <div class="col s12 container" id="services">
-        <h4 style="font-weight: bold;" class="center scramble-on-hover">SERVICES</h4>
-        <p class="center scramble-on-hover">What can I do?</p>
-        <!-- CARDS -->
-            <div class="row" id="services_content">
-                <!-- SERVICES WILL RENDER HERE -->
+            <div class="col s12 container" id="services">
+                <h4 style="font-weight: bold;" class="center scramble-on-hover">SERVICES</h4>
+                <p class="center scramble-on-hover">What can I do?</p>
+                <!-- CARDS -->
+                <div class="row" id="services_content">
+                    <!-- SERVICES WILL RENDER HERE -->
+                </div>
             </div>
         </div>
-    </div>
 
-    <!-- WORK -->
-    <div class="row" id="work">
-        <h4 style="font-weight: bold;" class="center scramble-on-hover">PORTFOLIO</h4>
-        <p class="center green-text">[My previous works...]</p>
-        <div class="row col s12" id="portfolio_content">
-            <!-- WORKS WILL RENDER HERE -->
-        </div> 
-    </div>
-
-    <!-- NETWORK DESIGN -->
-    <div class="row">
-        <h4 style="font-weight: bold;" class="center scramble-on-hover">IT NETWORKING AND OPS</h4>
-        <div class="col l12 m12 s12" id="network_design">
-            <!-- NETWORK DESIGNS WILL RENDER HERE -->
-        </div> 
-    </div>
-
-   <div class="row"></div>
-    <!--</CONTENT>  -->
-
-    <!-- CONTACT -->
-    <div class="row" id="contact">
-        <div class="row" style="align-items: center;">
-			<div class="col l6 m6 s12" style="display: flex; justify-content: center; align-items: center;">
-				<img src="Image/email.png" alt="" id="contact_image" class="responsive-img" style="opacity:0.2; object-fit: contain; max-height: 400px;">
-			</div>
-			<div class="col l6 m6 s12" id="contact_section">
-				<p class="flow-text">“Technology is a useful servant but a dangerous master.” &mdash; <b>Christian Lous Lange</b></p>
-				<div class="row divider"></div>
-				<h4>Contact Informations:</h4>
-				<p class="flow-text"><strong>Explore our tech services, feel free to reach out via our website or follow us on social media!</strong></p>
-            <ul>
-				<li>
-					<a href="https://sites.google.com/view/erintech" target="_blank">Erin Tech & Business Solutions &mdash; Website</a>
-				</li>
-				<li>
-					<a href="https://www.facebook.com/erintechbusiness" target="_blank">Erin Tech & Business Solutions &mdash; Facebook Page</a>
-				</li>
-            </ul>
-            <!-- END CONTACT -->
-			</div>
+        <!-- WORK -->
+        <div class="row" id="work">
+            <h4 style="font-weight: bold;" class="center scramble-on-hover">PORTFOLIO</h4>
+            <p class="center green-text">[My previous works...]</p>
+            <div class="row col s12" id="portfolio_content">
+                <!-- WORKS WILL RENDER HERE -->
+            </div>
         </div>
-    </div>
 
-    <div class="row center">
-        <a href="#main-screen" id="bktotopbtn" class="btn black btn-large z-depth-1" style="font-size:20px;border-radius: 30px;">Back to top</a>
-    </div>
-    <footer>
-        <p class="center">All Rights Reserved &copy; 2021</p>
-        <p class="center">Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from 
-            <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>
-    </footer>
+        <!-- NETWORK DESIGN -->
+        <div class="row">
+            <h4 style="font-weight: bold;" class="center scramble-on-hover">IT NETWORKING AND OPS</h4>
+            <div class="col l12 m12 s12" id="network_design">
+                <!-- NETWORK DESIGNS WILL RENDER HERE -->
+            </div>
+        </div>
+
+        <div class="row"></div>
+        <!--</CONTENT>  -->
+
+        <!-- CONTACT -->
+        <div class="row" id="contact">
+            <div class="row" style="align-items: center;">
+                <div class="col l6 m6 s12" style="display: flex; justify-content: center; align-items: center;">
+                    <img src="Image/email.png" alt="" id="contact_image" class="responsive-img"
+                        style="opacity:0.2; object-fit: contain; max-height: 400px;">
+                </div>
+                <div class="col l6 m6 s12" id="contact_section">
+                    <p class="flow-text">“Technology is a useful servant but a dangerous master.” &mdash; <b>Christian
+                            Lous Lange</b></p>
+                    <div class="row divider"></div>
+                    <h4>Contact Informations:</h4>
+                    <p class="flow-text"><strong>Explore our tech services, feel free to reach out via our website or
+                            follow us on social media!</strong></p>
+                    <ul>
+                        <li>
+                            <a href="https://sites.google.com/view/erintech" target="_blank">Erin Tech & Business
+                                Solutions &mdash; Website</a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/erintechbusiness" target="_blank">Erin Tech & Business
+                                Solutions &mdash; Facebook Page</a>
+                        </li>
+                    </ul>
+                    <!-- END CONTACT -->
+                </div>
+            </div>
+        </div>
+
+        <div class="row center">
+            <a href="#main-screen" id="bktotopbtn" class="btn black btn-large z-depth-1"
+                style="font-size:20px;border-radius: 30px;">Back to top</a>
+        </div>
+        <footer>
+            <p class="center">All Rights Reserved &copy; 2021</p>
+            <p class="center">Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from
+                <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+            </p>
+        </footer>
     </main>
 
 
@@ -252,4 +290,5 @@
     <script src="main.js"></script>
     <script type="text/javascript" async src="https://cdn.credly.com/assets/utilities/embed.js"></script>
 </body>
+
 </html>

@@ -33,10 +33,10 @@ let portfolio = [
 	['Image/systems/borrowed_item_invsys.png', 'Asset Availability and Borrowing Monitoring System', 'Web App (Programmer) / April 2023'],
 	['Image/systems/balete_mun.jpg', 'Balete Web-based Municipal Demographic Information System - Capstone', 'Web App (Tech Lead) / October 2023'],
 	['Image/systems/business_permit_sys.jpeg', 'Business Permit Registration and Renewal Portal', 'Web App (Tech Lead) / January 2024'],
-	['Image/systems/financial_fraud_detection.png', 'Financial Fraud Detection Data Model', 'Data Science | Research (Programmer) / May 2024'],
-	['Image/systems/cyber_attack_pre_detection.png', 'Cyberattack Pre-detection Data Model', 'Data Science | Research (Programmer) / July 2024'],
+	['Image/systems/financial_fraud_detection.png', 'Financial Fraud Detection Predictive Model', 'Data Science | Research (Programmer) / May 2024'],
+	['Image/systems/cyber_attack_pre_detection.png', 'Cyberattack Pre-detection Predictive Model', 'Data Science | Research (Programmer) / July 2024'],
 	['Image/systems/pnh_floyd_warshall.jpg', 'PNH Water Station Management System with Delivery Mapping Optimization using Floyd-Warshall Algorithm', 'Web App (Tech Lead) / January 2025'],
-	['Image/systems/predictive_maintenance.png', 'Predictive Maintenance Data Model', 'Data Science (Programmer) / February 2025'],
+	['Image/systems/predictive_maintenance.png', 'Predictive Maintenance Model', 'Data Science (Programmer) / February 2025'],
 	['Image/systems/lian_up_site.png', '<a href="https://sites.google.com/view/lianup/home" target="_blank">Lian Up! Tourism Portal</a>', 'Web Design (Web Master/ Designer) / April 2025'],
 	['Image/systems/mint.png', '<a href="https://mis.batelec2.ph/mint/index.php" target="_blank"> MIS Integrated Network of Tickets [MINT] &mdash; BATELEC II</a>', 'Web App (Programmer) / July 2025'],
 	['Image/systems/paytrack.png', 'PayTrack - Payroll with Attendance Management with RFID-based Time Tracking', 'Web App (Tech Lead) / August 2025'],
@@ -46,8 +46,8 @@ let portfolio = [
 	['Image/systems/emp-movement.png', 'Employee Movement Portal - For Internal &amp; External Recruitment Monitoring - BATELEC II', 'Web App (Programmer) / November 2025'],
 	['Image/systems/brgystoninolipaportal.png', '<a href="https://barangaystoninolipa.com" target="_blank">Barangay Sto. Nino Lipa Portal - Capstone</a>', 'Web App/ ReactJS (Reverse & Deploy) / November 2025'],
 	['Image/systems/batelec_ddcc.png', '<a href="https://mis.batelec2.ph/ddcc_portal" target="_blank">BATELEC II DDCC & Grid Operations Monitoring Portal</a>', 'Web App (Programmer) / December 2025'],
-	['Image/systems/energy_data_aggregator.png', 'Hourly Energy and NGCP Metering Point Data Aggregator', 'Web App / Data Automation (Programmer) / May 2026'],
-	['Image/systems/lwapforecaster.png', 'LWAP Forecaster', 'Web App / Data Model (Programmer) / May 2026'],
+	['Image/systems/energy_data_aggregator.png', 'Hourly Energy and NGCP Metering Point Data Aggregator - BATELEC II', 'Web App / Data Automation (Programmer) / May 2026'],
+	['Image/systems/lwapforecaster.png', 'LWAP Forecaster - BATELEC II', 'Web App / Data Model (Programmer) / May 2026'],
 ];
 
 
@@ -131,7 +131,7 @@ let credentials = [
 
 // ACHIEVEMENTS
 let achievements = {
-	works_completed: 39,
+	works_completed: 46,
 	years_of_exp: 6,
 	total_clients: 28,
 	awards: 0
