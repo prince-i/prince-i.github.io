@@ -36,6 +36,7 @@
                         <li><a href="#services" class="scramble-on-hover">Services</a></li>
                         <li><a href="#work" class="scramble-on-hover">Works</a></li>
                         <li><a href="#contact" class="scramble-on-hover">Contact</a></li>
+                        <li><a href="#cliModal" class="modal-trigger" style="color:#00e676;"><i class="material-icons left">terminal</i><span class="scramble-on-hover">Terminal</span></a></li>
                         <li><a href="javascript:void()" id="theme_button_nav">Dark Mode<i
                                     class="material-icons black-text" id="theme_icon">brightness_2</i></a></li>
                     </ul>
@@ -50,12 +51,13 @@
             <li><a href="#services" class="sidenav-close scramble-on-hover">Services</a></li>
             <li><a href="#work" class="sidenav-close scramble-on-hover">Work</a></li>
             <li><a href="#contact" class="sidenav-close scramble-on-hover">Contact</a></li>
+            <li><a href="#cliModal" class="modal-trigger sidenav-close" style="color:#00e676;"><i class="material-icons left">terminal</i><span class="scramble-on-hover">Terminal</span></a></li>
             <li><a href="javascript:void()" class="flow-text sidenav-close" style="color:black;" id="theme_button">Dark
                     Mode<i class="material-icons black-text" id="theme_icon">brightness_2</i></a></li>
         </ul>
 
 
-        <div class="row center" style="margin-top: -20px; z-index: -1; position: relative;">
+        <div class="row center" style="margin-top: -20px; position: relative;">
             <img src="Image/Kyoto.png" class="responsive-img"
                 style="width:100%; max-height: 60dvh; object-fit: cover; border-bottom-left-radius: 30px; border-bottom-right-radius: 30px;">
         </div>
@@ -222,9 +224,38 @@
         </div>
 
         <!-- WORK -->
-        <div class="row" id="work">
+        <div class="row reveal-on-scroll" id="work">
             <h4 style="font-weight: bold;" class="center scramble-on-hover">PORTFOLIO</h4>
             <p class="center green-text">[My previous works...]</p>
+            
+            <!-- INTERACTIVE CONTROLS -->
+            <div class="portfolio-controls center">
+                <!-- FILTER PILLS -->
+                <div class="filter-pills">
+                    <div class="filter-pill active" data-filter="all">All Projects</div>
+                    <div class="filter-pill" data-filter="web">Web Applications</div>
+                    <div class="filter-pill" data-filter="ai_data">Data Science & AI</div>
+                    <div class="filter-pill" data-filter="desktop">Desktop & Mobile</div>
+                </div>
+
+                <!-- SEARCH BAR -->
+                <div class="search-box-wrapper">
+                    <input type="text" id="portfolio-search" placeholder="Search systems, keywords, dates (e.g. PHP, Capstone, RFID)...">
+                    <i class="material-icons grey-text">search</i>
+                </div>
+
+                <!-- ACTIVE TECH BADGE INDICATOR -->
+                <div id="tech-badge-container" style="display:none;">
+                    <div class="active-tech-badge">
+                        Filter by tech: <strong id="active-tech-name"></strong>
+                        <span id="clear-tech-filter" title="Clear filter">&times;</span>
+                    </div>
+                </div>
+
+                <!-- COUNTER -->
+                <p id="portfolio-counter" class="grey-text" style="font-size:0.9rem; margin-top:8px;"></p>
+            </div>
+
             <div class="row col s12" id="portfolio_content">
                 <!-- WORKS WILL RENDER HERE -->
             </div>
@@ -267,6 +298,59 @@
                     </ul>
                     <!-- END CONTACT -->
                 </div>
+            </div>
+        </div>
+
+        <!-- FLOATING TERMINAL BUTTON -->
+        <a href="#cliModal" class="modal-trigger floating-term-btn tooltipped" data-position="right" data-tooltip="Open Developer CLI Terminal">
+            <i class="material-icons">terminal</i>
+        </a>
+
+        <!-- PROJECT PREVIEW LIGHTBOX MODAL -->
+        <div id="projectModal" class="modal modal-fixed-footer grey darken-4 white-text">
+            <div class="modal-content">
+                <div class="project-modal-layout">
+                    <div class="project-modal-img-wrap">
+                        <img id="projectModalImg" src="" alt="Project Preview">
+                    </div>
+                    <div class="project-modal-details">
+                        <h4 id="projectModalTitle" style="font-weight: bold; margin-bottom: 5px;"></h4>
+                        <p id="projectModalCategory" class="green-text" style="font-weight: bold;"></p>
+                        <div id="projectModalTags" style="margin-top: 10px; margin-bottom: 15px;"></div>
+                        <div id="projectModalDescription"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer grey darken-4" style="border-top: 1px solid #333;">
+                <a href="#!" id="projectModalLink" target="_blank" class="btn btn-small #00e676 green accent-3 black-text modal-close" style="display:none; font-weight:bold; margin-right:10px;">Visit Site</a>
+                <a href="#!" class="modal-close waves-effect waves-light btn-flat white-text">Close</a>
+            </div>
+        </div>
+
+        <!-- FULLSCREEN IMAGE VIEWER -->
+        <div id="imgFullscreenOverlay" class="img-fullscreen-overlay">
+            <img id="imgFullscreenSrc" src="" alt="Full Preview">
+            <button id="imgFullscreenClose" class="img-fullscreen-close" title="Close">&times;</button>
+        </div>
+
+        <!-- RETRO CLI TERMINAL MODAL -->
+        <div id="cliModal" class="modal">
+            <div class="terminal-header">
+                <div class="terminal-dots">
+                    <div class="terminal-dot dot-red modal-close" title="Close"></div>
+                    <div class="terminal-dot dot-yellow"></div>
+                    <div class="terminal-dot dot-green" id="termMaxBtn" title="Maximize"></div>
+                </div>
+                <div class="terminal-title">prince-i@prince-i.github.io:~ (bash)</div>
+                <div style="width: 40px;"></div>
+            </div>
+            <div class="terminal-body" id="terminalOutput">
+                <div>Type <span style="color:#ffbd2e;">help</span> to view available interactive commands.</div>
+                <div>--------------------------------------------------</div>
+            </div>
+            <div class="terminal-input-row">
+                <span class="terminal-prompt">prince-i@prince-i.github.io$ </span>
+                <input type="text" id="terminalInput" placeholder="type a command (e.g. help, skills, projects, exp, contact)..." autocomplete="off" spellcheck="false">
             </div>
         </div>
 
