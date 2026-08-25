@@ -13,8 +13,6 @@ $(document).ready(function () {
     inDuration: 600,
     outDuration: 500,
     onOpenEnd: function () {
-      $('#cliModal').addClass('maximized');
-      $('#termMaxBtn').attr('title', 'Restore');
       $('#terminalInput').focus();
     },
     onCloseEnd: function () {
@@ -294,6 +292,7 @@ function initPortfolioControls() {
     if (!project) return;
 
     $('#projectModalImg').attr('src', project[0]);
+    $('.project-modal-img-wrap').css('--bg-img', `url('${project[0]}')`);
 
     // Extract link if present in title HTML
     const tempDiv = document.createElement('div');
@@ -492,7 +491,7 @@ function setupCLI() {
         case 'projects':
         case 'works':
           appendLog(`Total Works Completed: 46+ Projects across Web, Data Science, AI & Systems.`);
-          appendLog(`Featured Systems: BATELEC II DDCC Portal, LWAP Forecaster, Hourly Energy Aggregator, PayTrack Payroll.`);
+          appendLog(`Featured Systems: BATELEC II DDCC Portal, LWAP Forecaster, Hourly Energy Aggregator, PayTrack Payroll, Andon System, Motorpool Vehicle and Maintenance Management System [MpVMMS].`);
           break;
 
         case 'exp':
@@ -503,8 +502,9 @@ function setupCLI() {
           break;
 
         case 'contact':
-          appendLog(`Website: https://sites.google.com/view/erintech`);
-          appendLog(`Facebook: https://www.facebook.com/erintechbusiness`);
+          appendLog(`Website: <a href="https://sites.google.com/view/erintech" target="_blank" style="color:#58a6ff; text-decoration:underline;">https://sites.google.com/view/erintech</a>`);
+          appendLog(`Facebook: <a href="https://www.facebook.com/erintechbusiness" target="_blank" style="color:#58a6ff; text-decoration:underline;">https://www.facebook.com/erintechbusiness</a>`);
+          appendLog(`Reach my socials @cyber.pca on <a href="https://instagram.com/cyber.pca" target="_blank" style="color:#28eaeb">IG</a> and <a href="https://facebook.com/cyber.pca" target="_blank" style="color:#28eaeb">FB</a>.`, '#27c93f');
           break;
 
         case 'whoami':
@@ -630,6 +630,7 @@ function setupCLI() {
         case 'sudo hire':
         case 'sudo hire prince':
           appendLog(`[OK] Access Granted! Prince Arce is ready to bring high performance to your organization! 🚀`, '#27c93f');
+          appendLog(`Reach my socials @cyber.pca on <a href="https://instagram.com/cyber.pca" target="_blank" style="color:#28eaeb">IG</a> and <a href="https://facebook.com/cyber.pca" target="_blank" style="color:#28eaeb">FB</a>.`, '#27c93f');
           break;
 
         case 'exit':

@@ -545,16 +545,21 @@ nav {
 }
 
 #cliModal.maximized {
-  max-width: 100% !important;
-  width: 100% !important;
-  height: 100% !important;
-  max-height: 100% !important;
-  border-radius: 0 !important;
-  top: 0 !important;
+  max-width: 80% !important;
+  width: 80% !important;
+  height: 80dvh !important;
+  max-height: 80dvh !important;
+  border-radius: 8px !important;
+  top: 10% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  overflow: hidden !important;
 }
 
 #cliModal.maximized .terminal-body {
-  height: calc(100vh - 90px);
+  height: auto !important;
+  flex: 1 !important;
+  min-height: 0 !important;
 }
 
 .terminal-title {
@@ -631,19 +636,37 @@ nav {
 }
 
 .project-modal-img-wrap {
-  flex: 0 0 48%;
-  max-width: 48%;
+  flex: 0 0 65%;
+  max-width: 65%;
   overflow: hidden;
   position: relative;
   cursor: zoom-in;
+  display: flex;
+  flex-direction: column;
+  background-color: #111;
+}
+
+.project-modal-img-wrap::before {
+  content: "";
+  position: absolute;
+  top: -30px; left: -30px; right: -30px; bottom: -30px;
+  background-image: var(--bg-img);
+  background-size: cover;
+  background-position: center;
+  filter: blur(25px);
+  opacity: 0.5;
+  z-index: 0;
+  pointer-events: none;
 }
 
 #projectModalImg {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   display: block;
   border-radius: 0;
+  position: relative;
+  z-index: 1;
 }
 
 .project-modal-details {
@@ -653,6 +676,7 @@ nav {
   overflow-y: auto;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .project-modal-details h4 {
@@ -663,7 +687,6 @@ nav {
 
 .project-modal-details #projectModalDescription {
   margin-top: 8px;
-  flex: 1;
   font-size: 0.95rem;
   line-height: 1.7;
   color: rgba(255, 255, 255, 0.82);
@@ -710,6 +733,12 @@ nav {
 
   .project-modal-details h4 {
     font-size: 1.3rem;
+  }
+
+  .project-modal-details h4,
+  #projectModalCategory,
+  #projectModalTags {
+    text-align: left;
   }
 }
 
