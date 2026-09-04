@@ -22,7 +22,7 @@ let portfolio = [
 	['Image/systems/tubemaking_system.png', 'Tubemaking Kanban System', 'Web Application / July 2021', 'web', ['php', 'mysql', 'javascript']],
 	['Image/systems/pcs_summary_view.png', 'Progress Counter Summary Reporting System', 'Web Application / August 2021', 'web', ['php', 'mysql', 'javascript']],
 	['Image/systems/hr-aris.png', 'HR Absenteeism Report Information System', 'Web Application / September 2021', 'web', ['php', 'mysql', 'javascript']],
-	['Image/systems/pcamera.png', 'pCAMERA - Image Classification Camera', 'Android App / November 2021', 'desktop', ['python', 'jupyter']],
+	['Image/systems/pcamera.png', 'pCAMERA - Image Classification Camera', 'Android App / November 2021', 'mobile', ['apache cordova', 'openCV','mobilenet']],
 	['Image/systems/faculty_scheduling_system.png', 'School Faculty Scheduling System', 'Web App(Programmer) / December 2021', 'web', ['php', 'mysql', 'javascript']],
 	['Image/systems/bookaholic.png', 'Bookaholic Admin - Book Renting Portal', 'Web App (Programmer) / February 2022', 'web', ['php', 'mysql', 'javascript']],
 	['Image/systems/library_management_sys_qr.jpeg', 'Library Management System w/ QR Code and Penalty Monitoring', 'Web App (Tech Lead)/ June 2022', 'web', ['php', 'mysql', 'javascript']],
