@@ -508,7 +508,7 @@ function setupCLI() {
           break;
 
         case 'whoami':
-          appendLog(`Prince Arce - Applications Programmer | IT Officer`);
+          appendLog(`Prince Arce - Applications Programmer | IT Specialist`);
           appendLog(`Specialties: Programming, Data Mining, Data Science, AI/NLP Automation, System Architecture, IT Infrastructure and Management.`);
           break;
 
@@ -649,7 +649,7 @@ function setupCLI() {
 
 // ====================================================================================
 // TYPEWRITER EFFECT
-const txt = 'APPLICATIONS PROGRAMMER | IT OFFICER';
+const txt = 'APPLICATIONS PROGRAMMER | IT Specialist';
 const speed = 30;
 const sChars = "!@#$%^&*()_+-=[]{}|;:',.<>?/`~";
 let i = 0;

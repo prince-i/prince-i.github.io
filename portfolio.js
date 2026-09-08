@@ -132,8 +132,8 @@ let credentials = [
 
 // ACHIEVEMENTS
 let achievements = {
-	works_completed: 46,
+	works_completed: 39,
 	years_of_exp: 6,
-	total_clients: 28,
+	total_clients: 29,
 	awards: 0
 };
