@@ -649,7 +649,7 @@ function setupCLI() {
 
 // ====================================================================================
 // TYPEWRITER EFFECT
-const txt = 'APPLICATIONS PROGRAMMER | IT Specialist';
+const txt = 'APPLICATIONS PROGRAMMER | IT SPECIALIST';
 const speed = 30;
 const sChars = "!@#$%^&*()_+-=[]{}|;:',.<>?/`~";
 let i = 0;
