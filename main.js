@@ -82,6 +82,7 @@ $(document).ready(function () {
   setupScrollReveal();
   setupCLI();
   initPortfolioControls();
+  initLazyLoading();
 
   // TEXT SCRAMBLE ON HOVER
   const specialChars = "!@#$%^&*()_+-=[]{}|;:',.<>?/`~";
@@ -161,8 +162,9 @@ for (let n = 0; n < networks.length; n++) {
   networkHTML += `
     <div class="col l4 m12 s12">
       <div class="col s12 card" style="border-radius:30px;">
-        <div class="card-image center-align">
-          <img src="${networks[n][0]}" loading="lazy" decoding="async" alt="Network Diagram" class="responsive-img materialboxed" id="system_preview" style="padding-top:10px;">
+        <div class="card-image center-align lazy-container">
+          <img data-src="${networks[n][0]}" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 9'%3E%3C/svg%3E" alt="Network Diagram" class="responsive-img materialboxed lazy-img" id="system_preview" style="padding-top:10px;">
+          <div class="lazy-placeholder-shimmer"></div>
         </div>
       </div>
     </div>
@@ -252,12 +254,14 @@ function renderPortfolio(filter = currentFilter, search = currentSearch, tech = 
     if (p % 3 === 0) html += `<div class="row">`;
 
     const originalIndex = portfolio.indexOf(filtered[p]);
+    const plainTitle = filtered[p][1].replace(/<[^>]*>/g, '').replace(/"/g, '&quot;').trim();
 
     html += `
       <div class="col l4 m12 s12">
         <div class="card project-card-item" data-index="${originalIndex}">
-          <div class="card-image center-align">
-            <img src="${filtered[p][0]}" loading="lazy" decoding="async" alt="${filtered[p][1]}" class="responsive-img" style="padding-top:10px;">
+          <div class="card-image center-align lazy-container">
+            <img data-src="${filtered[p][0]}" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 9'%3E%3C/svg%3E" alt="${plainTitle}" class="responsive-img lazy-img" style="padding-top:10px;">
+            <div class="lazy-placeholder-shimmer"></div>
           </div>
           <div class="card-content">
             <p id="system_name">${filtered[p][1]}</p>
@@ -272,6 +276,59 @@ function renderPortfolio(filter = currentFilter, search = currentSearch, tech = 
 
   container.append(html);
   get_theme();
+  initLazyLoading();
+}
+
+// ====================================================================================
+// VISUAL LAZY LOADING OBSERVER
+function initLazyLoading() {
+  const lazyImages = document.querySelectorAll('.lazy-img:not(.lazy-observed)');
+
+  if (!('IntersectionObserver' in window)) {
+    lazyImages.forEach(img => {
+      if (img.dataset.src) {
+        img.src = img.dataset.src;
+        img.classList.add('loaded');
+        const parent = img.closest('.lazy-container');
+        if (parent) parent.classList.add('image-loaded');
+      }
+    });
+    return;
+  }
+
+  const imageObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const img = entry.target;
+        if (img.dataset.src) {
+          const tempImg = new Image();
+          tempImg.src = img.dataset.src;
+          tempImg.onload = () => {
+            img.src = img.dataset.src;
+            img.classList.add('loaded');
+            const parent = img.closest('.lazy-container');
+            if (parent) parent.classList.add('image-loaded');
+          };
+          tempImg.onerror = () => {
+            img.src = img.dataset.src;
+            img.classList.add('loaded');
+            const parent = img.closest('.lazy-container');
+            if (parent) parent.classList.add('image-loaded');
+          };
+        }
+        img.classList.add('lazy-observed');
+        observer.unobserve(img);
+      }
+    });
+  }, {
+    rootMargin: '120px 0px 120px 0px',
+    threshold: 0.01
+  });
+
+  lazyImages.forEach(img => {
+    img.classList.add('lazy-observed');
+    imageObserver.observe(img);
+  });
 }
 
 function initPortfolioControls() {
@@ -444,6 +501,7 @@ function setupStatObserver() {
     entries.forEach(entry => {
       if (entry.isIntersecting && !animated) {
         animated = true;
+        observer.unobserve(statsElem);
         animateCounters();
       }
     });
@@ -465,6 +523,7 @@ function setupScrollReveal() {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
       }
     });
   }, { threshold: 0.02, rootMargin: '0px 0px -50px 0px' });
