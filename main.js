@@ -134,7 +134,7 @@ const techContainer = $('#tech_tools');
 for (let t = 0; t < tech_tools.length; t++) {
   techContainer.append(`
     <div class="col l2 m4 s4 tech-stack-item tooltipped" data-position="top" data-tooltip="Click to filter projects with ${tech_tools[t][1]}" data-tech="${tech_tools[t][2]}">
-      <img src="${tech_tools[t][0]}" class="responsive-img skill_stack skill_icon drop_shadow_filter grayscale-50" alt="${tech_tools[t][1]}">
+      <img src="${tech_tools[t][0]}" loading="lazy" decoding="async" class="responsive-img skill_stack skill_icon drop_shadow_filter grayscale-50" alt="${tech_tools[t][1]}">
       <p class="center tech-label">${tech_tools[t][1]}</p>
     </div>
   `);
@@ -146,7 +146,7 @@ let servicesHTML = '';
 for (let s = 0; s < services.length; s++) {
   servicesHTML += `
     <div class="col l4 m4 s12" style="text-align:center; height:40dvh; margin-bottom:3%;">
-      <img src="${services[s][0]}" alt="" style="width:30%;" class="services_icon drop_shadow_filter rotate_hover grayscale-50">
+      <img src="${services[s][0]}" loading="lazy" decoding="async" alt="${services[s][1]}" style="width:30%;" class="services_icon drop_shadow_filter rotate_hover grayscale-50">
       <p style="font-weight:bold;">${services[s][1]}</p>
       <p>${services[s][2]}</p>
     </div>
@@ -162,7 +162,7 @@ for (let n = 0; n < networks.length; n++) {
     <div class="col l4 m12 s12">
       <div class="col s12 card" style="border-radius:30px;">
         <div class="card-image center-align">
-          <img src="${networks[n][0]}" alt="" class="responsive-img materialboxed" id="system_preview" style="padding-top:10px;">
+          <img src="${networks[n][0]}" loading="lazy" decoding="async" alt="Network Diagram" class="responsive-img materialboxed" id="system_preview" style="padding-top:10px;">
         </div>
       </div>
     </div>
@@ -257,7 +257,7 @@ function renderPortfolio(filter = currentFilter, search = currentSearch, tech = 
       <div class="col l4 m12 s12">
         <div class="card project-card-item" data-index="${originalIndex}">
           <div class="card-image center-align">
-            <img src="${filtered[p][0]}" alt="" class="responsive-img" style="padding-top:10px;">
+            <img src="${filtered[p][0]}" loading="lazy" decoding="async" alt="${filtered[p][1]}" class="responsive-img" style="padding-top:10px;">
           </div>
           <div class="card-content">
             <p id="system_name">${filtered[p][1]}</p>

@@ -168,8 +168,8 @@ nav {
   opacity: 1;
   visibility: visible;
   transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1),
-              visibility 0.6s ease,
-              transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    visibility 0.6s ease,
+    transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
   overflow: hidden;
   will-change: opacity, transform;
 }
@@ -338,6 +338,7 @@ html.light-mode .loader-progress-fill {
     opacity: 0;
     transform: scale(0.75);
   }
+
   100% {
     opacity: 1;
     transform: scale(1);
@@ -349,6 +350,7 @@ html.light-mode .loader-progress-fill {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -358,6 +360,7 @@ html.light-mode .loader-progress-fill {
   0% {
     transform: rotate(360deg);
   }
+
   100% {
     transform: rotate(0deg);
   }
@@ -368,6 +371,7 @@ html.light-mode .loader-progress-fill {
     transform: scale(0.9);
     opacity: 0.4;
   }
+
   100% {
     transform: scale(1.35);
     opacity: 0.85;
@@ -378,6 +382,7 @@ html.light-mode .loader-progress-fill {
   0% {
     opacity: 0.45;
   }
+
   100% {
     opacity: 1;
   }
@@ -388,10 +393,12 @@ html.light-mode .loader-progress-fill {
     left: -40%;
     width: 40%;
   }
+
   50% {
     left: 30%;
     width: 50%;
   }
+
   100% {
     left: 100%;
     width: 40%;
@@ -731,12 +738,18 @@ html.light-mode .loader-progress-fill {
   background: #27c93f;
 }
 
-.dot-red, .dot-green {
+.dot-red,
+.dot-green {
   cursor: pointer;
 }
 
-.dot-red:hover { background: #e04440; }
-.dot-green:hover { background: #1fad32; }
+.dot-red:hover {
+  background: #e04440;
+}
+
+.dot-green:hover {
+  background: #1fad32;
+}
 
 #cliModal {
   transition: max-width 0.35s ease, width 0.35s ease, max-height 0.35s ease, height 0.35s ease, border-radius 0.35s ease;
@@ -822,7 +835,7 @@ html.light-mode .loader-progress-fill {
   overflow: hidden;
 }
 
-#projectModal > .modal-content {
+#projectModal>.modal-content {
   padding: 0;
   height: 100%;
   overflow: hidden;
@@ -847,7 +860,10 @@ html.light-mode .loader-progress-fill {
 .project-modal-img-wrap::before {
   content: "";
   position: absolute;
-  top: -30px; left: -30px; right: -30px; bottom: -30px;
+  top: -30px;
+  left: -30px;
+  right: -30px;
+  bottom: -30px;
   background-image: var(--bg-img);
   background-size: cover;
   background-position: center;
@@ -911,7 +927,7 @@ html.light-mode .loader-progress-fill {
     border-radius: 16px 16px 0 0;
   }
 
-  #projectModal > .modal-content {
+  #projectModal>.modal-content {
     overflow-y: auto;
   }
 
@@ -963,8 +979,13 @@ html.light-mode .loader-progress-fill {
 }
 
 @keyframes fsOverlayIn {
-  from { opacity: 0; }
-  to   { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 .img-fullscreen-overlay img {
@@ -977,8 +998,15 @@ html.light-mode .loader-progress-fill {
 }
 
 @keyframes fsImgIn {
-  from { transform: scale(0.85); opacity: 0; }
-  to   { transform: scale(1);    opacity: 1; }
+  from {
+    transform: scale(0.85);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 .img-fullscreen-close {
