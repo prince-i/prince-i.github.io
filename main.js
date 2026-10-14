@@ -1,5 +1,47 @@
 $(document).ready(function () {
-  $('#main-screen').fadeIn(1500);
+  // Apply theme immediately to ensure consistent presentation
+  get_theme();
+
+  // Smooth Preloader Fade-out & Main Screen Reveal
+  const hideLoader = function () {
+    const $loader = $('#loader');
+    if (!$loader.length || $loader.hasClass('loader-hidden')) return;
+    $loader.addClass('loader-hidden');
+
+    $loader.css({
+      opacity: '0',
+      visibility: 'hidden',
+      transform: 'scale(1.04)'
+    });
+
+    $('#main-screen').fadeIn(700);
+
+    setTimeout(function () {
+      $loader.css('display', 'none');
+    }, 650);
+  };
+
+  const urlParams = new URLSearchParams(window.location.search);
+  if (urlParams.has('preview_loader')) {
+    // In preview mode: maintain loader visible to inspect animation
+    return;
+  }
+
+  const minLoaderTime = 700;
+  const loaderStartTime = window.loaderInitTime || Date.now();
+  const timeElapsed = Date.now() - loaderStartTime;
+  const remainingDelay = Math.max(0, minLoaderTime - timeElapsed);
+
+  if (document.readyState === 'complete') {
+    setTimeout(hideLoader, remainingDelay);
+  } else {
+    $(window).on('load', function () {
+      setTimeout(hideLoader, remainingDelay);
+    });
+    // Safety fallback timeout
+    setTimeout(hideLoader, Math.max(remainingDelay, 2500));
+  }
+
   $('.sidenav').sidenav({
     draggable: true,
     inDuration: 600,
@@ -25,9 +67,6 @@ $(document).ready(function () {
   $('.materialboxed').materialbox();
 
   typeWriter();
-
-  document.querySelector('#loader').classList.remove("loader");
-  get_theme();
 
   $('body').on('contextmenu', 'img', function (e) {
     return false;
@@ -693,6 +732,7 @@ const get_theme = () => {
   const $myPic = $('#myPic');
 
   if (isDark) {
+    $('html').removeClass('light-mode').addClass('dark-mode');
     $('#theme_button').html('Light Mode<i class="material-icons white-text">brightness_5</i>');
     $('#theme_button_nav').html('<i class="material-icons white-text">brightness_5</i>');
 
@@ -708,6 +748,7 @@ const get_theme = () => {
     $myPic.css('filter', 'brightness(90%)');
 
   } else {
+    $('html').removeClass('dark-mode').addClass('light-mode');
     $('#theme_button').html('Dark Mode<i class="material-icons black-text">brightness_2</i>');
     $('#theme_button_nav').html('<i class="material-icons black-text">brightness_2</i>');
 

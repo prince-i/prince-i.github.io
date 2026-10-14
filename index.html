@@ -25,10 +25,44 @@
       rel="stylesheet"
     />
     <link rel="manifest" href="manifest.json" />
+    <script>
+      window.loaderInitTime = Date.now();
+      (function () {
+        var theme = localStorage.getItem('theme') || 'dark';
+        if (theme === 'light') {
+          document.documentElement.classList.add('light-mode');
+        } else {
+          document.documentElement.classList.add('dark-mode');
+        }
+      })();
+    </script>
   </head>
 
   <body>
-    <div class="loader" id="loader"></div>
+    <!-- UPGRADED PRELOADER -->
+    <div class="loader-wrapper" id="loader">
+      <div class="loader-content">
+        <div class="loader-visual-container">
+          <div class="loader-glow"></div>
+          <div class="loader-orbit-ring-outer"></div>
+          <div class="loader-orbit-ring"></div>
+          <div class="loader-icon-frame">
+            <img
+              src="Image/icon.png"
+              alt="Prince Arce"
+              id="loader-img"
+              class="loader-icon-img"
+            />
+          </div>
+        </div>
+        <div class="loader-label">
+          <span class="loader-text">PRINCE ARCE</span>
+          <div class="loader-progress-bar">
+            <div class="loader-progress-fill"></div>
+          </div>
+        </div>
+      </div>
+    </div>
     <main id="main-screen">
       <div class="navbar-fixed">
         <nav class="nav-extended white">

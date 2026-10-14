@@ -55,9 +55,6 @@ body {
     margin-top: 1%;
   }
 
-  #loader {
-    object-fit: contain;
-  }
 
   #myPic {
     max-height: 300px;
@@ -153,53 +150,254 @@ nav {
   }
 }
 
-.loader,
-.loader:after {
-  border-radius: 50%;
-  width: 10em;
-  height: 10em;
+/* ==========================================================================
+   UPGRADED PRELOADER ANIMATION
+   ========================================================================== */
+.loader-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  height: 100dvh;
+  background-color: #212121;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999999;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+              visibility 0.6s ease,
+              transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+  will-change: opacity, transform;
 }
 
-.loader {
-  margin: 60px auto;
-  font-size: 20px;
+html.light-mode .loader-wrapper {
+  background-color: #ffffff;
+}
+
+.loader-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: loaderFadeIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  user-select: none;
+}
+
+.loader-visual-container {
   position: relative;
-  margin-top: 15%;
-  text-indent: -9999em;
-  border-top: 1.1em solid #000000;
-  border-right: 1.1em solid #000000;
-  border-bottom: 1.1em solid #000000;
-  border-left: 1.1em solid #ffffff;
-  -webkit-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  transform: translateZ(0);
-  -webkit-animation: load8 1.1s infinite linear;
-  animation: load8 1.1s infinite linear;
+  width: 160px;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-@-webkit-keyframes load8 {
+/* Stationary Circular Center Logo */
+.loader-icon-frame {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 3;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.25), 0 4px 20px rgba(0, 0, 0, 0.6);
+  border: 2.5px solid rgba(255, 255, 255, 0.85);
+  transition: all 0.3s ease;
+}
+
+.loader-icon-img {
+  width: 108%;
+  height: 108%;
+  object-fit: cover;
+  display: block;
+  pointer-events: none;
+  /* Not rotating: Logo stays upright and circular */
+}
+
+/* Rotating Outside Circles */
+.loader-orbit-ring {
+  position: absolute;
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  border: 2.5px solid transparent;
+  border-top-color: #ffffff;
+  border-right-color: rgba(255, 255, 255, 0.45);
+  animation: rotateLoaderRing 1.3s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  z-index: 2;
+}
+
+.loader-orbit-ring-outer {
+  position: absolute;
+  width: 154px;
+  height: 154px;
+  border-radius: 50%;
+  border: 1.5px dashed rgba(255, 255, 255, 0.35);
+  animation: rotateLoaderReverse 7s linear infinite;
+  z-index: 1;
+}
+
+.loader-glow {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.16) 0%, rgba(255, 255, 255, 0) 70%);
+  animation: pulseGlow 2s ease-in-out infinite alternate;
+  z-index: 0;
+}
+
+.loader-label {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.loader-text {
+  font-family: Consolas_Custom, monospace;
+  font-size: 13px;
+  letter-spacing: 4px;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+  animation: pulseText 1.6s ease-in-out infinite alternate;
+}
+
+.loader-progress-bar {
+  width: 120px;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.12);
+  border-radius: 2px;
+  overflow: hidden;
+  position: relative;
+}
+
+.loader-progress-fill {
+  position: absolute;
+  top: 0;
+  left: -40%;
+  height: 100%;
+  width: 40%;
+  background-color: #ffffff;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+  animation: progressIndeterminate 1.5s ease-in-out infinite;
+}
+
+/* ==========================================================================
+   THEME ALIGNMENT FOR PRELOADER (LIGHT MODE)
+   ========================================================================== */
+html.light-mode .loader-wrapper {
+  background-color: #ffffff;
+}
+
+html.light-mode .loader-icon-frame {
+  background-color: #ffffff;
+  border-color: #212121;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.15), 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+html.light-mode .loader-orbit-ring {
+  border-top-color: #212121;
+  border-right-color: rgba(33, 33, 33, 0.35);
+}
+
+html.light-mode .loader-orbit-ring-outer {
+  border-color: rgba(33, 33, 33, 0.22);
+}
+
+html.light-mode .loader-glow {
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0) 70%);
+}
+
+html.light-mode .loader-text {
+  color: #212121;
+}
+
+html.light-mode .loader-progress-bar {
+  background-color: rgba(0, 0, 0, 0.09);
+}
+
+html.light-mode .loader-progress-fill {
+  background-color: #212121;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.25);
+}
+
+/* Preloader Keyframes */
+@keyframes loaderFadeIn {
   0% {
-    -webkit-transform: rotate(0deg);
+    opacity: 0;
+    transform: scale(0.75);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+@keyframes rotateLoaderRing {
+  0% {
     transform: rotate(0deg);
   }
-
   100% {
-    -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
 }
 
-@keyframes load8 {
+@keyframes rotateLoaderReverse {
   0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-
-  100% {
-    -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
+  100% {
+    transform: rotate(0deg);
+  }
 }
+
+@keyframes pulseGlow {
+  0% {
+    transform: scale(0.9);
+    opacity: 0.4;
+  }
+  100% {
+    transform: scale(1.35);
+    opacity: 0.85;
+  }
+}
+
+@keyframes pulseText {
+  0% {
+    opacity: 0.45;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes progressIndeterminate {
+  0% {
+    left: -40%;
+    width: 40%;
+  }
+  50% {
+    left: 30%;
+    width: 50%;
+  }
+  100% {
+    left: 100%;
+    width: 40%;
+  }
+}
+
 
 .gradient-button {
   background: linear-gradient(45deg,
