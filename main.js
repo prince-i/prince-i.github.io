@@ -1,8 +1,8 @@
 $(document).ready(function () {
-  // Apply theme immediately to ensure consistent presentation
+  // APPLY THEME IMMEDIATELY TO ENSURE CONSISTENT PRESENTATION
   get_theme();
 
-  // Smooth Preloader Fade-out & Main Screen Reveal
+  // SMOOTH PRELOADER FADE-OUT & MAIN SCREEN REVEAL
   const hideLoader = function () {
     const $loader = $('#loader');
     if (!$loader.length || $loader.hasClass('loader-hidden')) return;
@@ -23,7 +23,7 @@ $(document).ready(function () {
 
   const urlParams = new URLSearchParams(window.location.search);
   if (urlParams.has('preview_loader')) {
-    // In preview mode: maintain loader visible to inspect animation
+    // IN PREVIEW MODE: MAINTAIN LOADER VISIBLE TO INSPECT ANIMATION
     return;
   }
 
@@ -38,7 +38,7 @@ $(document).ready(function () {
     $(window).on('load', function () {
       setTimeout(hideLoader, remainingDelay);
     });
-    // Safety fallback timeout
+    // SAFETY FALLBACK TIMEOUT
     setTimeout(hideLoader, Math.max(remainingDelay, 2500));
   }
 
@@ -72,12 +72,12 @@ $(document).ready(function () {
     return false;
   });
 
-  // Clear PDF modal iframe on close
+  // CLEAR PDF MODAL IFRAME ON CLOSE
   $('#certModal').on('modalclose', function () {
     $('#pdfIframe').attr('src', '');
   });
 
-  // Initialize Interactive Features
+  // INITIALIZE INTERACTIVE FEATURES
   setupStatObserver();
   setupScrollReveal();
   setupCLI();
@@ -130,11 +130,11 @@ for (let a = 0; a < about.length; a++) {
 }
 aboutContainer.append(aboutHTML);
 
-// LOAD TECH STACK (WITH INTERACTIVE CLICK-TO-FILTER)
+// LOAD TECH STACK
 const techContainer = $('#tech_tools');
 for (let t = 0; t < tech_tools.length; t++) {
   techContainer.append(`
-    <div class="col l2 m4 s4 tech-stack-item tooltipped" data-position="top" data-tooltip="Click to filter projects with ${tech_tools[t][1]}" data-tech="${tech_tools[t][2]}">
+    <div class="col l2 m4 s4 tech-stack-item">
       <img src="${tech_tools[t][0]}" loading="lazy" decoding="async" class="responsive-img skill_stack skill_icon drop_shadow_filter grayscale-50" alt="${tech_tools[t][1]}">
       <p class="center tech-label">${tech_tools[t][1]}</p>
     </div>
@@ -177,13 +177,17 @@ const credentialContainer = $('#credential_data');
 let credentialHTML = '';
 for (let c = 0; c < credentials.length; c++) {
   credentialHTML += `
-    <div class="l4 m6 col s12">
-      <div class="card transparent" style="border-radius: 30px; margin-bottom: 10px;">
-        <div class="card-content">
-          <h5 style="font-weight: bold;">${credentials[c][0]}</h5>
-          <h6 style="font-style: italic; margin-bottom: 10px;">${credentials[c][1]}</h6>
-          <p><b class="green-text">[ ${credentials[c][2]} ]</b></p>
-          <p>${credentials[c][3]}</p>
+    <div class="l4 m6 col s12 credential-col">
+      <div class="credential-card z-depth-1">
+        <div class="credential-card-body">
+          <div class="credential-top-bar">
+            <span class="credential-badge"><i class="material-icons">schedule</i>${credentials[c][2]}</span>
+            <span class="credential-index">#0${c + 1}</span>
+          </div>
+          <h5 class="credential-role">${credentials[c][0]}</h5>
+          <h6 class="credential-company"><i class="material-icons">business</i>${credentials[c][1]}</h6>
+          <div class="credential-divider"></div>
+          <p class="credential-desc">${credentials[c][3]}</p>
         </div>
       </div>
     </div>
@@ -193,85 +197,33 @@ credentialContainer.append(credentialHTML);
 
 
 // ====================================================================================
-// INTERACTIVE PORTFOLIO FILTERING & SEARCH
-let currentFilter = 'all';
-let currentSearch = '';
-let currentTechFilter = '';
-
-function renderPortfolio(filter = currentFilter, search = currentSearch, tech = currentTechFilter) {
-  currentFilter = filter;
-  currentSearch = search.toLowerCase().trim();
-  currentTechFilter = tech;
-
+// LOAD PORTFOLIO
+function renderPortfolio() {
   const container = $('#portfolio_content');
   container.empty();
 
-  const filtered = portfolio.filter(item => {
-    const itemTitle = item[1];
-    const itemInfo = item[2];
-    const itemCat = item[3] || 'web';
-    const itemTechs = item[4] || [];
-
-    // Category Pill Filter
-    if (currentFilter !== 'all' && itemCat !== currentFilter) {
-      return false;
-    }
-
-    // Tech Tag Filter
-    if (currentTechFilter && !itemTechs.includes(currentTechFilter)) {
-      return false;
-    }
-
-    // Search Query Filter
-    if (currentSearch) {
-      const matchTitle = itemTitle.toLowerCase().includes(currentSearch);
-      const matchInfo = itemInfo.toLowerCase().includes(currentSearch);
-      const matchTech = itemTechs.some(t => t.toLowerCase().includes(currentSearch));
-      if (!matchTitle && !matchInfo && !matchTech) {
-        return false;
-      }
-    }
-
-    return true;
-  });
-
-  // Update Portfolio Counter
-  $('#portfolio-counter').text(`Showing ${filtered.length} of ${portfolio.length} projects`);
-
-  if (filtered.length === 0) {
-    container.html(`
-      <div class="col s12 center-align" style="padding: 40px 0;">
-        <i class="material-icons grey-text" style="font-size: 4rem;">search_off</i>
-        <h5 class="grey-text">No matching projects found</h5>
-        <p class="grey-text">Try adjusting your search terms or clearing the selected tech filter.</p>
-      </div>
-    `);
-    return;
-  }
-
   let html = '';
-  for (let p = 0; p < filtered.length; p++) {
+  for (let p = 0; p < portfolio.length; p++) {
     if (p % 3 === 0) html += `<div class="row">`;
 
-    const originalIndex = portfolio.indexOf(filtered[p]);
-    const plainTitle = filtered[p][1].replace(/<[^>]*>/g, '').replace(/"/g, '&quot;').trim();
+    const plainTitle = portfolio[p][1].replace(/<[^>]*>/g, '').replace(/"/g, '&quot;').trim();
 
     html += `
       <div class="col l4 m12 s12">
-        <div class="card project-card-item" data-index="${originalIndex}">
+        <div class="card project-card-item" data-index="${p}">
           <div class="card-image center-align lazy-container">
-            <img data-src="${filtered[p][0]}" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 9'%3E%3C/svg%3E" alt="${plainTitle}" class="responsive-img lazy-img" style="padding-top:10px;">
+            <img data-src="${portfolio[p][0]}" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 9'%3E%3C/svg%3E" alt="${plainTitle}" class="responsive-img lazy-img" style="padding-top:10px;">
             <div class="lazy-placeholder-shimmer"></div>
           </div>
           <div class="card-content">
-            <p id="system_name">${filtered[p][1]}</p>
-            <p id="system_info">${filtered[p][2]}</p>
+            <p id="system_name">${portfolio[p][1]}</p>
+            <p id="system_info">${portfolio[p][2]}</p>
           </div>
         </div>
       </div>
     `;
 
-    if (p % 3 === 2 || p === filtered.length - 1) html += `</div>`;
+    if (p % 3 === 2 || p === portfolio.length - 1) html += `</div>`;
   }
 
   container.append(html);
@@ -332,56 +284,10 @@ function initLazyLoading() {
 }
 
 function initPortfolioControls() {
-  // Render default portfolio
+  // RENDER DEFAULT PORTFOLIO
   renderPortfolio();
 
-  // Category Filter Pill Handler
-  $('.filter-pill').on('click', function () {
-    $('.filter-pill').removeClass('active');
-    $(this).addClass('active');
-    const filterVal = $(this).data('filter');
-    renderPortfolio(filterVal, currentSearch, currentTechFilter);
-  });
-
-  // Real-Time Search Handler
-  $('#portfolio-search').on('keyup input', function () {
-    const searchVal = $(this).val();
-    renderPortfolio(currentFilter, searchVal, currentTechFilter);
-  });
-
-  // Tech Stack Item Click Handler
-  $(document).on('click', '.tech-stack-item', function () {
-    const techKey = $(this).data('tech');
-    if (currentTechFilter === techKey) {
-      // Toggle off
-      currentTechFilter = '';
-      $('.tech-stack-item').removeClass('selected-tech');
-      $('#tech-badge-container').hide();
-    } else {
-      currentTechFilter = techKey;
-      $('.tech-stack-item').removeClass('selected-tech');
-      $(this).addClass('selected-tech');
-      const techName = $(this).find('.tech-label').text();
-      $('#active-tech-name').text(techName);
-      $('#tech-badge-container').show();
-
-      // Smooth scroll to portfolio section
-      $('html, body').animate({
-        scrollTop: $("#work").offset().top - 70
-      }, 500);
-    }
-    renderPortfolio();
-  });
-
-  // Clear Tech Badge Handler
-  $('#clear-tech-filter').on('click', function () {
-    currentTechFilter = '';
-    $('.tech-stack-item').removeClass('selected-tech');
-    $('#tech-badge-container').hide();
-    renderPortfolio();
-  });
-
-  // Project Card Detail Modal Handler
+  // PROJECT CARD DETAIL MODAL HANDLER
   $(document).on('click', '.project-card-item', function () {
     const index = $(this).data('index');
     const project = portfolio[index];
@@ -390,7 +296,7 @@ function initPortfolioControls() {
     $('#projectModalImg').attr('src', project[0]);
     $('.project-modal-img-wrap').css('--bg-img', `url('${project[0]}')`);
 
-    // Extract link if present in title HTML
+    // EXTRACT LINK IF PRESENT IN TITLE HTML
     const tempDiv = document.createElement('div');
     tempDiv.innerHTML = project[1];
     const linkEl = tempDiv.querySelector('a');
@@ -433,14 +339,14 @@ function initPortfolioControls() {
     document.body.style.overflow = '';
   }
 
-  // Click the modal image to go fullscreen
+  // CLICK THE MODAL IMAGE TO GO FULLSCREEN
   document.addEventListener('click', function (e) {
     if (e.target && e.target.id === 'projectModalImg') {
       openFullscreen(e.target.src);
     }
   });
 
-  // Close on overlay click, close button, or Escape key
+  // CLOSE ON OVERLAY CLICK, CLOSE BUTTON, OR ESCAPE KEY
   overlay.addEventListener('click', function (e) {
     if (e.target === overlay || e.target === fsImg) closeFullscreen();
   });
@@ -545,7 +451,7 @@ function setupCLI() {
     $output.scrollTop($output[0].scrollHeight);
   }
 
-  // Maximize / Restore toggle
+  // MAXIMIZE / RESTORE TOGGLE
   $('#termMaxBtn').on('click', function () {
     const $modal = $('#cliModal');
     $modal.toggleClass('maximized');
@@ -658,7 +564,7 @@ function setupCLI() {
           $output.append(html);
           $output.scrollTop($output[0].scrollHeight);
 
-          // ── Fetch GitHub stats with auto-retry ──
+          // ── FETCH GITHUB STATS WITH AUTO-RETRY ──
           let retries = 0;
           const maxRetries = 6;
 
@@ -790,6 +696,8 @@ const get_theme = () => {
   const $upskillLinks = $('#upskill a');
   const $myPic = $('#myPic');
 
+  const $contactImage = $('#contact_image');
+
   if (isDark) {
     $('html').removeClass('light-mode').addClass('dark-mode');
     $('#theme_button').html('Light Mode<i class="material-icons white-text">brightness_5</i>');
@@ -805,6 +713,7 @@ const get_theme = () => {
     $upskillLinks.removeClass('black-text').addClass('white-text');
     $divider.removeClass('white').addClass('black');
     $myPic.css('filter', 'brightness(90%)');
+    $contactImage.css({ filter: 'invert(1)', opacity: '0.85' });
 
   } else {
     $('html').removeClass('dark-mode').addClass('light-mode');
@@ -820,6 +729,7 @@ const get_theme = () => {
     $upskillLinks.removeClass('white-text').addClass('black-text');
     $divider.removeClass('white').addClass('black');
     $myPic.css('filter', 'brightness(100%)');
+    $contactImage.css({ filter: 'none', opacity: '0.75' });
   }
 };
 

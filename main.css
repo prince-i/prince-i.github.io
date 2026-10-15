@@ -63,6 +63,120 @@ body {
     object-fit: contain;
     border-radius: 20px;
   }
+
+  #about {
+    padding: 10px 8px !important;
+    margin-top: 5% !important;
+  }
+
+  #about_content {
+    padding: 0 !important;
+  }
+
+  #about_content .card {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding: 15px 12px !important;
+    border-radius: 20px !important;
+  }
+
+  #about_content p.flow-text {
+    text-align: left !important;
+    text-indent: 0 !important;
+    font-size: 1rem !important;
+    line-height: 1.6 !important;
+    margin-bottom: 12px !important;
+  }
+
+  .credentials-wrapper {
+    padding: 0 !important;
+  }
+
+  #credential_data {
+    margin-left: -6px !important;
+    margin-right: -6px !important;
+  }
+
+  .credential-col {
+    padding: 0 6px !important;
+    width: 100% !important;
+  }
+
+  .credential-card {
+    margin: 8px 0 !important;
+    border-radius: 18px !important;
+  }
+
+  .credential-card-body {
+    padding: 18px 16px !important;
+  }
+
+  .credential-role {
+    font-size: 1.15rem !important;
+  }
+
+  .credential-company {
+    font-size: 0.88rem !important;
+  }
+
+  .credential-desc {
+    font-size: 0.9rem !important;
+  }
+
+  #about img[alt="Prince Arce Avatar"] {
+    min-width: 70px;
+    max-width: 85px;
+    border-width: 6px !important;
+  }
+}
+
+@media (min-width: 601px) {
+  #profile_info {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  #profile_info p,
+  #profile_info p.flow-text {
+    font-size: 0.95rem !important;
+    line-height: 1.6 !important;
+    margin-bottom: 12px !important;
+  }
+
+  #profile_info ul {
+    margin: 4px 0 10px 0;
+    padding-left: 20px;
+  }
+
+  #profile_info li {
+    font-size: 0.88rem !important;
+    line-height: 1.5 !important;
+    list-style-type: disc;
+  }
+
+  #about_content .col.l6,
+  #about_content .col.m12.l6 {
+    padding-left: 24px;
+    padding-right: 20px;
+  }
+
+  #about_content .col.l6 p,
+  #about_content .col.l6 p.flow-text,
+  #about_content .col.m12.l6 p,
+  #about_content .col.m12.l6 p.flow-text {
+    font-size: 0.98rem !important;
+    line-height: 1.75 !important;
+    text-align: left !important;
+    text-indent: 0 !important;
+    margin-bottom: 14px !important;
+    letter-spacing: 0.15px;
+  }
+
+  #about_content .card {
+    padding: 24px 20px !important;
+  }
 }
 
 .skill_stack {
@@ -152,9 +266,7 @@ nav {
   }
 }
 
-/* ==========================================================================
-   UPGRADED PRELOADER ANIMATION
-   ========================================================================== */
+
 .loader-wrapper {
   position: fixed;
   top: 0;
@@ -198,7 +310,7 @@ html.light-mode .loader-wrapper {
   justify-content: center;
 }
 
-/* Stationary Circular Center Logo */
+/* STATIONARY CIRCULAR CENTER LOGO */
 .loader-icon-frame {
   width: 96px;
   height: 96px;
@@ -221,10 +333,9 @@ html.light-mode .loader-wrapper {
   object-fit: cover;
   display: block;
   pointer-events: none;
-  /* Not rotating: Logo stays upright and circular */
 }
 
-/* Rotating Outside Circles */
+/* ROTATING OUTSIDE CIRCLES */
 .loader-orbit-ring {
   position: absolute;
   width: 128px;
@@ -295,9 +406,7 @@ html.light-mode .loader-wrapper {
   animation: progressIndeterminate 1.5s ease-in-out infinite;
 }
 
-/* ==========================================================================
-   THEME ALIGNMENT FOR PRELOADER (LIGHT MODE)
-   ========================================================================== */
+/* THEME PRELOADER */
 html.light-mode .loader-wrapper {
   background-color: #ffffff;
 }
@@ -334,7 +443,7 @@ html.light-mode .loader-progress-fill {
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.25);
 }
 
-/* Preloader Keyframes */
+/* KEYFRAMES */
 @keyframes loaderFadeIn {
   0% {
     opacity: 0;
@@ -505,7 +614,6 @@ html.light-mode .loader-progress-fill {
   position: relative;
   width: 100%;
   padding-top: 56.25%;
-  /* 16:9 aspect ratio */
 }
 
 .responsive-iframe iframe {
@@ -569,7 +677,6 @@ html.light-mode .loader-progress-fill {
   flex-grow: 1;
 }
 
-/* INTERACTIVE FILTERING & SEARCH BAR */
 .portfolio-controls {
   margin-bottom: 25px;
   padding: 0 15px;
@@ -919,7 +1026,7 @@ html.light-mode .loader-progress-fill {
   margin-top: 6px;
 }
 
-/* Mobile: stack image on top, details below */
+/* MOBILE STACK IMAGE ON TOP */
 @media (max-width: 600px) {
   #projectModal {
     max-width: 100%;
@@ -1030,9 +1137,7 @@ html.light-mode .loader-progress-fill {
   transform: scale(1.15);
 }
 
-/* ==========================================================================
-   VISUAL LAZY LOADING & SKELETON SHIMMER
-   ========================================================================== */
+/* VISUAL LAZY LOADING & SKELETON SHIMMER */
 .lazy-container {
   position: relative;
   overflow: hidden;
@@ -1066,12 +1171,10 @@ html.light-mode .lazy-container {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0.07) 50%,
-    rgba(255, 255, 255, 0) 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.07) 50%,
+      rgba(255, 255, 255, 0) 100%);
   background-size: 200% 100%;
   animation: shimmerMove 1.6s infinite;
   pointer-events: none;
@@ -1079,12 +1182,10 @@ html.light-mode .lazy-container {
 }
 
 html.light-mode .lazy-placeholder-shimmer {
-  background: linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 0.06) 50%,
-    rgba(0, 0, 0, 0) 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.06) 50%,
+      rgba(0, 0, 0, 0) 100%);
   background-size: 200% 100%;
 }
 
@@ -1097,7 +1198,370 @@ html.light-mode .lazy-placeholder-shimmer {
   0% {
     background-position: -200% 0;
   }
+
   100% {
     background-position: 200% 0;
   }
+}
+
+/* CONTACT SECTION IMAGE STYLES */
+#contact_image {
+  object-fit: contain;
+  max-height: 400px;
+  transition: filter 0.4s ease, opacity 0.4s ease, transform 0.3s ease;
+}
+
+html.dark-mode #contact_image {
+  filter: invert(1);
+  opacity: 0.85;
+}
+
+html.light-mode #contact_image {
+  filter: none;
+  opacity: 0.75;
+}
+
+#contact_image:hover {
+  opacity: 1;
+  transform: scale(1.02);
+}
+
+#contact_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px 24px;
+}
+
+.contact-quote {
+  margin: 0 0 16px 0;
+  padding: 8px 18px;
+  border-left: 3.5px solid #00e676;
+  font-size: 1.05rem;
+  line-height: 1.65;
+  font-style: italic;
+  letter-spacing: 0.2px;
+}
+
+.quote-author {
+  display: block;
+  margin-top: 6px;
+  font-size: 0.95rem;
+  font-style: normal;
+  font-weight: bold;
+  opacity: 0.9;
+}
+
+.contact-divider {
+  margin: 12px 0 20px 0;
+  opacity: 0.25;
+}
+
+.contact-heading {
+  font-size: 1.85rem !important;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  margin: 0 0 12px 0 !important;
+  line-height: 1.3;
+}
+
+.contact-subtext {
+  font-size: 1rem !important;
+  line-height: 1.65;
+  margin: 0 0 22px 0 !important;
+  letter-spacing: 0.15px;
+}
+
+.contact-links-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-link-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 11px 20px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  width: fit-content;
+  max-width: 100%;
+  transition: all 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
+  box-sizing: border-box;
+}
+
+.contact-link-pill i {
+  font-size: 1.35rem;
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.contact-link-pill .link-arrow {
+  font-size: 1.1rem;
+  opacity: 0.45;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+  margin-left: 4px;
+}
+
+.contact-link-pill:hover .link-arrow {
+  opacity: 1;
+  transform: translateX(4px);
+}
+
+html.dark-mode .contact-quote {
+  color: #e0e0e0;
+}
+
+html.dark-mode .contact-heading {
+  color: #ffffff;
+}
+
+html.dark-mode .contact-subtext {
+  color: #b0bec5;
+}
+
+html.dark-mode .contact-link-pill {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #eceff1 !important;
+}
+
+html.dark-mode .contact-link-pill i:first-child {
+  color: #00e676;
+}
+
+html.dark-mode .contact-link-pill:hover {
+  background: rgba(0, 230, 118, 0.12);
+  border-color: #00e676;
+  color: #00e676 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 230, 118, 0.15);
+}
+
+html.light-mode .contact-quote {
+  color: #37474f;
+  border-left-color: #00c853;
+}
+
+html.light-mode .contact-heading {
+  color: #212121;
+}
+
+html.light-mode .contact-subtext {
+  color: #455a64;
+}
+
+html.light-mode .contact-link-pill {
+  background: rgba(0, 0, 0, 0.035);
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  color: #212121 !important;
+}
+
+html.light-mode .contact-link-pill i:first-child {
+  color: #00c853;
+}
+
+html.light-mode .contact-link-pill:hover {
+  background: rgba(0, 200, 83, 0.08);
+  border-color: #00c853;
+  color: #007e33 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+@media (max-width: 600px) {
+  #contact_section {
+    padding: 10px 6px;
+    text-align: center;
+  }
+
+  .contact-quote {
+    border-left: none;
+    border-top: 2.5px solid #00e676;
+    padding: 12px 8px 6px;
+    font-size: 0.95rem;
+    text-align: center;
+  }
+
+  .contact-link-pill {
+    width: 100%;
+    justify-content: center;
+    font-size: 0.88rem;
+    padding: 10px 14px;
+  }
+}
+
+.credential-col {
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.credential-card {
+  position: relative;
+  width: 100%;
+  border-radius: 22px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.35s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.35s ease, border-color 0.3s ease;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.credential-card:hover {
+  transform: translateY(-6px);
+}
+
+.credential-card-body {
+  padding: 26px 24px 28px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.credential-top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.credential-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+}
+
+.credential-badge i {
+  font-size: 0.95rem;
+}
+
+.credential-index {
+  font-size: 0.85rem;
+  font-weight: bold;
+  opacity: 0.4;
+  letter-spacing: 1px;
+}
+
+.credential-role {
+  font-size: 1.25rem !important;
+  font-weight: 800 !important;
+  line-height: 1.35 !important;
+  margin: 0 0 8px 0 !important;
+  letter-spacing: 0.3px;
+}
+
+.credential-company {
+  font-size: 0.9rem !important;
+  line-height: 1.45 !important;
+  margin: 0 0 16px 0 !important;
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  font-style: normal !important;
+  opacity: 0.82;
+}
+
+.credential-company i {
+  font-size: 1.05rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+  opacity: 0.7;
+}
+
+.credential-divider {
+  width: 100%;
+  height: 1px;
+  margin-bottom: 16px;
+}
+
+.credential-desc {
+  font-size: 0.92rem !important;
+  line-height: 1.7 !important;
+  margin: 0 !important;
+  flex: 1;
+  opacity: 0.9;
+  letter-spacing: 0.15px;
+}
+
+/* DARK MODE CREDENTIALS CARD STYLING */
+html.dark-mode .credential-card {
+  background: rgba(255, 255, 255, 0.035);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+}
+
+html.dark-mode .credential-card:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(0, 230, 118, 0.5);
+  box-shadow: 0 14px 40px rgba(0, 230, 118, 0.12), 0 4px 18px rgba(0, 0, 0, 0.5);
+}
+
+html.dark-mode .credential-badge {
+  background: rgba(0, 230, 118, 0.12);
+  color: #00e676;
+  border: 1px solid rgba(0, 230, 118, 0.25);
+}
+
+html.dark-mode .credential-role {
+  color: #ffffff;
+}
+
+html.dark-mode .credential-company {
+  color: #b0bec5;
+}
+
+html.dark-mode .credential-divider {
+  background: linear-gradient(90deg, rgba(0, 230, 118, 0.35) 0%, rgba(255, 255, 255, 0.05) 100%);
+}
+
+html.dark-mode .credential-desc {
+  color: #cfd8dc;
+}
+
+/* LIGHT MODE CREDENTIALS CARD STYLING */
+html.light-mode .credential-card {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.06);
+}
+
+html.light-mode .credential-card:hover {
+  border-color: #00c853;
+  box-shadow: 0 14px 34px rgba(0, 200, 83, 0.12), 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+html.light-mode .credential-badge {
+  background: rgba(0, 200, 83, 0.09);
+  color: #007e33;
+  border: 1px solid rgba(0, 200, 83, 0.25);
+}
+
+html.light-mode .credential-role {
+  color: #1a1a1a;
+}
+
+html.light-mode .credential-company {
+  color: #455a64;
+}
+
+html.light-mode .credential-divider {
+  background: linear-gradient(90deg, rgba(0, 200, 83, 0.35) 0%, rgba(0, 0, 0, 0.06) 100%);
+}
+
+html.light-mode .credential-desc {
+  color: #37474f;
 }
