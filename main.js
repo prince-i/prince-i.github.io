@@ -47,6 +47,14 @@ $(document).ready(function () {
     inDuration: 600,
     outDuration: 500
   });
+  $('.collapsible').collapsible();
+  $('.dropdown-trigger').dropdown({
+    coverTrigger: false,
+    constrainWidth: false,
+    hover: true,
+    inDuration: 250,
+    outDuration: 200
+  });
   $('.modal').not('#cliModal').modal({
     inDuration: 600,
     outDuration: 500
@@ -87,16 +95,19 @@ $(document).ready(function () {
   // TEXT SCRAMBLE ON HOVER
   const specialChars = "!@#$%^&*()_+-=[]{}|;:',.<>?/`~";
   document.querySelectorAll('.scramble-on-hover').forEach(element => {
-    const originalText = element.textContent;
+    // If element contains child tags (e.g. <i>), do not wipe children
+    if (element.children.length > 0) return;
+
+    const originalText = element.textContent.trim();
     let interval = null;
-    let hasStarted = false;
-    let hasCompleted = false;
+    let isScrambling = false;
 
     element.addEventListener('mouseenter', () => {
-      if (hasCompleted || hasStarted) return;
-      hasStarted = true;
+      if (isScrambling) return;
+      isScrambling = true;
       let iterations = 0;
 
+      clearInterval(interval);
       interval = setInterval(() => {
         const scrambled = originalText
           .split('')
@@ -113,10 +124,15 @@ $(document).ready(function () {
         if (iterations >= originalText.length) {
           clearInterval(interval);
           element.textContent = originalText;
-          hasCompleted = true;
-          hasStarted = false;
+          isScrambling = false;
         }
       }, 30);
+    });
+
+    element.addEventListener('mouseleave', () => {
+      clearInterval(interval);
+      element.textContent = originalText;
+      isScrambling = false;
     });
   });
 });
@@ -130,15 +146,43 @@ for (let a = 0; a < about.length; a++) {
 }
 aboutContainer.append(aboutHTML);
 
-// LOAD TECH STACK
+// LOAD TECH STACK BY CATEGORIES
 const techContainer = $('#tech_tools');
-for (let t = 0; t < tech_tools.length; t++) {
-  techContainer.append(`
-    <div class="col l2 m4 s4 tech-stack-item">
-      <img src="${tech_tools[t][0]}" loading="lazy" decoding="async" class="responsive-img skill_stack skill_icon drop_shadow_filter grayscale-50" alt="${tech_tools[t][1]}">
-      <p class="center tech-label">${tech_tools[t][1]}</p>
-    </div>
-  `);
+if (typeof tech_categories !== 'undefined' && tech_categories.length > 0) {
+  let techHTML = '';
+  tech_categories.forEach(cat => {
+    techHTML += `
+      <div class="col s12 tech-category-block">
+        <div class="tech-category-header">
+          <span class="tech-category-title">${cat.category}</span>
+          <div class="tech-category-line"></div>
+        </div>
+        <div class="row tech-category-items">
+    `;
+    cat.tools.forEach(tool => {
+      techHTML += `
+        <div class="col l2 m4 s4 tech-stack-item">
+          <img src="${tool[0]}" loading="lazy" decoding="async" class="responsive-img skill_stack skill_icon drop_shadow_filter grayscale-50" alt="${tool[1]}">
+          <p class="center tech-label">${tool[1]}</p>
+        </div>
+      `;
+    });
+    techHTML += `
+        </div>
+      </div>
+    `;
+  });
+  techContainer.append(techHTML);
+} else {
+  // FALLBACK FLATTENED RENDER
+  for (let t = 0; t < tech_tools.length; t++) {
+    techContainer.append(`
+      <div class="col l2 m4 s4 tech-stack-item">
+        <img src="${tech_tools[t][0]}" loading="lazy" decoding="async" class="responsive-img skill_stack skill_icon drop_shadow_filter grayscale-50" alt="${tech_tools[t][1]}">
+        <p class="center tech-label">${tech_tools[t][1]}</p>
+      </div>
+    `);
+  }
 }
 
 // LOAD SERVICES
@@ -446,7 +490,7 @@ function setupCLI() {
   const $input = $('#terminalInput');
   const $output = $('#terminalOutput');
 
-  function appendLog(lineHtml, color = '#00e676') {
+  function appendLog(lineHtml, color = '#e6edf3') {
     $output.append(`<div style="color: ${color}; margin-bottom: 4px;">${lineHtml}</div>`);
     $output.scrollTop($output[0].scrollHeight);
   }
@@ -508,7 +552,7 @@ function setupCLI() {
         case 'contact':
           appendLog(`Website: <a href="https://sites.google.com/view/erintech" target="_blank" style="color:#58a6ff; text-decoration:underline;">https://sites.google.com/view/erintech</a>`);
           appendLog(`Facebook: <a href="https://www.facebook.com/erintechbusiness" target="_blank" style="color:#58a6ff; text-decoration:underline;">https://www.facebook.com/erintechbusiness</a>`);
-          appendLog(`Reach my socials @cyber.pca on <a href="https://instagram.com/cyber.pca" target="_blank" style="color:#28eaeb">IG</a> and <a href="https://facebook.com/cyber.pca" target="_blank" style="color:#28eaeb">FB</a>.`, '#27c93f');
+          appendLog(`Reach my socials @cyber.pca on <a href="https://instagram.com/cyber.pca" target="_blank" style="color:#ffffff; text-decoration:underline;">IG</a> and <a href="https://facebook.com/cyber.pca" target="_blank" style="color:#ffffff; text-decoration:underline;">FB</a>.`, '#ffffff');
           break;
 
         case 'whoami':
@@ -525,7 +569,7 @@ function setupCLI() {
             { name: 'MySQL/MSSQL', pct: 85, color: '#f29111' },
             { name: 'Python', pct: 80, color: '#3776ab' },
             { name: 'Git', pct: 82, color: '#f05032' },
-            { name: 'Linux / Bash', pct: 78, color: '#27c93f' },
+            { name: 'Linux / Bash', pct: 78, color: '#f5f5f5' },
             { name: 'VB .NET', pct: 75, color: '#68217a' },
             { name: 'Data Science', pct: 72, color: '#17becf' },
             { name: 'AI / NLP', pct: 68, color: '#ff6fd8' },
@@ -579,14 +623,14 @@ function setupCLI() {
                 if (!el) return;
                 el.innerHTML = `
                   <div style="display:flex; flex-wrap:wrap; gap:6px 24px;">
-                    <div><span style="color:#888;">Public Repos</span> <span style="color:#27c93f; font-weight:bold;">${gh.public_repos ?? '-'}</span></div>
-                    <div><span style="color:#888;">Followers</span> <span style="color:#27c93f; font-weight:bold;">${gh.followers ?? '-'}</span></div>
-                    <div><span style="color:#888;">Following</span> <span style="color:#27c93f; font-weight:bold;">${gh.following ?? '-'}</span></div>
-                    <div><span style="color:#888;">Gists</span> <span style="color:#27c93f; font-weight:bold;">${gh.public_gists ?? '-'}</span></div>
+                    <div><span style="color:#888;">Public Repos</span> <span style="color:#ffffff; font-weight:bold;">${gh.public_repos ?? '-'}</span></div>
+                    <div><span style="color:#888;">Followers</span> <span style="color:#ffffff; font-weight:bold;">${gh.followers ?? '-'}</span></div>
+                    <div><span style="color:#888;">Following</span> <span style="color:#ffffff; font-weight:bold;">${gh.following ?? '-'}</span></div>
+                    <div><span style="color:#888;">Gists</span> <span style="color:#ffffff; font-weight:bold;">${gh.public_gists ?? '-'}</span></div>
                     <div><span style="color:#888;">Joined</span> <span style="color:#666;">${gh.created_at ? new Date(gh.created_at).getFullYear() : '-'}</span></div>
                   </div>
                   <div style="margin-top:6px; display:flex; justify-content:space-between; align-items:center;">
-                    <span style="color:#27c93f; font-size:0.75rem;">● online</span>
+                    <span style="color:#ffffff; font-size:0.75rem;">● online</span>
                     <span style="font-size:0.7rem; color:#555;">src: <a href="https://api.github.com/users/prince-i" target="_blank" style="color:#58a6ff; text-decoration:none;">api.github.com/users/prince-i</a></span>
                   </div>`;
               })
@@ -633,8 +677,8 @@ function setupCLI() {
 
         case 'sudo hire':
         case 'sudo hire prince':
-          appendLog(`[OK] Access Granted! Prince Arce is ready to bring high performance to your organization! 🚀`, '#27c93f');
-          appendLog(`Reach my socials @cyber.pca on <a href="https://instagram.com/cyber.pca" target="_blank" style="color:#28eaeb">IG</a> and <a href="https://facebook.com/cyber.pca" target="_blank" style="color:#28eaeb">FB</a>.`, '#27c93f');
+          appendLog(`[OK] Access Granted! Prince Arce is ready to bring high performance to your organization! 🚀`, '#ffffff');
+          appendLog(`Reach my socials @cyber.pca on <a href="https://instagram.com/cyber.pca" target="_blank" style="color:#ffffff; text-decoration:underline;">IG</a> and <a href="https://facebook.com/cyber.pca" target="_blank" style="color:#ffffff; text-decoration:underline;">FB</a>.`, '#ffffff');
           break;
 
         case 'exit':
@@ -690,7 +734,7 @@ const get_theme = () => {
   const $sidenav = $('.sidenav');
   const $body = $('body');
   const $title = $('#title');
-  const $buttons = $('#bktotopbtn, #cert_button, #badges_button, #viewMore');
+  const $buttons = $('#cert_button, #badges_button, #viewMore');
   const $cards = $('#work .card, #executive_reports .card');
   const $divider = $('.divider');
   const $upskillLinks = $('#upskill a');
@@ -733,10 +777,92 @@ const get_theme = () => {
   }
 };
 
-function toggleTheme() {
-  const theme = localStorage.getItem("theme") === "dark" ? "light" : "dark";
-  localStorage.setItem("theme", theme);
-  get_theme();
+function toggleTheme(e) {
+  if (e && typeof e.preventDefault === 'function') {
+    e.preventDefault();
+  }
+
+  const currentTheme = localStorage.getItem("theme") || ($('html').hasClass('dark-mode') ? 'dark' : 'light');
+  const targetTheme = currentTheme === 'dark' ? 'light' : 'dark';
+  const isGoingDark = targetTheme === 'dark';
+
+  // 1. Calculate trigger coordinates (button position)
+  let x = window.innerWidth - 45;
+  let y = 32;
+  if (e && typeof e.clientX === 'number' && typeof e.clientY === 'number' && (e.clientX !== 0 || e.clientY !== 0)) {
+    x = e.clientX;
+    y = e.clientY;
+  } else {
+    const $target = $('#theme_button_nav:visible, #theme_button:visible').first();
+    if ($target.length) {
+      const offset = $target.offset();
+      x = offset.left + ($target.outerWidth() / 2);
+      y = offset.top - $(window).scrollTop() + ($target.outerHeight() / 2);
+    }
+  }
+
+  const endRadius = Math.ceil(Math.hypot(
+    Math.max(x, window.innerWidth - x),
+    Math.max(y, window.innerHeight - y)
+  ));
+
+  // 2. Trigger theme icon rotational spin
+  $('#theme_button_nav i, #theme_button i').addClass('theme-icon-spin');
+  setTimeout(() => {
+    $('#theme_button_nav i, #theme_button i').removeClass('theme-icon-spin');
+  }, 600);
+
+  // 3. Create full-viewport overlay for universal circular animation
+  const overlay = document.createElement('div');
+  overlay.className = 'theme-wipe-overlay';
+  overlay.style.backgroundColor = '#ffffff';
+
+  if (isGoingDark) {
+    // LIGHT -> DARK: Light screen collapses inward into the button
+    overlay.style.clipPath = `circle(${endRadius}px at ${x}px ${y}px)`;
+    document.body.appendChild(overlay);
+
+    localStorage.setItem("theme", targetTheme);
+    get_theme();
+
+    const anim = overlay.animate(
+      [
+        { clipPath: `circle(${endRadius}px at ${x}px ${y}px)` },
+        { clipPath: `circle(0px at ${x}px ${y}px)` }
+      ],
+      {
+        duration: 520,
+        easing: 'cubic-bezier(0.4, 0, 0.2, 1)',
+        fill: 'forwards'
+      }
+    );
+
+    anim.onfinish = () => {
+      overlay.remove();
+    };
+  } else {
+    // DARK -> LIGHT: Light bursts outward from the button across the content
+    overlay.style.clipPath = `circle(0px at ${x}px ${y}px)`;
+    document.body.appendChild(overlay);
+
+    const anim = overlay.animate(
+      [
+        { clipPath: `circle(0px at ${x}px ${y}px)` },
+        { clipPath: `circle(${endRadius}px at ${x}px ${y}px)` }
+      ],
+      {
+        duration: 520,
+        easing: 'cubic-bezier(0.4, 0, 0.2, 1)',
+        fill: 'forwards'
+      }
+    );
+
+    anim.onfinish = () => {
+      localStorage.setItem("theme", targetTheme);
+      get_theme();
+      overlay.remove();
+    };
+  }
 }
 
 $('#theme_button, #theme_button_nav').on('click', toggleTheme);

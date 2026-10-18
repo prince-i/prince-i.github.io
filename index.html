@@ -63,18 +63,22 @@
               class="material-icons">menu</i></a>
           <ul id="nav-mobile" class="right hide-on-med-and-down nav-linked">
             <li><a href="#" class="scramble-on-hover">Home</a></li>
-            <li><a href="#about" class="scramble-on-hover">About</a></li>
+            <li>
+              <a href="#about" class="dropdown-trigger" data-target="about-dropdown"><span
+                  class="scramble-on-hover">About</span><i class="material-icons right"
+                  style="margin-left: 2px;">arrow_drop_down</i></a>
+            </li>
             <li>
               <a href="#services" class="scramble-on-hover">Services</a>
             </li>
             <li><a href="#work" class="scramble-on-hover">Works</a></li>
             <li><a href="#contact" class="scramble-on-hover">Contact</a></li>
             <li>
-              <a href="#cliModal" class="modal-trigger" style="color: #00e676"><i
-                  class="material-icons left">terminal</i><span class="scramble-on-hover">Terminal</span></a>
+              <a href="#cliModal" class="modal-trigger"><i class="material-icons left">terminal</i><span
+                  class="scramble-on-hover">Terminal</span></a>
             </li>
             <li>
-              <a href="javascript:void()" id="theme_button_nav">Dark Mode<i class="material-icons black-text"
+              <a href="javascript:void(0)" id="theme_button_nav">Dark Mode<i class="material-icons black-text"
                   id="theme_icon">brightness_2</i></a>
             </li>
           </ul>
@@ -82,11 +86,32 @@
       </nav>
     </div>
 
+    <!-- ABOUT DROPDOWN CONTENT FOR DESKTOP -->
+    <ul id="about-dropdown" class="dropdown-content">
+      <li><a href="#about"><i class="material-icons left">badge</i>Introduction</a></li>
+      <li><a href="#credentials"><i class="material-icons left">history_edu</i>Credentials</a></li>
+      <li><a href="#tech-stack"><i class="material-icons left">code</i>Tech Stack</a></li>
+    </ul>
+
     <!-- SIDEBAR NAVIGATION FOR MOBILE -->
     <ul class="sidenav" id="mobile-demo">
       <li><a href="#" class="sidenav-close scramble-on-hover">Home</a></li>
-      <li>
-        <a href="#about" class="sidenav-close scramble-on-hover">About</a>
+      <li class="no-padding">
+        <ul class="collapsible collapsible-accordion">
+          <li>
+            <a class="collapsible-header waves-effect"><span class="scramble-on-hover">About</span><i
+                class="material-icons right nav-chevron">expand_more</i></a>
+            <div class="collapsible-body">
+              <ul>
+                <li><a href="#about" class="sidenav-close"><i class="material-icons left">badge</i>Introduction</a></li>
+                <li><a href="#credentials" class="sidenav-close"><i
+                      class="material-icons left">history_edu</i>Credentials</a></li>
+                <li><a href="#tech-stack" class="sidenav-close"><i class="material-icons left">code</i>Tech Stack</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
       </li>
       <li>
         <a href="#services" class="sidenav-close scramble-on-hover">Services</a>
@@ -98,12 +123,12 @@
         <a href="#contact" class="sidenav-close scramble-on-hover">Contact</a>
       </li>
       <li>
-        <a href="#cliModal" class="modal-trigger sidenav-close" style="color: #00e676"><i
-            class="material-icons left">terminal</i><span class="scramble-on-hover">Terminal</span></a>
+        <a href="#cliModal" class="modal-trigger sidenav-close"><i class="material-icons left">terminal</i><span
+            class="scramble-on-hover">Terminal</span></a>
       </li>
       <li>
-        <a href="javascript:void()" class="flow-text sidenav-close" style="color: black" id="theme_button">Dark Mode<i
-            class="material-icons black-text" id="theme_icon">brightness_2</i></a>
+        <a href="javascript:void(0)" class="flow-text sidenav-close" id="theme_button">Dark Mode<i
+            class="material-icons" id="theme_icon">brightness_2</i></a>
       </li>
     </ul>
 
@@ -149,7 +174,7 @@
           </div>
         </div>
         <div class="modal-footer #212121 grey darken-4" style="background-color: #212121">
-          <a href="#!" class="modal-close waves-effect waves-green btn-flat white-text">Close</a>
+          <a href="#!" class="modal-close waves-effect waves-light btn-flat white-text">Close</a>
         </div>
       </div>
     </div>
@@ -263,7 +288,7 @@
         </div>
 
         <!-- EXPERIENCE CREDENTIALS -->
-        <div class="col s12 credentials-wrapper">
+        <div class="col s12 credentials-wrapper" id="credentials">
           <h4 style="font-weight: bold" class="center scramble-on-hover">
             CREDENTIALS
           </h4>
@@ -274,7 +299,7 @@
         <!-- END CREDS -->
       </div>
 
-      <div class="col s12" id="skills_content">
+      <div class="col s12" id="tech-stack">
         <h4 style="font-weight: bold" class="center hide-on-med-and-down scramble-on-hover">
           CORE TECHNICAL TOOLS
         </h4>
@@ -317,7 +342,7 @@
       <h4 style="font-weight: bold" class="center scramble-on-hover">
         PORTFOLIO
       </h4>
-      <p class="center green-text">[My previous works...]</p>
+      <p class="center grey-text text-lighten-1" style="letter-spacing: 1px;">[My previous works...]</p>
 
       <div class="row col s12" id="portfolio_content">
         <!-- WORKS WILL RENDER HERE -->
@@ -340,12 +365,7 @@
     <!-- CONTACT -->
     <div class="row" id="contact">
       <div class="row" style="align-items: center">
-        <div class="col l6 m6 s12" style="display: flex; justify-content: center; align-items: center">
-          <img data-src="Image/email.png"
-            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E"
-            alt="Contact Support" id="contact_image" class="responsive-img lazy-img"
-            style="object-fit: contain; max-height: 400px" />
-        </div>
+        <!-- CONTACT SECTION (QUOTE, HEADER, LINKS) -->
         <div class="col l6 m6 s12" id="contact_section">
           <blockquote class="contact-quote">
             “Technology is a useful servant but a dangerous master.”
@@ -375,6 +395,39 @@
           </ul>
           <!-- END CONTACT -->
         </div>
+
+        <!-- CYBER HUD IMAGE CARD -->
+        <div class="col l6 m6 s12" style="display: flex; justify-content: center; align-items: center; padding: 15px;">
+          <div class="cyber-contact-stage">
+            <div class="cyber-hud-card">
+              <!-- Corner brackets -->
+              <div class="cyber-corner corner-tl"></div>
+              <div class="cyber-corner corner-tr"></div>
+              <div class="cyber-corner corner-bl"></div>
+              <div class="cyber-corner corner-br"></div>
+
+              <!-- Top HUD Header -->
+              <div class="cyber-hud-top">
+                <span><span class="cyber-status-pulse"></span>COMM_LINK // 01</span>
+                <span>TRANSMIT READY</span>
+              </div>
+
+              <!-- Central Hologram -->
+              <div class="cyber-hologram-wrap">
+                <div class="cyber-scanline"></div>
+                <div class="cyber-grid-lines"></div>
+                <img src="Image/email.png" data-src="Image/email.png" alt="Contact Support" id="contact_image"
+                  class="responsive-img lazy-img loaded" />
+              </div>
+
+              <!-- Bottom HUD Footer -->
+              <div class="cyber-hud-bottom">
+                <span class="cyber-hud-coords">SYS.STATUS: ONLINE</span>
+                <span>PROTOCOL // SECURE</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -393,7 +446,8 @@
           </div>
           <div class="project-modal-details">
             <h4 id="projectModalTitle" style="font-weight: bold; margin-bottom: 5px"></h4>
-            <p id="projectModalCategory" class="green-text" style="font-weight: bold"></p>
+            <p id="projectModalCategory" class="white-text"
+              style="font-weight: 600; letter-spacing: 0.8px; opacity: 0.85;"></p>
             <div id="projectModalTags" style="margin-top: 10px; margin-bottom: 15px"></div>
             <div id="projectModalDescription"></div>
           </div>
@@ -401,8 +455,8 @@
       </div>
       <div class="modal-footer grey darken-4" style="border-top: 1px solid #333">
         <a href="#!" id="projectModalLink" target="_blank"
-          class="btn btn-small #00e676 green accent-3 black-text modal-close"
-          style="display: none; font-weight: bold; margin-right: 10px">Visit Site</a>
+          class="btn btn-small white black-text modal-close waves-effect waves-dark"
+          style="display: none; font-weight: bold; margin-right: 10px; border-radius: 4px;">Visit Site</a>
         <a href="#!" class="modal-close waves-effect waves-light btn-flat white-text">Close</a>
       </div>
     </div>
@@ -441,9 +495,17 @@
       </div>
     </div>
 
-    <div class="row center">
-      <a href="#main-screen" id="bktotopbtn" class="btn black btn-large z-depth-1"
-        style="font-size: 20px; border-radius: 30px">Back to top</a>
+    <div class="row center" style="margin-top: 35px; margin-bottom: 25px">
+      <a href="#main-screen" id="bktotopbtn" class="cyber-top-btn" title="Return to Top">
+        <span class="cyber-corner corner-tl"></span>
+        <span class="cyber-corner corner-tr"></span>
+        <span class="cyber-corner corner-bl"></span>
+        <span class="cyber-corner corner-br"></span>
+        <span class="cyber-top-pulse"></span>
+        <i class="material-icons cyber-top-icon">arrow_upward</i>
+        <span class="cyber-top-text">RETURN TO TOP</span>
+        <span class="cyber-top-tag">[SYS.TOP]</span>
+      </a>
     </div>
     <footer>
       <p class="center">All Rights Reserved &copy; 2021</p>

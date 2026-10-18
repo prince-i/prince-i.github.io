@@ -2,9 +2,9 @@
 var about = [
 	['NAME:', 'Prince'],
 	['PROFILE:', 'IT professional with experience in software development, IT operations, and technical support.'],
-	['EDUCATION:', '<ul><li>Bachelor of Science in Information Technology: <b class="green-text">GRADUATED</b></li><li>Master in Information Technology: <b class="orange-text">ONGOING</b></li></ul>'],
-	['INDUSTRY KNOWLEDGE:', '<ul><li>ANALYTICS</li><li>ARTIFICIAL INTELLIGENCE</li><li>CYBERSECURITY</li><li>PROJECT AND IT MANAGEMENT</li><li>IT OPERATIONS AND INFRASTRUCTURE</li></ul>'],
-	['SKILLS', '<p>PROGRAMMING &bull; RESEARCH &amp; ANALYSIS &bull; STRATEGIC THINKING &bull; TECHNICAL INNOVATION &bull; PROBLEM-SOLVING</p>']
+	['EDUCATION:', '<ul><li>Bachelor of Science in Information Technology: <b style="font-weight: 700;">GRADUATED</b></li><li>Master in Information Technology: <b class="orange-text">ONGOING</b></li></ul>'],
+	['INDUSTRY KNOWLEDGE:', '<p>ANALYTICS &bull; ARTIFICIAL INTELLIGENCE &bull; CYBERSECURITY &bull; PROJECT AND IT MANAGEMENT &bull; IT OPERATIONS AND INFRASTRUCTURE</p>'],
+	['SKILLS:', '<p>PROGRAMMING &bull; RESEARCH &amp; ANALYSIS &bull; STRATEGIC THINKING &bull; TECHNICAL INNOVATION &bull; PROBLEM-SOLVING</p>']
 ];
 
 
@@ -45,36 +45,92 @@ let portfolio = [
 	['Image/systems/cert-gen.png', 'Certificate Multiplier Generating Tool', 'Python Web App/ Replit (Programmer) / November 2025', 'web', ['python', 'javascript', 'ajax']],
 	['Image/systems/emp-movement.png', 'Employee Movement Portal - For Internal &amp; External Recruitment Monitoring - BATELEC II', 'Web App (Programmer) / November 2025', 'web', ['php', 'mysql', 'javascript', 'ajax']],
 	['Image/systems/brgystoninolipaportal.png', '<a href="https://barangaystoninolipa.com" target="_blank">Barangay Sto. Nino Lipa Portal - Capstone</a>', 'Web App/ ReactJS (Reverse & Deploy) / November 2025', 'web', ['javascript', 'ajax', 'npm', 'vercel']],
-	['Image/systems/batelec_ddcc.png', '<a href="https://mis.batelec2.ph/ddcc_portal" target="_blank">BATELEC II DDCC & Grid Operations Monitoring Portal</a>', 'Web App (Programmer) / December 2025', 'web', ['php', 'mysql', 'javascript', 'ajax']],
+	['Image/systems/batelec_ddcc.png', '<a href="https://mis.batelec2.ph/ddcc_portal" target="_blank">BATELEC II - Command Center & Grid Operations Monitoring Portal</a>', 'Web App (Programmer) / December 2025', 'web', ['php', 'mysql', 'javascript', 'ajax']],
 	['Image/systems/energy_data_aggregator.png', 'Hourly Energy and NGCP Metering Point Data Aggregator - BATELEC II', 'Web App / Data Automation (Programmer) / May 2026', 'ai_data', ['python', 'flask']],
 	['Image/systems/lwapforecaster.png', 'LWAP Forecaster - BATELEC II', 'Web App / Data Model (Programmer) / May 2026', 'ai_data', ['python', 'flask']],
-	['Image/systems/fleet_tracking_app.png', 'FleetWatch - Fleet Tracking App & Geolocation Monitoring Portal', 'Android and Web App (Programmer) / August 2026', 'web', ['kotlin + java', 'php', 'ajax', 'javascript', 'cloudflare-api']]
+	['Image/systems/fleet_tracking_app.png', 'FleetWatch - Fleet Tracking App & Geolocation Monitoring Portal', 'Android and Web App (Programmer) / August 2026', 'web', ['kotlin + java', 'php', 'ajax', 'javascript', 'cloudflare-api']],
+	['Image/systems/batelec_drrmd.png', 'BATELEC II Disaster Risk Reduction & Management Division (DRRMD) Portal - Disaster Resilience', 'Web App (Programmer) / August 2026', 'web', ['php', 'mysql', 'javascript', 'ajax', 'materialize-css']],
+	['Image/systems/mis_ciatmp.png', 'BATELEC II MIS - Centralized IT Asset Tracking & Management Portal', 'Web App (Programmer) / September 2026', 'web', ['php', 'mysql', 'javascript', 'ajax', 'materialize-css']],
+	['Image/systems/command_center.png', 'BATELEC II - Command Center Dashboard', 'Web App (Programmer) / October 2026', 'web', ['php', 'mysql', 'javascript', 'ajax', 'materialize-css']]
 ];
 
 
-// TECH STACK
-let tech_tools = [
-	['Image/icons/html-5.png', 'HTML5', 'html5'],
-	['Image/icons/css-3.png', 'CSS3', 'css3'],
-	['Image/icons/javascript.png', 'JavaScript', 'javascript'],
-	['Image/icons/php.png', 'PHP', 'php'],
-	['Image/icons/mysql.png', 'MySQL', 'mysql'],
-	['Image/icons/sql.png', 'T-SQL(MS SQL)', 'sql'],
-	['Image/icons/dotnet.png', 'Visual Basic .Net', 'dotnet'],
-	['Image/icons/python.png', 'Python', 'python'],
-	['Image/icons/npm-logo.png', 'NPM', 'npm'],
-	['Image/icons/git.png', 'Git Bash', 'git'],
-	['Image/icons/visual-studio.png', 'VS Code', 'vscode'],
-	['Image/icons/github.png', 'Github', 'github'],
-	['Image/icons/figma.png', 'Figma', 'figma'],
-	['Image/icons/microsoft.png', 'Windows Server', 'server'],
-	['Image/icons/ubuntu.png', 'Linux Server', 'linux'],
-	['Image/icons/bash.png', 'Bash', 'bash'],
-	['Image/icons/Msdos-icon.svg', 'MS-DOS', 'msdos'],
-	['Image/icons/google-apps-script.png', 'App Script', 'appscript'],
-	['Image/icons/jupyter-icon-sm.png', 'Jupyter Notebook', 'jupyter'],
-	['Image/icons/colab.png', 'Google Colab', 'colab']
+// TECH STACK CATEGORIES
+let tech_categories = [
+	{
+		category: 'WEB & APP DEVELOPMENT',
+		tools: [
+			['Image/icons/html-5.png', 'HTML5', 'html5'],
+			['Image/icons/css-3.png', 'CSS3', 'css3'],
+			['Image/icons/javascript.png', 'JavaScript', 'javascript'],
+			['Image/icons/php.png', 'PHP', 'php'],
+			['Image/icons/dotnet.png', 'VB.NET', 'dotnet'],
+		]
+	},
+	{
+		category: 'DATABASE MANAGEMENT',
+		tools: [
+			['Image/icons/mysql.png', 'MySQL', 'mysql'],
+			['Image/icons/sql.png', 'SQL Server / T-SQL', 'sql']
+		]
+	},
+	{
+		category: 'DATA SCIENCE & ARTIFICIAL INTELLIGENCE',
+		tools: [
+			['Image/icons/python.png', 'Python', 'python'],
+			['Image/icons/jupyter-icon-sm.png', 'Jupyter Notebook', 'jupyter'],
+			['Image/icons/colab.png', 'Google Colab', 'colab'],
+			['Image/icons/scikit-learn.png', 'Scikit-Learn', 'scikit-learn'],
+			['Image/icons/yolo.png', 'YOLO (Computer Vision)', 'yolo'],
+			['Image/icons/sentence-transformers.png', 'Sentence Transformers (NLP)', 'sentence-transformers'],
+			['Image/icons/php.png', 'PHP-NLP-Tools', 'php-nlp'],
+			['Image/icons/chromadb.png', 'Vector DB & RAG', 'vectordb']
+		]
+	},
+	{
+		category: 'DEVELOPMENT TOOLS & VERSION CONTROL',
+		tools: [
+			['Image/icons/npm-logo.png', 'NPM', 'npm'],
+			['Image/icons/git.png', 'Git', 'git'],
+			['Image/icons/visual-studio.png', 'VS Code', 'vscode'],
+			['Image/icons/github.png', 'GitHub', 'github']
+		]
+	},
+	{
+		category: 'IT INFRASTRUCTURE & SYSTEMS ADMINISTRATION',
+		tools: [
+			['Image/icons/microsoft.png', 'Windows Server', 'server'],
+			['Image/icons/ubuntu.png', 'Linux Server', 'linux'],
+			['Image/icons/active-directory.png', 'Active Directory', 'active-directory'],
+			['Image/icons/remote-desktop.png', 'Remote Desktop', 'remote-desktop'],
+			['Image/icons/anydesk.png', 'AnyDesk', 'anydesk'],
+			['Image/icons/powershell.png', 'PowerShell', 'powershell'],
+			['Image/icons/bash.png', 'Bash', 'bash'],
+			['Image/icons/python.png', 'Python Scripting', 'python-script'],
+			['Image/icons/php.png', 'PHP Scripting', 'php-script'],
+			['Image/icons/google-apps-script.png', 'Google Apps Script', 'appscript']
+		]
+	},
+	{
+		category: 'NETWORKING & DIAGNOSTICS',
+		tools: [
+			['Image/icons/wireshark.png', 'Wireshark', 'wireshark'],
+			['Image/icons/packet-tracer.png', 'Cisco Packet Tracer', 'packet-tracer']
+		]
+	},
+	{
+		category: 'UI/UX DESIGN',
+		tools: [
+			['Image/icons/figma.png', 'Figma', 'figma'],
+			['Image/icons/uizard.png', 'Uizard', 'uizard'],
+			['Image/icons/drawio.png', 'draw.io', 'drawio']
+		]
+	}
 ];
+
+// BACKWARD COMPATIBILITY FLATTENED ARRAY
+let tech_tools = tech_categories.flatMap(c => c.tools);
+
 
 // SERVICES OFFERED
 let services = [
