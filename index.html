@@ -16,6 +16,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap" rel="stylesheet" />
+  <!-- CRITICAL ASSET PRELOADS FOR INSTANT LCP -->
+  <link rel="preload" as="image" href="Image/icon.png" fetchpriority="high" />
+  <link rel="preload" as="image" href="Image/Kyoto.png" fetchpriority="high" />
   <!-- STYLESHEETS (FRAMEWORK FIRST, CUSTOM STYLES SECOND) -->
   <link rel="stylesheet" href="materialize/css/materialize.min.css" />
   <link rel="stylesheet" href="main.css" />
@@ -42,8 +45,8 @@
         <div class="loader-orbit-ring-outer"></div>
         <div class="loader-orbit-ring"></div>
         <div class="loader-icon-frame">
-          <img src="Image/icon.png" alt="Prince Arce" id="loader-img" class="loader-icon-img" loading="eager"
-            fetchpriority="high" />
+          <img src="Image/icon.png" alt="Prince Arce" id="loader-img" class="loader-icon-img" width="56" height="56"
+            loading="eager" fetchpriority="high" decoding="async" />
         </div>
       </div>
       <div class="loader-label">
@@ -135,9 +138,11 @@
     <!-- HERO SECTION -->
     <div class="row center" style="margin-top: -20px; position: relative">
       <img src="Image/Kyoto.png" alt="Kyoto Map Banner" class="responsive-img" loading="eager" fetchpriority="high"
+        decoding="async" width="1200" height="400"
         style="
             width: 100%;
             max-height: 60dvh;
+            aspect-ratio: 16/9;
             object-fit: cover;
             border-bottom-left-radius: 30px;
             border-bottom-right-radius: 30px;
@@ -183,8 +188,8 @@
     <div class="divider"></div>
     <div class="row col s12" id="stats_content" style="margin-top: 30px; margin-bottom: 30px">
       <div class="col l3 m3 s12" style="text-align: center" id="stat_cont">
-        <img src="Image/icons/puzzle.png" alt="Works Completed" loading="lazy" decoding="async" style="width: 30%"
-          class="responsive-img rotate_hover grayscale-50" />
+        <img src="Image/icons/puzzle.png" alt="Works Completed" loading="lazy" decoding="async" width="64" height="64"
+          style="width: 30%; max-width: 64px; aspect-ratio: 1/1;" class="responsive-img rotate_hover grayscale-50" />
         <p style="font-size: 30px; font-weight: bold" id="works_completed_count">
           -
         </p>
@@ -192,22 +197,22 @@
       </div>
 
       <div class="col l3 m3 s12" style="text-align: center" id="stat_cont">
-        <img src="Image/icons/schedule.svg" alt="Years of Experience" loading="lazy" decoding="async" style="width: 30%"
-          class="responsive-img rotate_hover grayscale-50" />
+        <img src="Image/icons/schedule.svg" alt="Years of Experience" loading="lazy" decoding="async" width="64" height="64"
+          style="width: 30%; max-width: 64px; aspect-ratio: 1/1;" class="responsive-img rotate_hover grayscale-50" />
         <p style="font-size: 30px; font-weight: bold" id="yrs_of_exp">-</p>
         <p>YEARS OF EXPERIENCE</p>
       </div>
 
       <div class="col l3 m3 s12" style="text-align: center" id="stat_cont">
-        <img src="Image/icons/customer-engagement.png" alt="Total Clients" loading="lazy" decoding="async"
-          style="width: 30%" class="responsive-img rotate_hover grayscale-50" />
+        <img src="Image/icons/customer-engagement.png" alt="Total Clients" loading="lazy" decoding="async" width="64" height="64"
+          style="width: 30%; max-width: 64px; aspect-ratio: 1/1;" class="responsive-img rotate_hover grayscale-50" />
         <p style="font-size: 30px; font-weight: bold" id="total_clients">-</p>
         <p>TOTAL CLIENTS</p>
       </div>
 
       <div class="col l3 m3 s12" style="text-align: center" id="stat_cont">
-        <img src="Image/icons/trophy.svg" alt="Awards Won" loading="lazy" decoding="async" style="width: 30%"
-          class="responsive-img rotate_hover grayscale-50" />
+        <img src="Image/icons/trophy.svg" alt="Awards Won" loading="lazy" decoding="async" width="64" height="64"
+          style="width: 30%; max-width: 64px; aspect-ratio: 1/1;" class="responsive-img rotate_hover grayscale-50" />
         <p style="font-size: 30px; font-weight: bold" id="total_awards">-</p>
         <p>AWARDS WON</p>
       </div>
@@ -216,8 +221,11 @@
     <!-- ABOUT -->
     <div class="row" style="padding: 10px; margin-top: 5%" id="about">
       <div class="row col s12 center">
-        <img src="Image/icon.png" alt="Prince Arce Avatar" loading="lazy" decoding="async" style="
+        <img src="Image/icon.png" alt="Prince Arce Avatar" loading="lazy" decoding="async" width="90" height="90" style="
               width: 8%;
+              min-width: 70px;
+              max-width: 100px;
+              aspect-ratio: 1/1;
               border-style: solid;
               border-width: 10px;
               border-color: white;
@@ -517,12 +525,11 @@
     </footer>
   </main>
 
-  <!-- JS -->
-  <script src="materialize/js/jquery.min.js"></script>
-  <script src="materialize/js/materialize.min.js"></script>
-  <script type="text/javascript" src="portfolio.js"></script>
-  <script src="main.js"></script>
-  <script type="text/javascript" async src="https://cdn.credly.com/assets/utilities/embed.js"></script>
+  <!-- JS (DEFERRED TO UNBLOCK PARSING & RENDER) -->
+  <script defer src="materialize/js/jquery.min.js"></script>
+  <script defer src="materialize/js/materialize.min.js"></script>
+  <script defer type="text/javascript" src="portfolio.js"></script>
+  <script defer src="main.js"></script>
 </body>
 
 </html>

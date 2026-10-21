@@ -604,10 +604,31 @@ html.light-mode .sidenav .collapsible-body li a:hover i.material-icons {
     margin-top: 1%;
   }
 
+  #about_content .card.transparent {
+    padding: 0 !important;
+    overflow: hidden;
+  }
+
+  #about_content .col:has(#myPic),
+  #about_content div:has(> #myPic) {
+    padding: 0 !important;
+    width: 100% !important;
+  }
+
   #myPic {
-    max-height: 300px;
-    object-fit: contain;
-    border-radius: 20px;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 240px !important;
+    max-height: 280px !important;
+    object-fit: cover !important;
+    object-position: center top !important;
+    border-radius: 20px 20px 0 0 !important;
+    display: block !important;
+    margin: 0 !important;
+  }
+
+  #profile_info {
+    padding: 18px 16px !important;
   }
 }
 
@@ -2436,5 +2457,75 @@ html.theme-switching h6 {
   100% {
     transform: rotate(360deg) scale(1);
     opacity: 1;
+  }
+}
+
+/* ==========================================================================
+   13. PERFORMANCE OPTIMIZATIONS FOR LOW-END & MOBILE DEVICES
+   ========================================================================== */
+
+/* GPU HARDWARE ACCELERATION & LAYER PROMOTION */
+.loader-orbit-ring,
+.loader-orbit-ring-outer,
+.loader-glow,
+.loader-icon-frame,
+.cyber-top-btn,
+.theme-wipe-overlay,
+.theme-icon-spin {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+/* ACCELERATE FREQUENT HOVER TARGETS WITHOUT MEMORY OVERHEAD */
+.rotate_hover,
+.tech-stack-card,
+.credential-card,
+.portfolio-card {
+  will-change: transform;
+}
+
+/* PREFERS-REDUCED-MOTION & BATTERY CONSERVATION */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .loader-orbit-ring,
+  .loader-orbit-ring-outer,
+  .loader-glow,
+  .loader-text,
+  .loader-progress-fill,
+  .cyber-top-pulse {
+    animation: none !important;
+  }
+}
+
+/* LOW-END / NARROW SCREEN PERFORMANCE TUNING */
+@media screen and (max-width: 600px) {
+  /* Flatten heavy backdrop filters on low-end mobile to avoid GPU frame dropping */
+  .cyber-top-btn,
+  .terminal-header,
+  .portfolio-floating-pill,
+  .project-modal-header {
+    -webkit-backdrop-filter: none !important;
+    backdrop-filter: none !important;
+  }
+
+  html.dark-mode .cyber-top-btn,
+  html.dark-mode .terminal-header,
+  html.dark-mode .portfolio-floating-pill {
+    background: #111111 !important;
+  }
+
+  html.light-mode .cyber-top-btn,
+  html.light-mode .terminal-header,
+  html.light-mode .portfolio-floating-pill {
+    background: #f5f5f5 !important;
   }
 }

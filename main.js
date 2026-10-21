@@ -92,49 +92,69 @@ $(document).ready(function () {
   initPortfolioControls();
   initLazyLoading();
 
-  // TEXT SCRAMBLE ON HOVER
-  const specialChars = "!@#$%^&*()_+-=[]{}|;:',.<>?/`~";
-  document.querySelectorAll('.scramble-on-hover').forEach(element => {
-    // If element contains child tags (e.g. <i>), do not wipe children
-    if (element.children.length > 0) return;
-
-    const originalText = element.textContent.trim();
-    let interval = null;
-    let isScrambling = false;
-
-    element.addEventListener('mouseenter', () => {
-      if (isScrambling) return;
-      isScrambling = true;
-      let iterations = 0;
-
-      clearInterval(interval);
-      interval = setInterval(() => {
-        const scrambled = originalText
-          .split('')
-          .map((char, i) => {
-            if (char === ' ') return ' ';
-            if (i < iterations) return originalText[i];
-            return specialChars[Math.floor(Math.random() * specialChars.length)];
-          })
-          .join('');
-
-        element.textContent = scrambled;
-        iterations += 1 / 3;
-
-        if (iterations >= originalText.length) {
-          clearInterval(interval);
-          element.textContent = originalText;
-          isScrambling = false;
-        }
-      }, 30);
-    });
-
-    element.addEventListener('mouseleave', () => {
-      clearInterval(interval);
-      element.textContent = originalText;
-      isScrambling = false;
-    });
+  // SMOOTH ANCHOR SCROLLING WITH NAVBAR OFFSET COMPENSATION
+  $(document).on('click', 'a[href^="#"]:not([href="#"]):not(.modal-trigger):not(.dropdown-trigger):not(.sidenav-trigger)', function (e) {
+    const targetHash = this.getAttribute('href');
+    if (!targetHash || targetHash === '#') return;
+    const targetEl = document.querySelector(targetHash);
+    if (targetEl) {
+      e.preventDefault();
+      const navOffset = $('nav').outerHeight() || 64;
+      const targetPos = $(targetEl).offset().top - navOffset;
+      $('html, body').animate({
+        scrollTop: Math.max(0, targetPos)
+      }, 500);
+      if (history.pushState) {
+        history.pushState(null, null, targetHash);
+      }
+    }
   });
+
+  // TEXT SCRAMBLE ON HOVER (ONLY ON POINTER/DESKTOP DEVICES TO SAVE MOBILE THREAD)
+  const isFinePointer = window.matchMedia && window.matchMedia('(pointer: fine)').matches;
+  if (isFinePointer) {
+    const specialChars = "!@#$%^&*()_+-=[]{}|;:',.<>?/`~";
+    document.querySelectorAll('.scramble-on-hover').forEach(element => {
+      if (element.children.length > 0) return;
+
+      const originalText = element.textContent.trim();
+      let interval = null;
+      let isScrambling = false;
+
+      element.addEventListener('mouseenter', () => {
+        if (isScrambling) return;
+        isScrambling = true;
+        let iterations = 0;
+
+        clearInterval(interval);
+        interval = setInterval(() => {
+          const scrambled = originalText
+            .split('')
+            .map((char, i) => {
+              if (char === ' ') return ' ';
+              if (i < iterations) return originalText[i];
+              return specialChars[Math.floor(Math.random() * specialChars.length)];
+            })
+            .join('');
+
+          element.textContent = scrambled;
+          iterations += 1 / 3;
+
+          if (iterations >= originalText.length) {
+            clearInterval(interval);
+            element.textContent = originalText;
+            isScrambling = false;
+          }
+        }, 30);
+      });
+
+      element.addEventListener('mouseleave', () => {
+        clearInterval(interval);
+        element.textContent = originalText;
+        isScrambling = false;
+      });
+    });
+  }
 });
 
 // ====================================================================================
@@ -162,7 +182,7 @@ if (typeof tech_categories !== 'undefined' && tech_categories.length > 0) {
     cat.tools.forEach(tool => {
       techHTML += `
         <div class="col l2 m4 s4 tech-stack-item">
-          <img src="${tool[0]}" loading="lazy" decoding="async" class="responsive-img skill_stack skill_icon drop_shadow_filter grayscale-50" alt="${tool[1]}">
+          <img src="${tool[0]}" loading="lazy" decoding="async" width="48" height="48" style="aspect-ratio: 1/1;" class="responsive-img skill_stack skill_icon drop_shadow_filter grayscale-50" alt="${tool[1]}">
           <p class="center tech-label">${tool[1]}</p>
         </div>
       `;
@@ -178,7 +198,7 @@ if (typeof tech_categories !== 'undefined' && tech_categories.length > 0) {
   for (let t = 0; t < tech_tools.length; t++) {
     techContainer.append(`
       <div class="col l2 m4 s4 tech-stack-item">
-        <img src="${tech_tools[t][0]}" loading="lazy" decoding="async" class="responsive-img skill_stack skill_icon drop_shadow_filter grayscale-50" alt="${tech_tools[t][1]}">
+        <img src="${tech_tools[t][0]}" loading="lazy" decoding="async" width="48" height="48" style="aspect-ratio: 1/1;" class="responsive-img skill_stack skill_icon drop_shadow_filter grayscale-50" alt="${tech_tools[t][1]}">
         <p class="center tech-label">${tech_tools[t][1]}</p>
       </div>
     `);
@@ -191,7 +211,7 @@ let servicesHTML = '';
 for (let s = 0; s < services.length; s++) {
   servicesHTML += `
     <div class="col l4 m4 s12" style="text-align:center; height:40dvh; margin-bottom:3%;">
-      <img src="${services[s][0]}" loading="lazy" decoding="async" alt="${services[s][1]}" style="width:30%;" class="services_icon drop_shadow_filter rotate_hover grayscale-50">
+      <img src="${services[s][0]}" loading="lazy" decoding="async" width="80" height="80" alt="${services[s][1]}" style="width:30%; max-width:80px; aspect-ratio: 1/1;" class="services_icon drop_shadow_filter rotate_hover grayscale-50">
       <p style="font-weight:bold;">${services[s][1]}</p>
       <p>${services[s][2]}</p>
     </div>
@@ -300,12 +320,14 @@ function initLazyLoading() {
           const tempImg = new Image();
           tempImg.src = img.dataset.src;
           tempImg.onload = () => {
+            img.decoding = 'async';
             img.src = img.dataset.src;
             img.classList.add('loaded');
             const parent = img.closest('.lazy-container');
             if (parent) parent.classList.add('image-loaded');
           };
           tempImg.onerror = () => {
+            img.decoding = 'async';
             img.src = img.dataset.src;
             img.classList.add('loaded');
             const parent = img.closest('.lazy-container');
@@ -404,10 +426,7 @@ function initPortfolioControls() {
 // ====================================================================================
 // ANIMATED STAT COUNTER (COUNT-UP EFFECT)
 function animateCounters() {
-  const duration = 1800;
-  const frameDuration = 1000 / 60;
-  const totalFrames = Math.round(duration / frameDuration);
-
+  const duration = 1600;
   const targets = {
     works: achievements.works_completed,
     exp: achievements.years_of_exp,
@@ -415,10 +434,12 @@ function animateCounters() {
     awards: achievements.awards
   };
 
-  let frame = 0;
-  const counterInterval = setInterval(() => {
-    frame++;
-    const progress = frame / totalFrames;
+  let startTime = null;
+
+  function step(timestamp) {
+    if (!startTime) startTime = timestamp;
+    const elapsed = timestamp - startTime;
+    const progress = Math.min(elapsed / duration, 1);
     const easeOut = 1 - Math.pow(1 - progress, 3);
 
     $('#works_completed_count').text(Math.floor(targets.works * easeOut));
@@ -426,14 +447,17 @@ function animateCounters() {
     $('#total_clients').text(Math.floor(targets.clients * easeOut));
     $('#total_awards').text(Math.floor(targets.awards * easeOut));
 
-    if (frame === totalFrames) {
-      clearInterval(counterInterval);
+    if (progress < 1) {
+      window.requestAnimationFrame(step);
+    } else {
       $('#works_completed_count').text(targets.works);
       $('#yrs_of_exp').text(targets.exp);
       $('#total_clients').text(targets.clients);
       $('#total_awards').text(targets.awards);
     }
-  }, frameDuration);
+  }
+
+  window.requestAnimationFrame(step);
 }
 
 function setupStatObserver() {
