@@ -27,20 +27,172 @@ $(document).ready(function () {
     return;
   }
 
+  // ASSET PRELOAD PIPELINE WITH REAL-TIME PROGRESS
+  const $progressBar = $('.loader-progress-fill');
+  const updateProgress = function (percent) {
+    if ($progressBar.length) {
+      $progressBar.css('width', Math.min(100, Math.max(0, percent)) + '%');
+    }
+  };
+
+  const preloadSingleImage = function (url) {
+    return new Promise(function (resolve) {
+      if (!url) return resolve();
+      const img = new Image();
+      img.src = url;
+      if (img.complete) {
+        if (typeof img.decode === 'function') {
+          img.decode().then(resolve).catch(resolve);
+        } else {
+          resolve();
+        }
+        return;
+      }
+      img.onload = function () {
+        if (typeof img.decode === 'function') {
+          img.decode().then(resolve).catch(resolve);
+        } else {
+          resolve();
+        }
+      };
+      img.onerror = resolve; // Continue on error to avoid blocking the loader
+    });
+  };
+
+  // 1. GATHER CRITICAL ASSETS (VIEWPORT / TOP-TIER ASSETS)
+  const criticalImages = [
+    'Image/icon.png',
+    'Image/Kyoto.png',
+    'Image/ai_engineer.png',
+    'Image/icons/puzzle.png',
+    'Image/icons/schedule.svg',
+    'Image/icons/customer-engagement.png',
+    'Image/icons/trophy.svg',
+    'Image/hardware.jpg',
+    'Image/email.png'
+  ];
+
+  // Include the first batch of portfolio items (visible upon reaching work section)
+  if (typeof portfolio !== 'undefined' && Array.isArray(portfolio)) {
+    const initialPortfolioCount = Math.min(6, portfolio.length);
+    for (let i = 0; i < initialPortfolioCount; i++) {
+      if (portfolio[i] && portfolio[i][0]) {
+        criticalImages.push(portfolio[i][0]);
+      }
+    }
+  }
+
+  // De-duplicate critical images
+  const uniqueCriticalImages = Array.from(new Set(criticalImages));
+  let loadedCount = 0;
+  const totalAssets = uniqueCriticalImages.length;
+
+  const trackAssetProgress = function () {
+    loadedCount++;
+    const percent = Math.round((loadedCount / totalAssets) * 100);
+    updateProgress(percent);
+  };
+
+  // Create loading promises for critical images
+  const criticalPromises = uniqueCriticalImages.map(function (src) {
+    return preloadSingleImage(src).then(trackAssetProgress);
+  });
+
+  // Also wait for web fonts to avoid layout shift (FOIT / FOUT)
+  if (document.fonts && document.fonts.ready) {
+    criticalPromises.push(document.fonts.ready.catch(function () {}));
+  }
+
+  // Wait for DOM ready + Window load
+  const windowLoadPromise = new Promise(function (resolve) {
+    if (document.readyState === 'complete') {
+      resolve();
+    } else {
+      $(window).on('load', resolve);
+    }
+  });
+  criticalPromises.push(windowLoadPromise);
+
   const minLoaderTime = 700;
   const loaderStartTime = window.loaderInitTime || Date.now();
-  const timeElapsed = Date.now() - loaderStartTime;
-  const remainingDelay = Math.max(0, minLoaderTime - timeElapsed);
 
-  if (document.readyState === 'complete') {
-    setTimeout(hideLoader, remainingDelay);
-  } else {
-    $(window).on('load', function () {
-      setTimeout(hideLoader, remainingDelay);
-    });
-    // SAFETY FALLBACK TIMEOUT
-    setTimeout(hideLoader, Math.max(remainingDelay, 2500));
-  }
+  // Safety maximum wait time (3.5s) so slower networks never get stuck
+  const timeoutPromise = new Promise(function (resolve) {
+    setTimeout(resolve, 3500);
+  });
+
+  // Coordinate critical preload
+  Promise.race([
+    Promise.allSettled(criticalPromises),
+    timeoutPromise
+  ]).then(function () {
+    updateProgress(100);
+    const timeElapsed = Date.now() - loaderStartTime;
+    const remainingDelay = Math.max(0, minLoaderTime - timeElapsed);
+
+    setTimeout(function () {
+      hideLoader();
+      // 2. BACKGROUND PRIMING: Preload remaining assets during idle time
+      primeRemainingAssets();
+    }, remainingDelay);
+  });
+
+  // BACKGROUND PRIMING OF REMAINING PORTFOLIO & ASSETS
+  const primeRemainingAssets = function () {
+    const remainingUrls = [];
+
+    // Remaining portfolio screenshots
+    if (typeof portfolio !== 'undefined' && Array.isArray(portfolio)) {
+      for (let i = 6; i < portfolio.length; i++) {
+        if (portfolio[i] && portfolio[i][0]) {
+          remainingUrls.push(portfolio[i][0]);
+        }
+      }
+    }
+
+    // Services and networking icons
+    if (typeof services !== 'undefined' && Array.isArray(services)) {
+      services.forEach(function (s) {
+        if (s && s[0]) remainingUrls.push(s[0]);
+      });
+    }
+
+    if (typeof networks !== 'undefined' && Array.isArray(networks)) {
+      networks.forEach(function (n) {
+        if (n && n[0]) remainingUrls.push(n[0]);
+      });
+    }
+
+    if (typeof tech_tools !== 'undefined' && Array.isArray(tech_tools)) {
+      tech_tools.forEach(function (t) {
+        if (t && t[0]) remainingUrls.push(t[0]);
+      });
+    }
+
+    const uniqueRemaining = Array.from(new Set(remainingUrls));
+    const loadRemainingInChunks = function () {
+      let index = 0;
+      const loadNextChunk = function () {
+        const chunk = uniqueRemaining.slice(index, index + 3);
+        if (!chunk.length) return;
+        index += 3;
+        Promise.allSettled(chunk.map(preloadSingleImage)).then(function () {
+          if ('requestIdleCallback' in window) {
+            window.requestIdleCallback(loadNextChunk, { timeout: 1500 });
+          } else {
+            setTimeout(loadNextChunk, 200);
+          }
+        });
+      };
+      loadNextChunk();
+    };
+
+    if ('requestIdleCallback' in window) {
+      window.requestIdleCallback(loadRemainingInChunks, { timeout: 2000 });
+    } else {
+      setTimeout(loadRemainingInChunks, 400);
+    }
+  };
 
   $('.sidenav').sidenav({
     draggable: true,
