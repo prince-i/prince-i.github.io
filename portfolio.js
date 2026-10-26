@@ -49,7 +49,7 @@ let portfolio = [
 	['Image/systems/energy_data_aggregator.png', 'Hourly Energy and NGCP Metering Point Data Aggregator - BATELEC II', 'Web App / Data Automation (Programmer) / May 2026', 'ai_data', ['python', 'flask']],
 	['Image/systems/lwapforecaster.png', 'LWAP Forecaster - BATELEC II', 'Web App / Data Model (Programmer) / May 2026', 'ai_data', ['python', 'flask']],
 	['Image/systems/fleet_tracking_app.png', 'FleetWatch - Fleet Tracking App & Geolocation Monitoring Portal', 'Android and Web App (Programmer) / August 2026', 'web', ['kotlin + java', 'php', 'ajax', 'javascript', 'cloudflare-api']],
-	['Image/systems/batelec_drrmd.png', 'BATELEC II Disaster Risk Reduction & Management Division (DRRMD) Portal - Disaster Resilience', 'Web App (Programmer) / August 2026', 'web', ['php', 'mysql', 'javascript', 'ajax', 'materialize-css']],
+	['Image/systems/batelec_drrmd.png', 'BATELEC II Disaster Risk Reduction & Management Department (DRRMD) Portal - Disaster Resilience', 'Web App (Programmer) / August 2026', 'web', ['php', 'mysql', 'javascript', 'ajax', 'materialize-css']],
 	['Image/systems/mis_ciatmp.png', 'BATELEC II MIS - Centralized IT Asset Tracking & Management Portal', 'Web App (Programmer) / September 2026', 'web', ['php', 'mysql', 'javascript', 'ajax', 'materialize-css']],
 	['Image/systems/command_center.png', 'BATELEC II - Command Center Dashboard', 'Web App (Programmer) / October 2026', 'web', ['php', 'mysql', 'javascript', 'ajax', 'materialize-css']]
 ];
