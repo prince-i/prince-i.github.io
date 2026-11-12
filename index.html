@@ -37,24 +37,12 @@
 </head>
 
 <body>
-  <!-- UPGRADED PRELOADER -->
+  <!-- FULL-PAGE LOADING OVERLAY -->
   <div class="loader-wrapper" id="loader">
     <div class="loader-content">
-      <div class="loader-visual-container">
-        <div class="loader-glow"></div>
-        <div class="loader-orbit-ring-outer"></div>
-        <div class="loader-orbit-ring"></div>
-        <div class="loader-icon-frame">
-          <img src="Image/icon.png" alt="Prince Arce" id="loader-img" class="loader-icon-img" width="56" height="56"
-            loading="eager" fetchpriority="high" decoding="async" />
-        </div>
-      </div>
-      <div class="loader-label">
-        <span class="loader-text">PRINCE ARCE</span>
-        <div class="loader-progress-bar">
-          <div class="loader-progress-fill"></div>
-        </div>
-      </div>
+      <img src="Image/icon.png" alt="Prince Arce" id="loader-img" class="loader-icon-img" width="96" height="96"
+        loading="eager" fetchpriority="high" decoding="async" />
+      <span class="loader-name">Prince Arce</span>
     </div>
   </div>
   <main id="main-screen">
@@ -246,10 +234,13 @@
                 ">
               <!-- G1 -->
               <div class="col l3 m6 s12 center align-right" style="display: flex; flex-direction: column">
-                <img data-src="Image/me.jpg"
-                  src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E"
-                  alt="Prince Arce Profile" class="responsive-img lazy-img" id="myPic"
-                  style="margin: auto; height: 100%" />
+                <div class="lazy-container" style="width: 100%; height: 100%; min-height: 260px; border-radius: 20px; overflow: hidden; position: relative;">
+                  <img data-src="Image/me.jpg"
+                    src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E"
+                    alt="Prince Arce Profile" class="responsive-img lazy-img" id="myPic"
+                    style="margin: auto; height: 100%; width: 100%; object-fit: cover;" />
+                  <div class="lazy-placeholder-shimmer"></div>
+                </div>
               </div>
 
               <!-- G2 -->
@@ -405,43 +396,20 @@
           <!-- END CONTACT -->
         </div>
 
-        <!-- CYBER HUD IMAGE CARD -->
-        <div class="col l6 m6 s12" style="display: flex; justify-content: center; align-items: center; padding: 15px;">
-          <div class="cyber-contact-stage">
-            <div class="cyber-hud-card">
-              <!-- Corner brackets -->
-              <div class="cyber-corner corner-tl"></div>
-              <div class="cyber-corner corner-tr"></div>
-              <div class="cyber-corner corner-bl"></div>
-              <div class="cyber-corner corner-br"></div>
-
-              <!-- Top HUD Header -->
-              <div class="cyber-hud-top">
-                <span><span class="cyber-status-pulse"></span>COMM_LINK // 01</span>
-                <span>TRANSMIT READY</span>
-              </div>
-
-              <!-- Central Hologram -->
-              <div class="cyber-hologram-wrap">
-                <div class="cyber-scanline"></div>
-                <div class="cyber-grid-lines"></div>
-                <img src="Image/email.png" data-src="Image/email.png" alt="Contact Support" id="contact_image"
-                  class="responsive-img lazy-img loaded" />
-              </div>
-
-              <!-- Bottom HUD Footer -->
-              <div class="cyber-hud-bottom">
-                <span class="cyber-hud-coords">SYS.STATUS: ONLINE</span>
-                <span>PROTOCOL // SECURE</span>
-              </div>
-            </div>
+        <!-- CONTACT IMAGE -->
+        <div class="col l6 m6 s12" style="display: flex; justify-content: center; align-items: center">
+          <div class="contact-image-container lazy-container">
+            <img data-src="Image/email.png"
+              src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E"
+              alt="Contact Support" id="contact_image" class="responsive-img lazy-img" />
+            <div class="lazy-placeholder-shimmer"></div>
           </div>
         </div>
       </div>
     </div>
 
     <!-- FLOATING TERMINAL BUTTON -->
-    <a href="#cliModal" class="modal-trigger floating-term-btn tooltipped" data-position="right"
+    <a href="#cliModal" class="modal-trigger floating-term-btn tooltipped" data-position="left"
       data-tooltip="Open Developer CLI Terminal">
       <i class="material-icons">terminal</i>
     </a>
@@ -505,15 +473,10 @@
     </div>
 
     <div class="row center" style="margin-top: 35px; margin-bottom: 25px">
-      <a href="#main-screen" id="bktotopbtn" class="cyber-top-btn" title="Return to Top">
-        <span class="cyber-corner corner-tl"></span>
-        <span class="cyber-corner corner-tr"></span>
-        <span class="cyber-corner corner-bl"></span>
-        <span class="cyber-corner corner-br"></span>
-        <span class="cyber-top-pulse"></span>
-        <i class="material-icons cyber-top-icon">arrow_upward</i>
-        <span class="cyber-top-text">RETURN TO TOP</span>
-        <span class="cyber-top-tag">[SYS.TOP]</span>
+      <a href="#main-screen" id="bktotopbtn"
+        class="btn btn-large waves-effect waves-light bktotop-material-btn z-depth-2" title="Return to Top">
+        <i class="material-icons left">arrow_upward</i>
+        <span class="btn-text">RETURN TO TOP</span>
       </a>
     </div>
     <footer>

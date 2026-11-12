@@ -8,17 +8,11 @@ $(document).ready(function () {
     if (!$loader.length || $loader.hasClass('loader-hidden')) return;
     $loader.addClass('loader-hidden');
 
-    $loader.css({
-      opacity: '0',
-      visibility: 'hidden',
-      transform: 'scale(1.04)'
-    });
-
-    $('#main-screen').fadeIn(700);
+    $('#main-screen').fadeIn(500);
 
     setTimeout(function () {
-      $loader.css('display', 'none');
-    }, 650);
+      $loader.remove();
+    }, 550);
   };
 
   const urlParams = new URLSearchParams(window.location.search);
